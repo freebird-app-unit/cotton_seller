@@ -3,7 +3,7 @@ const api_config = {
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid/api/',
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
   BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
-  //Production URL  mari app.js jovo to socket mate barobar 6 k nai kaan mujab
+  //Production URL
   //BASE_URL: 'http://cottontradecentre.com/cotton_bid/api/',
 
   //APIs Name

@@ -100,7 +100,8 @@ class MyPostDetails extends Component {
         },
       })
         .then(function (response) {
-          console.log('response POST_DETAILS:', JSON.stringify(response.data.data[0].attribute_array));
+          console.log('response POST_DETAILS:', JSON.stringify(response.data.data));
+          console.log("Status: " + self.props.route.params.status)
           if (response.data.status == 200) {
             self.setState({
               attribute_array: response.data.data[0].attribute_array,
@@ -469,7 +470,7 @@ class MyPostDetails extends Component {
                       marginRight: '5%',
                       height: 40,
                     }}>
-                    <Text
+                      {this.props.route.params.status != "active" ? <Text
                       numberOfLines={1}
                       ellipsizeMode="tail"
                       style={{
@@ -481,7 +482,8 @@ class MyPostDetails extends Component {
                         fontFamily:'Poppins-Medium'
                       }}>
                       {this.props.route.params.status == "completed" ? 'Update at' : 'Cancel at'}
-                    </Text>
+                    </Text>: null} 
+                    
 
                     {this.props.route.params.status == "completed" ? (<Text numberOfLines={1} 
                           ellipsizeMode='tail' 
