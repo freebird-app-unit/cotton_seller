@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CottonBidSeller.iml" filepath="$PROJECT_DIR$/.idea/modules/CottonBidSeller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CottonBidSeller.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CottonBidSeller.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-970021209/CottonBidSeller.notifee_react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-970021209/CottonBidSeller.notifee_react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-995170672/CottonBidSeller.react-native-aes-crypto.iml" filepath="$PROJECT_DIR$/.idea/modules/-995170672/CottonBidSeller.react-native-aes-crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2085526213/CottonBidSeller.react-native-community_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/2085526213/CottonBidSeller.react-native-community_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1882604244/CottonBidSeller.react-native-community_datetimepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/1882604244/CottonBidSeller.react-native-community_datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1975788843/CottonBidSeller.react-native-document-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1975788843/CottonBidSeller.react-native-document-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1257979271/CottonBidSeller.react-native-encrypted-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1257979271/CottonBidSeller.react-native-encrypted-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1571813442/CottonBidSeller.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/-1571813442/CottonBidSeller.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/822349793/CottonBidSeller.react-native-firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/822349793/CottonBidSeller.react-native-firebase_messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-38609899/CottonBidSeller.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-38609899/CottonBidSeller.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1875210955/CottonBidSeller.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/1875210955/CottonBidSeller.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1732381804/CottonBidSeller.react-native-otp-verify.iml" filepath="$PROJECT_DIR$/.idea/modules/1732381804/CottonBidSeller.react-native-otp-verify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/921344384/CottonBidSeller.react-native-pager-view.iml" filepath="$PROJECT_DIR$/.idea/modules/921344384/CottonBidSeller.react-native-pager-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/218378986/CottonBidSeller.react-native-picker_picker.iml" filepath="$PROJECT_DIR$/.idea/modules/218378986/CottonBidSeller.react-native-picker_picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/18263763/CottonBidSeller.react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/18263763/CottonBidSeller.react-native-push-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2093006018/CottonBidSeller.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-2093006018/CottonBidSeller.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1285290198/CottonBidSeller.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1285290198/CottonBidSeller.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2015677365/CottonBidSeller.react-native-simple-crypto.iml" filepath="$PROJECT_DIR$/.idea/modules/-2015677365/CottonBidSeller.react-native-simple-crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2118257715/CottonBidSeller.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/2118257715/CottonBidSeller.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1003338721/CottonBidSeller.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/1003338721/CottonBidSeller.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2037865628/CottonBidSeller.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-2037865628/CottonBidSeller.rn-fetch-blob.iml" />
+    </modules>
+  </component>
+</project>
