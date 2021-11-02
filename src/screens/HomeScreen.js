@@ -228,11 +228,11 @@ export default class Dashboard extends Component {
         offset: '0',
         limit: '5',
       };
-      // console.log("Negotiation request: " + JSON.stringify(data))
+      console.log("Negotiation request: " + JSON.stringify(data))
       const formData = new FormData();
       formData.append('data', JSON.stringify(data));
 
-      console.log('data', JSON.stringify(formData));
+      //console.log('data', JSON.stringify(formData));
 
       axios({
         url: api_config.BASE_URL + api_config.NEGOTIATION_LIST,
@@ -255,7 +255,7 @@ export default class Dashboard extends Component {
 
           });
           if (response.data.status == 200) {
-            console.log(' response.data.data >> nagotiation', response.data);
+            console.log(' response.data.data >> nagotiation', JSON.stringify(response.data));
             self.setState({arrNegotiationList: response.data.data});
           } else {
             console.log(response.data.message);

@@ -405,6 +405,7 @@ export default class Dashboard extends Component {
     this.props.navigation.navigate("MyPostDetails", {
       data: obj,
       status: status,
+      type: obj.type
     });
   };
 

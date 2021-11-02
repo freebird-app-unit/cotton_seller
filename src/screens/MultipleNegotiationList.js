@@ -304,7 +304,7 @@ class MultipleNegotiationList extends Component {
   }
 
   createNegitiationListUI = () => {
-    console.log('this.state.arrNegotiationList',this.state.arrNegotiationList[0])
+    console.log('this.state.arrNegotiationList: ' + JSON.stringify(this.state.arrNegotiationList))
     try {
       console.log("Bhavin Thakkar: " + JSON.stringify(this.state.arrNegotiationList.length))
       if (this.state.arrNegotiationList.length > 0) {
@@ -627,7 +627,7 @@ class MultipleNegotiationList extends Component {
                         marginRight: '5%',
                         height: 35,
                       }}>
-                      {el.negotiation_by == 'buyer' ?
+                      {el.negotiation_by == 'seller' ?
                         <TouchableOpacity
                           onPress={() => this.onClickWaitingForResponse(el)}>
                           <Text

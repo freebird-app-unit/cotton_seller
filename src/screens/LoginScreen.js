@@ -203,10 +203,11 @@ const LoginScreen = ({route, navigation}) => {
       await EncryptedStorage.setItem('user_id', id.toString());
       setLoading(false);
       // navigation.navigate('HomeScreen')
-      if (userPlan)
+      if (userPlan){
         navigation.navigate('HomeScreen');
-      else
+      } else {
         navigation.navigate('RegisterPlan');
+      }
    
 
       // });
@@ -275,7 +276,7 @@ console.log("Login data: " + JSON.stringify(data))
         />
         </View>
       
-
+        <ScrollView>
         <View
           style={{
             backgroundColor: '#fff',
@@ -336,6 +337,7 @@ console.log("Login data: " + JSON.stringify(data))
           <View style={{alignItems:'center',bottom:5}}>
           <Text style={{ fontFamily: "Poppins-Regular"}}>Version: {defaultMessages.en.versionNumber}</Text></View>
         </View>
+        </ScrollView>
       </View>
   );
 };

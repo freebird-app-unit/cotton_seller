@@ -112,7 +112,7 @@ class NegotiateDetails extends Component {
         buyer_id: buyerId,
         post_notification_id: postId,
       };
-
+      console.log('Nego details Bhavin ====>>>>>>: ' + JSON.stringify(data));
       const formData = new FormData();
       formData.append('data', JSON.stringify(data));
 

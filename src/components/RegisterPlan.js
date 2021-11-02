@@ -24,6 +24,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Spinner from 'react-native-loading-spinner-overlay';
 import api_config from '../Api/api';
 import axios from 'axios';
+import { RazorpayApiKey } from "../Api/Razorpayconfig";
+import RazorpayCheckout from 'react-native-razorpay';
 
 const RegisterPlan = ({ navigation }) => {
 
@@ -105,6 +107,60 @@ const RegisterPlan = ({ navigation }) => {
     }, [])
 
     const onSubmitButtonPress = async () => {
+        //  test with upi failure@razorpay
+        //  test with upi success@razorpay
+        if (IdSelected) {
+            try {
+                var today = new Date();
+                var time = today.getHours() + today.getMinutes() + today.getSeconds();
+
+                let user_data = JSON.parse(await EncryptedStorage.getItem('user_data'))
+
+                console.log('IdSelected.price', IdSelected.price)
+                let op = {
+                    name: 'Seller ' + await EncryptedStorage.getItem('user_id'),
+                    image: require('../assets/ic_launcher.png'),
+                    description: `Payment of ${IdSelected.name} with ${IdSelected.validity} days validity`,
+                    key: RazorpayApiKey,
+                    currency: 'INR',
+                    amount: JSON.stringify(IdSelected.price) + '00',
+                    prefill: {
+                        email: '',
+                        contact: user_data.user_mobile,
+                        name: '',
+                    },
+                    theme: { color: theme.colors.primary }
+                }
+
+                //    setOption(op);
+                console.log('option', op)
+
+                RazorpayCheckout.open(op)
+                    .then(res => {
+                        console.log('res', res)
+                        if (res.hasOwnProperty('razorpay_payment_id'))
+                            PaymentDone(res.razorpay_payment_id)
+                        else
+                            alert('please check your network')
+
+                    })
+                    .catch(err => {
+                        console.log(JSON.stringify(err))
+                        alert('please check your network')
+                    });
+
+            }
+            catch (error) {
+                console.log(JSON.stringify(error));
+            }
+        }
+        else {
+            alert('Please Select the Plan')
+        }
+
+    }
+
+    const PaymentDone = async (RazorPayId) => {
 
         console.log('avigay')
         try {
@@ -113,7 +169,8 @@ const RegisterPlan = ({ navigation }) => {
 
                 "user_id": await EncryptedStorage.getItem('user_id'),
                 "user_type": "seller",
-                "plan_id": IdSelected.id
+                "plan_id": IdSelected.id,
+                'razorpay_payment_id': RazorPayId
             };
 
             const formData = new FormData();
@@ -275,7 +332,7 @@ const RegisterPlan = ({ navigation }) => {
                         flexDirection: 'column', backgroundColor: '#fff', paddingHorizontal: wp(5)
                     }}>
 
-                        <View style={{minHeight:hp(70)}}>
+                        <View style={{height:hp(65)}}>
                             <FlatList
                                 data={Plan}
                                 numColumns={2}
@@ -285,12 +342,13 @@ const RegisterPlan = ({ navigation }) => {
                         </View>
                         <FullButtonComponent
                             type={'fill'}
-                            text={'Done'}
+                            text={'Buy'}
                             textStyle={styles.submitButtonText}
-                            buttonStyle={GenericStyles.mt24}
+                            // buttonStyle={GenericStyles.mt24}
                             onPress={onSubmitButtonPress}
                         // disabled={submittingOtp}
                         />
+                        
                     </View>
 
                 </View>
