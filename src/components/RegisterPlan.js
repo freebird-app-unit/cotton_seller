@@ -170,7 +170,7 @@ const RegisterPlan = ({ navigation }) => {
                 "user_id": await EncryptedStorage.getItem('user_id'),
                 "user_type": "seller",
                 "plan_id": IdSelected.id,
-                'razorpay_payment_id': RazorPayId
+                'transaction_id': RazorPayId
             };
 
             const formData = new FormData();
