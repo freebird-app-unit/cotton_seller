@@ -538,7 +538,7 @@ class DealDetails extends Component {
   onClickPlusIcon = () => {
     try {
       let maxCount = this.state.remain_bales;
-alert(remain_bales)
+      
       if (this.state.displayBalesCount + this.state.balesCount <= maxCount) {
         this.state.displayBalesCount =
           this.state.displayBalesCount + this.state.balesCount;

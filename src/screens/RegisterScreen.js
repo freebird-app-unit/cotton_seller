@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   StyleSheet,
@@ -13,8 +13,8 @@ import {
   Platform,
   Image,
 } from 'react-native';
-import {baseUrl} from '../components/Global';
-import {Text} from 'react-native-paper';
+import { baseUrl } from '../components/Global';
+import { Text } from 'react-native-paper';
 import Background from '../components/Background';
 import Logo from '../components/Logo';
 import Header from '../components/Header';
@@ -22,22 +22,22 @@ import Button from '../components/Button';
 import TextInput from '../components/TextInput';
 import TextInputFY from '../components/TextInputFY';
 import BackButton from '../components/BackButton';
-import {theme} from '../core/theme';
-import {emailValidator} from '../helpers/emailValidator';
-import {fieldValidator} from '../helpers/fieldValidator';
-import {numberValidator} from '../helpers/numberValidator';
-import {gstValidator} from '../helpers/gstValidator';
-import {panValidator} from '../helpers/panValidator';
-import {passwordValidator} from '../helpers/passwordValidator';
-import {nameValidator} from '../helpers/nameValidator';
+import { theme } from '../core/theme';
+import { emailValidator } from '../helpers/emailValidator';
+import { fieldValidator } from '../helpers/fieldValidator';
+import { numberValidator } from '../helpers/numberValidator';
+import { gstValidator } from '../helpers/gstValidator';
+import { panValidator } from '../helpers/panValidator';
+import { passwordValidator } from '../helpers/passwordValidator';
+import { nameValidator } from '../helpers/nameValidator';
 import DropDownPicker from 'react-native-dropdown-picker';
-import {Appbar} from 'react-native-paper';
-import {Calendar} from 'react-native-calendars';
+import { Appbar } from 'react-native-paper';
+import { Calendar } from 'react-native-calendars';
 import moment from 'moment';
 import Icon from 'react-native-vector-icons/AntDesign';
 import defaultMessages from '../helpers/defaultMessages';
 import api_config from '../Api/api';
-import {registration_api} from '../Api/registration_api';
+import { registration_api } from '../Api/registration_api';
 import axios from 'axios';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import SelectDropdown from 'react-native-select-dropdown';
@@ -46,39 +46,39 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import IconMaterial from 'react-native-vector-icons/MaterialIcons';
 //import DateTimePicker from '@react-native-community/datetimepicker';
 // Import Image Picker
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import ActionSheet from 'react-native-actionsheet';
 
 import CircleGreen from '../assets/CircleGreen';
 import CircleGray from '../assets/CircleGray';
 import Stamp_Icon from '../assets/Stamp';
-import {PermissionsAndroid} from 'react-native';
+import { PermissionsAndroid } from 'react-native';
 
 import LineGray from '../assets/LineWithCircleGray';
 import LineGreen from '../assets/LineWithCircleGreen';
-import { heightPercentageToDP } from '../components/responsive-ratio';
+import { heightPercentageToDP, widthPercentageToDP } from '../components/responsive-ratio';
 // import IC_PD from '../assets/personal_details.jpeg';
 // import IC_LD from '../assets/location_details.jpeg';
 // import IC_CD from '../assets/company_details.jpeg';
 // import IC_BD from '../assets/bank_details.jpeg';
 
-const RegisterScreen = ({navigation, ref}) => {
+const RegisterScreen = ({ navigation, ref }) => {
   const [sellerNameFocus, setSellerNameFocus] = useState(false);
   const [loading, setLoading] = useState(false);
   const [hidePass, setHidePass] = useState(true);
   const [hideConfirmPass, setHideConfirmPass] = useState(true);
-  const element = <TextInput.Icon name="lock-outline" />;
-  const [sellerName, setSellerName] = useState({value: '', error: ''});
-  const [postalAddress, setPostalAddress] = useState({value: '', error: ''});
-  const [contactPerson, setContactPerson] = useState({value: '', error: ''});
-  const [contactNumber, setContactNumber] = useState({value: '', error: ''});
-  const [email, setEmail] = useState({value: '', error: ''});
-  const [properiterShip, setProperiterShip] = useState({value: '', error: ''});
-  const [millRegNo, setMillRegNo] = useState({value: '', error: ''});
-  const [millRegDate, setMillRegDate] = useState({value: '', error: ''});
-  const [msmeType, setMsmeType] = useState({value: '', error: ''});
-  const [firstFY, setFirstFY] = useState({value: '', error: ''});
-  const [password, setPassword] = useState({value: '', error: ''});
+  // const element = <TextInput.Icon name="lock-outline" />;
+  const [sellerName, setSellerName] = useState({ value: '', error: '' });
+  const [postalAddress, setPostalAddress] = useState({ value: '', error: '' });
+  const [contactPerson, setContactPerson] = useState({ value: '', error: '' });
+  const [contactNumber, setContactNumber] = useState({ value: '', error: '' });
+  const [email, setEmail] = useState({ value: '', error: '' });
+  const [properiterShip, setProperiterShip] = useState({ value: '', error: '' });
+  const [millRegNo, setMillRegNo] = useState({ value: '', error: '' });
+  const [millRegDate, setMillRegDate] = useState({ value: '', error: '' });
+  const [msmeType, setMsmeType] = useState({ value: '', error: '' });
+  const [firstFY, setFirstFY] = useState({ value: '', error: '' });
+  const [password, setPassword] = useState({ value: '', error: '' });
   const [confirmPassword, setConfirmPassword] = useState({
     value: '',
     error: '',
@@ -87,12 +87,12 @@ const RegisterScreen = ({navigation, ref}) => {
     value: '',
     error: '',
   });
-  const [secondFY, setSecondFY] = useState({value: '', error: ''});
+  const [secondFY, setSecondFY] = useState({ value: '', error: '' });
   const [secondFYTurnOver, setSecondFYTurnOver] = useState({
     value: '',
     error: '',
   });
-  const [thirdFY, setThirdFY] = useState({value: '', error: ''});
+  const [thirdFY, setThirdFY] = useState({ value: '', error: '' });
   const [thirdFYTurnOver, setThirdFYTurnOver] = useState({
     value: '',
     error: '',
@@ -101,16 +101,16 @@ const RegisterScreen = ({navigation, ref}) => {
     value: '',
     error: '',
   });
-  const [gstNo, setGstNo] = useState({value: '', error: ''});
-  const [panNo, setPanNo] = useState({value: '', error: ''});
-  const [bankName, setBankName] = useState({value: '', error: ''});
+  const [gstNo, setGstNo] = useState({ value: '', error: '' });
+  const [panNo, setPanNo] = useState({ value: '', error: '' });
+  const [bankName, setBankName] = useState({ value: '', error: '' });
   const [accountHolderName, setAccountHolderName] = useState({
     value: '',
     error: '',
   });
-  const [branchAddress, setBranchAddress] = useState({value: '', error: ''});
-  const [ifscCode, setIfscCode] = useState({value: '', error: ''});
-  const [referralCode, setReferralCode] = useState({value: '', error: ''});
+  const [branchAddress, setBranchAddress] = useState({ value: '', error: '' });
+  const [ifscCode, setIfscCode] = useState({ value: '', error: '' });
+  const [referralCode, setReferralCode] = useState({ value: '', error: '' });
 
   const [open, setOpen] = useState(false);
   const [propriterShipValue, setBusinessTypeItem] = useState(null);
@@ -168,17 +168,17 @@ const RegisterScreen = ({navigation, ref}) => {
   const [openSecondYear, setOpenSecondYear] = useState(false);
   const [valueSecondYear, setValueSecondYear] = useState(null);
   const [itemsSecondYear, setItemsSecondYear] = useState([
-    {label: '2020-2019', value: '1'},
-    {label: '2019-2018', value: '2'},
-    {label: '2018-2017', value: '3'},
+    { label: '2020-2019', value: '1' },
+    { label: '2019-2018', value: '2' },
+    { label: '2018-2017', value: '3' },
   ]);
 
   const [openThirdYear, setOpenThirdYear] = useState(false);
   const [valueThirdYear, setValueThirdYear] = useState(null);
   const [itemsThirdYear, setItemsThirdYear] = useState([
-    {label: '2020-2019', value: '1'},
-    {label: '2019-2018', value: '2'},
-    {label: '2018-2017', value: '3'},
+    { label: '2020-2019', value: '1' },
+    { label: '2019-2018', value: '2' },
+    { label: '2018-2017', value: '3' },
   ]);
 
   const [isDisplayMillData, setMillData] = useState(true);
@@ -209,7 +209,7 @@ const RegisterScreen = ({navigation, ref}) => {
         let year = thisYear - i;
         setRegistrationYear(registrationYear => [
           ...registrationYear,
-          {label: year, value: year},
+          { label: year, value: year },
         ]);
       }
       getRegistrationDropDownData();
@@ -247,7 +247,7 @@ const RegisterScreen = ({navigation, ref}) => {
         for (let i = 0; i < sellerListData.length; i++) {
           setItemsSellerType(itemsSellerType => [
             ...itemsSellerType,
-            {label: sellerListData[i].name, value: sellerListData[i].id},
+            { label: sellerListData[i].name, value: sellerListData[i].id },
           ]);
         }
         for (let j = 0; j < businessTypeListData.length; j++) {
@@ -264,7 +264,6 @@ const RegisterScreen = ({navigation, ref}) => {
         // }
         console.log('Response 123: ' + new Date());
 
-        getStateList();
       })
       .catch(function (error) {
         alert(defaultMessages.en.serverNotRespondingMsg);
@@ -272,7 +271,7 @@ const RegisterScreen = ({navigation, ref}) => {
   };
 
   const getStateList = () => {
-    let data = {country_id: '1'};
+    let data = { country_id: '1' };
 
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -292,7 +291,7 @@ const RegisterScreen = ({navigation, ref}) => {
         for (let i = 0; i < stateListData.length; i++) {
           setItemsState(itemsState => [
             ...itemsState,
-            {label: stateListData[i].name, value: stateListData[i].id},
+            { label: stateListData[i].name, value: stateListData[i].id },
           ]);
         }
         //setLoading(false)
@@ -306,7 +305,7 @@ const RegisterScreen = ({navigation, ref}) => {
     setLoading(true);
     setStateError(null);
     setValueState(stateID);
-    let data = {state_id: stateID};
+    let data = { state_id: stateID };
     console.log('District data: ' + JSON.stringify(data));
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -328,7 +327,7 @@ const RegisterScreen = ({navigation, ref}) => {
         for (let i = 0; i < districtListData.length; i++) {
           setItemsDistrict(itemsDistrict => [
             ...itemsDistrict,
-            {label: districtListData[i].name, value: districtListData[i].id},
+            { label: districtListData[i].name, value: districtListData[i].id },
           ]);
         }
         setLoading(false);
@@ -341,7 +340,7 @@ const RegisterScreen = ({navigation, ref}) => {
   const getStationName = districtID => {
     setLoading(true);
     setValueDistrict(districtID);
-    let data = {city_id: districtID};
+    let data = { city_id: districtID };
 
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -363,19 +362,19 @@ const RegisterScreen = ({navigation, ref}) => {
           for (let i = 0; i < stationListData.length; i++) {
             setItemsStation(itemsStation => [
               ...itemsStation,
-              {label: stationListData[i].name, value: stationListData[i].id},
+              { label: stationListData[i].name, value: stationListData[i].id },
             ]);
           }
         } else {
-          let d =[]
+          let d = []
           d.push({
-              label: "No station avilable", value: 0
+            label: "No station avilable", value: 0
           })
           setItemsStation(d)
           setLoading(false);
         }
-        
-        
+
+
       })
       .catch(function (error) {
         alert(defaultMessages.en.serverNotRespondingMsg);
@@ -513,6 +512,7 @@ const RegisterScreen = ({navigation, ref}) => {
 
       setPersonalDetails(false);
       setLocationDetails(true);
+      getStateList();
       setCompanyDetails(false);
       setBankDetails(false);
     }
@@ -740,7 +740,7 @@ const RegisterScreen = ({navigation, ref}) => {
           storeScreenStack();
           navigation.reset({
             index: 0,
-            routes: [{name: 'VerifyOtpScreen'}],
+            routes: [{ name: 'VerifyOtpScreen' }],
           });
         } else {
           alert(response.data.message);
@@ -753,15 +753,15 @@ const RegisterScreen = ({navigation, ref}) => {
   };
 
   const onChangedContactNumber = text => {
-    setContactNumber({value: text.replace(/[^0-9]/g, ''), error: ''});
+    setContactNumber({ value: text.replace(/[^0-9]/g, ''), error: '' });
   };
 
   const onChangedGstNumber = text => {
-    setGstNo({value: text.replace(/[^a-zA-Z0-9]/g, ''), error: ''});
+    setGstNo({ value: text.replace(/[^a-zA-Z0-9]/g, ''), error: '' });
   };
 
   const onChangedPanNumber = text => {
-    setPanNo({value: text.replace(/[^a-zA-Z0-9]/g, ''), error: ''});
+    setPanNo({ value: text.replace(/[^a-zA-Z0-9]/g, ''), error: '' });
   };
 
   const onChange = (event, selectedDate) => {
@@ -926,7 +926,7 @@ const RegisterScreen = ({navigation, ref}) => {
           backgroundColor: 'transparent',
         }}>
         <Spinner visible={loading} color="#085cab" />
-        <View style={{width: '100%', marginTop: 0, backgroundColor: '#F0F5F9'}}>
+        {/* <View style={{width: '100%', marginTop: 0, backgroundColor: '#F0F5F9'}}>
           <Appbar.Header style={{backgroundColor: 'transparent'}}>
             <Appbar.BackAction
               color="#000"
@@ -940,17 +940,17 @@ const RegisterScreen = ({navigation, ref}) => {
             />
             <Appbar.Action color="transparent" onPress={() => {}} />
           </Appbar.Header>
-        </View>
+        </View> */}
         <ScrollView
           showsVerticalScrollIndicator={false}
           alwaysBounceVertical={false}
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="always"
           //contentContainerStyle={styles.contentContainer}
-          contentContainerStyle={{flexGrow: 1, paddingBottom: 60}}
-          style={{backgroundColor: 'white'}}>
+          contentContainerStyle={{ flexGrow: 1, paddingBottom: 60 }}
+          style={{ backgroundColor: 'white' }}>
           <View pointerEvents={loading ? 'none' : 'auto'}>
-            <View style={{height: 15}} />
+            <View style={{ height: 15 }} />
 
             {personaldetails && (
               <View
@@ -1110,7 +1110,7 @@ const RegisterScreen = ({navigation, ref}) => {
               </View>
             )}
 
-            <View style={{flexDirection: 'row', marginTop: 5, marginBottom: 5}}>
+            <View style={{ flexDirection: 'row', marginTop: 5, marginBottom: 5 }}>
               <Text
                 style={{
                   color: 'green',
@@ -1156,7 +1156,7 @@ const RegisterScreen = ({navigation, ref}) => {
             </View>
 
             {personaldetails && (
-              <View style={{marginTop: 5, marginBottom: 5}}>
+              <View style={{ marginTop: 5, marginBottom: 5 }}>
                 <SelectDropdown
                   data={itemsSellerType}
                   defaultValue={itemsSellerType}
@@ -1180,7 +1180,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         name="chevron-down"
                         color={'black'}
                         size={14}
-                        style={{marginRight: 20}}
+                        style={{ marginRight: 20 }}
                       />
                     );
                   }}
@@ -1200,14 +1200,14 @@ const RegisterScreen = ({navigation, ref}) => {
                     <Text style={styles.error}>{sellerTypeError}</Text>
                   ) : null}
                 </View>
-                <View style={{marginTop: 0, marginBottom: 0}}>
+                <View style={{ marginTop: 0, marginBottom: 0 }}>
                   <TextInput
                     autoFocus={sellerNameFocus}
                     label="Name of seller"
                     returnKeyType="next"
                     value={sellerName.value}
                     onChangeText={text =>
-                      setSellerName({value: text, error: ''})
+                      setSellerName({ value: text, error: '' })
                     }
                     error={!!sellerName.error}
                     errorText={sellerName.error}
@@ -1215,11 +1215,11 @@ const RegisterScreen = ({navigation, ref}) => {
                     maxLength={60}
                   />
                 </View>
-                <View style={{marginTop: 0, marginBottom: 0}}>
+                <View style={{ marginTop: 0, marginBottom: 0 }}>
                   <TextInput
                     style={styles.postInput}
                     onChangeText={text =>
-                      setPostalAddress({value: text, error: ''})
+                      setPostalAddress({ value: text, error: '' })
                     }
                     multiline={true}
                     value={postalAddress.value}
@@ -1233,13 +1233,13 @@ const RegisterScreen = ({navigation, ref}) => {
                     maxLength={200}
                   />
                 </View>
-                <View style={{marginTop: 0, marginBottom: 0}}>
+                <View style={{ marginTop: 0, marginBottom: 0 }}>
                   <TextInput
                     label="Name of contact person"
                     returnKeyType="next"
                     value={contactPerson.value}
                     onChangeText={text =>
-                      setContactPerson({value: text, error: ''})
+                      setContactPerson({ value: text, error: '' })
                     }
                     error={!!contactPerson.error}
                     errorText={contactPerson.error}
@@ -1256,57 +1256,45 @@ const RegisterScreen = ({navigation, ref}) => {
                   keyboardType="phone-pad"
                   maxLength={10}
                 />
-                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                   <TextInput
                     label="Password"
                     returnKeyType="done"
                     value={password.value}
-                    onChangeText={text => setPassword({value: text, error: ''})}
+                    onChangeText={text => setPassword({ value: text, error: '' })}
                     error={!!password.error}
                     errorText={password.error}
                     maxLength={40}
                     secureTextEntry={hidePass ? true : false}
-                    right={element}
+                    pass={true}
+                    show={hidePass}
+                    rightOnpress={() => setHidePass(!hidePass)}
                   />
-                  <IconMaterial
-                    style={styles.icon}
-                    name={hidePass ? 'visibility-off' : 'visibility'}
-                    size={30}
-                    color="#69BA53"
-                    onPress={() => {
-                      setHidePass(!hidePass);
-                    }}
-                  />
+
                 </View>
-                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                   <TextInput
                     label="Confirm Password"
                     returnKeyType="done"
                     value={confirmPassword.value}
                     onChangeText={text =>
-                      setConfirmPassword({value: text, error: ''})
+                      setConfirmPassword({ value: text, error: '' })
                     }
                     error={!!confirmPassword.error}
                     errorText={confirmPassword.error}
                     maxLength={40}
                     secureTextEntry={hideConfirmPass ? true : false}
-                    right={element}
+                    pass={true}
+                    show={hideConfirmPass}
+                    rightOnpress={() => setHideConfirmPass(!hideConfirmPass)}
                   />
-                  <IconMaterial
-                    style={styles.icon}
-                    name={hideConfirmPass ? 'visibility-off' : 'visibility'}
-                    size={30}
-                    color="#69BA53"
-                    onPress={() => {
-                      setHideConfirmPass(!hideConfirmPass);
-                    }}
-                  />
+
                 </View>
                 <TextInput
                   label="Email address"
                   returnKeyType="next"
                   value={email.value}
-                  onChangeText={text => setEmail({value: text, error: ''})}
+                  onChangeText={text => setEmail({ value: text, error: '' })}
                   error={!!email.error}
                   errorText={email.error}
                   autoCapitalize="none"
@@ -1319,7 +1307,7 @@ const RegisterScreen = ({navigation, ref}) => {
             )}
 
             {companydetails && (
-              <View style={{marginTop: 5, marginBottom: 5}}>
+              <View style={{ marginTop: 5, marginBottom: 5 }}>
                 <SelectDropdown
                   data={itemsPropriterShip}
                   defaultValue={itemsPropriterShip}
@@ -1345,7 +1333,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         name="chevron-down"
                         color={'black'}
                         size={14}
-                        style={{marginRight: 20}}
+                        style={{ marginRight: 20 }}
                       />
                     );
                   }}
@@ -1417,7 +1405,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   />
                                 )} */}
 
-                <View style={{marginTop: 15, marginBottom: 5}}>
+                <View style={{ marginTop: 15, marginBottom: 5 }}>
                   <SelectDropdown
                     data={registrationYear}
                     defaultValue={registrationYear}
@@ -1443,7 +1431,7 @@ const RegisterScreen = ({navigation, ref}) => {
                           name="chevron-down"
                           color={'black'}
                           size={14}
-                          style={{marginRight: 20}}
+                          style={{ marginRight: 20 }}
                         />
                       );
                     }}
@@ -1475,7 +1463,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   ) : null}
                 </View>
 
-                <View style={{marginTop: 0, marginBottom: 0}}>
+                <View style={{ marginTop: 0, marginBottom: 0 }}>
                   <View style={styles1.container}>
                     <TextInputFY
                       style={styles1.button}
@@ -1488,7 +1476,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         new Date().getFullYear()
                       }
                       onChangeText={text =>
-                        setFirstFYTurnOver({value: text, error: ''})
+                        setFirstFYTurnOver({ value: text, error: '' })
                       }
                       maxLength={15}
                       editable={false}
@@ -1499,7 +1487,7 @@ const RegisterScreen = ({navigation, ref}) => {
                       returnKeyType="next"
                       value={firstFYTurnOver.value}
                       onChangeText={text =>
-                        setFirstFYTurnOver({value: text, error: ''})
+                        setFirstFYTurnOver({ value: text, error: '' })
                       }
                       error={!!firstFYTurnOver.error}
                       errorText={firstFYTurnOver.error}
@@ -1535,7 +1523,7 @@ const RegisterScreen = ({navigation, ref}) => {
                       returnKeyType="next"
                       value={secondFYTurnOver.value}
                       onChangeText={text =>
-                        setSecondFYTurnOver({value: text, error: ''})
+                        setSecondFYTurnOver({ value: text, error: '' })
                       }
                       error={!!secondFYTurnOver.error}
                       errorText={secondFYTurnOver.error}
@@ -1571,7 +1559,7 @@ const RegisterScreen = ({navigation, ref}) => {
                       returnKeyType="next"
                       value={thirdFYTurnOver.value}
                       onChangeText={text =>
-                        setThirdFYTurnOver({value: text, error: ''})
+                        setThirdFYTurnOver({ value: text, error: '' })
                       }
                       error={!!thirdFYTurnOver.error}
                       errorText={thirdFYTurnOver.error}
@@ -1586,13 +1574,13 @@ const RegisterScreen = ({navigation, ref}) => {
                   </View>
                 </View>
 
-                <View style={{marginTop: 0, marginBottom: 5}}>
+                <View style={{ marginTop: 0, marginBottom: 5 }}>
                   <TextInput
                     label="Period of operation in cotton trade"
                     returnKeyType="done"
                     value={cottonTradeExperience.value}
                     onChangeText={text =>
-                      setCottonTradeExperience({value: text, error: ''})
+                      setCottonTradeExperience({ value: text, error: '' })
                     }
                     error={!!cottonTradeExperience.error}
                     errorText={cottonTradeExperience.error}
@@ -1607,7 +1595,7 @@ const RegisterScreen = ({navigation, ref}) => {
                     </Text>
                   ) : null}
                 </View>
-                <View style={{marginTop: 0, marginBottom: 5, marginLeft: '5%'}}>
+                <View style={{ marginTop: 0, marginBottom: 5, marginLeft: '5%' }}>
                   <Text
                     style={{
                       fontSize: 14,
@@ -1623,8 +1611,8 @@ const RegisterScreen = ({navigation, ref}) => {
                       <Stamp_Icon />
                     ) : (
                       <Image
-                        style={{width: 100, height: 100, borderRadius: 10}}
-                        source={{uri: filePath.assets[0].uri}}
+                        style={{ width: 100, height: 100, borderRadius: 10 }}
+                        source={{ uri: filePath.assets[0].uri }}
                       />
                     )}
                   </TouchableOpacity>
@@ -1673,7 +1661,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         name="chevron-down"
                         color={'black'}
                         size={14}
-                        style={{marginRight: 20}}
+                        style={{ marginRight: 20 }}
                       />
                     );
                   }}
@@ -1726,7 +1714,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         name="chevron-down"
                         color={'black'}
                         size={14}
-                        style={{marginRight: 20}}
+                        style={{ marginRight: 20 }}
                       />
                     );
                   }}
@@ -1779,7 +1767,7 @@ const RegisterScreen = ({navigation, ref}) => {
                         name="chevron-down"
                         color={'black'}
                         size={14}
-                        style={{marginRight: 20}}
+                        style={{ marginRight: 20 }}
                       />
                     );
                   }}
@@ -1830,7 +1818,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   label="Bank Name"
                   returnKeyType="done"
                   value={bankName.value}
-                  onChangeText={text => setBankName({value: text, error: ''})}
+                  onChangeText={text => setBankName({ value: text, error: '' })}
                   error={!!bankName.error}
                   errorText={bankName.error}
                   maxLength={120}
@@ -1841,7 +1829,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   returnKeyType="done"
                   value={branchAddress.value}
                   onChangeText={text =>
-                    setBranchAddress({value: text, error: ''})
+                    setBranchAddress({ value: text, error: '' })
                   }
                   error={!!branchAddress.error}
                   errorText={branchAddress.error}
@@ -1852,7 +1840,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   label="IFSC Code"
                   returnKeyType="done"
                   value={ifscCode.value}
-                  onChangeText={text => setIfscCode({value: text, error: ''})}
+                  onChangeText={text => setIfscCode({ value: text, error: '' })}
                   error={!!ifscCode.error}
                   errorText={ifscCode.error}
                   maxLength={10}
@@ -1863,7 +1851,7 @@ const RegisterScreen = ({navigation, ref}) => {
                   returnKeyType="done"
                   value={referralCode.value}
                   onChangeText={text =>
-                    setReferralCode({value: text, error: ''})
+                    setReferralCode({ value: text, error: '' })
                   }
                   error={!!referralCode.error}
                   errorText={referralCode.error}
@@ -1883,8 +1871,8 @@ const RegisterScreen = ({navigation, ref}) => {
                 <Button
                   mode="contained"
                   onPress={onSignUpPressed}
-                  style={{flex: 1, marginLeft: 5}}
-                  labelStyle={{color: 'white', textTransform: 'capitalize'}}>
+                  style={{ flex: 1, marginLeft: 5 }}
+                  labelStyle={{ color: 'white', textTransform: 'capitalize' }}>
                   Next
                 </Button>
               </View>
@@ -1908,15 +1896,15 @@ const RegisterScreen = ({navigation, ref}) => {
                     borderWidth: 1,
                     borderColor: 'gray',
                   }}
-                  labelStyle={{color: 'gray', textTransform: 'capitalize'}}>
+                  labelStyle={{ color: 'gray', textTransform: 'capitalize' }}>
                   Back
                 </Button>
 
                 <Button
                   mode="contained"
                   onPress={onSignUpPressed}
-                  style={{flex: 1, marginLeft: 5}}
-                  labelStyle={{color: 'white', textTransform: 'capitalize'}}>
+                  style={{ flex: 1, marginLeft: 5 }}
+                  labelStyle={{ color: 'white', textTransform: 'capitalize' }}>
                   Next
                 </Button>
               </View>
@@ -1940,15 +1928,15 @@ const RegisterScreen = ({navigation, ref}) => {
                     borderWidth: 1,
                     borderColor: 'gray',
                   }}
-                  labelStyle={{color: 'gray', textTransform: 'capitalize'}}>
+                  labelStyle={{ color: 'gray', textTransform: 'capitalize' }}>
                   Back
                 </Button>
 
                 <Button
                   mode="contained"
                   onPress={onSignUpPressed}
-                  style={{flex: 1, marginLeft: 5}}
-                  labelStyle={{color: 'white', textTransform: 'capitalize'}}>
+                  style={{ flex: 1, marginLeft: 5 }}
+                  labelStyle={{ color: 'white', textTransform: 'capitalize' }}>
                   Next
                 </Button>
               </View>
@@ -1972,15 +1960,15 @@ const RegisterScreen = ({navigation, ref}) => {
                     borderWidth: 1,
                     borderColor: 'gray',
                   }}
-                  labelStyle={{color: 'gray', textTransform: 'capitalize'}}>
+                  labelStyle={{ color: 'gray', textTransform: 'capitalize' }}>
                   Back
                 </Button>
 
                 <Button
                   mode="contained"
                   onPress={onSignUpPressed}
-                  style={{flex: 1, marginLeft: 5}}
-                  labelStyle={{color: 'white', textTransform: 'capitalize'}}>
+                  style={{ flex: 1, marginLeft: 5 }}
+                  labelStyle={{ color: 'white', textTransform: 'capitalize' }}>
                   Register
                 </Button>
               </View>
@@ -2130,9 +2118,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 0,
+    paddingHorizontal: widthPercentageToDP(4),
   },
-  dropdown3BtnImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdown3BtnImage: { width: 45, height: 45, resizeMode: 'cover' },
   dropdown3BtnTxt: {
     color: 'black',
     textAlign: 'center',
@@ -2140,7 +2128,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginHorizontal: 0,
   },
-  dropdown3DropdownStyle: {backgroundColor: 'white',marginTop:heightPercentageToDP(-4)},
+  dropdown3DropdownStyle: { backgroundColor: 'white', marginTop: heightPercentageToDP(-4) },
   dropdown3RowStyle: {
     backgroundColor: '#fff',
     borderBottomColor: '#444',
@@ -2153,7 +2141,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 0,
   },
-  dropdownRowImage: {width: 45, height: 45, resizeMode: 'cover'},
+  dropdownRowImage: { width: 45, height: 45, resizeMode: 'cover' },
   dropdown3RowTxt: {
     color: '#000',
     textAlign: 'center',

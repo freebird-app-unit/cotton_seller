@@ -203,6 +203,7 @@ export default class Dashboard extends Component {
       });
 
       this.getNegotiationListData();
+      this.getNotificationListData();
     });
   }
 

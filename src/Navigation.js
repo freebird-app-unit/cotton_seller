@@ -104,23 +104,23 @@ const AppHeading = (props) => {
             <Appbar.Header style={{ backgroundColor: 'transparent' }}>
                 {props.menu ? <Appbar.Action
                     icon="menu"
-                    color="white"
+                    color={props.color ? props.color : "white"}
                     onPress={props.leftPress}
                 /> :
                     <Appbar.Action
-                        icon={() => <Ionicons name='chevron-back-outline' size={hp(3)} color='#fff' />}
-                        color="white"
+                        icon={() => <Ionicons name='chevron-back-outline' size={hp(3)} color= {props.color ? props.color : '#fff'} />}
+                        color={props.color ? props.color : "white"}
                         onPress={props.leftPress}
                     />}
                 <Appbar.Content
                     style={{ alignItems: 'center' }}
-                    color="white"
+                    color= {props.color ? props.color : "white"}
                     title={props.title}
                     titleStyle={{ fontSize: 20, fontFamily: "Poppins-SemiBold" }}
                 />
                 {props.filter ? <Appbar.Action
                     icon="notification-clear-all"
-                    color={"white"}
+                    color={props.color ? props.color : "white"}
                     onPress={
                         props.rightPress
                         // this.setState({ isFilterShow: true });
@@ -292,6 +292,13 @@ const SearchSelectSellerFunction = ({ navigation, route }) => <View style={{ fle
     </View>
 </View>
 
+const RegisterScreenFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#f4fafe' }}>
+    <AppHeading color='#333' title={'Create an account'} leftPress={() => navigation.goBack()} />
+    <View
+        style={styles.flex}>
+        <RegisterScreen navigation={navigation} route={route} />
+    </View>
+</View>
 
 
 const MyPostDetailsFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
@@ -687,7 +694,7 @@ const App = () => {
 
 
 
-                    <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+                    <Stack.Screen name="RegisterScreen" component={RegisterScreenFunction} />
                     <Stack.Screen
                         name="ForgotPasswordScreen"
                         component={ForgotPasswordScreen} />
