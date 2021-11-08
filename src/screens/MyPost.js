@@ -333,7 +333,7 @@ export default class Dashboard extends Component {
       })
         .then(function (response) {
           //alert('my completed post list response :'+ JSON.stringify(response.data.data));
-          self.setState({ myActivePost: [], spinner: false });
+          self.setState({ myActivePost: [], spinner: false, refreshing:false });
           if (response.data.status == 200) {
             self.setState({ myActivePost: response.data.data });
           } else {
@@ -1044,7 +1044,11 @@ export default class Dashboard extends Component {
     this.setState({
       refreshing: true,
     });
-    this.getMyActivePost();
+    if(this.state.isMyPostActiveClicked) {
+      this.getMyActivePost();
+    } else {
+      this.getMyCompletedPost();
+    }
     // getCallNews(1);
   };
 

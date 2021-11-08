@@ -579,6 +579,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                 }
                 setItemsState(d);
                 setSelectedValueState({ label: route.params.data.state, value: parseInt(route.params.data.state_id)})
+                getDistrictList(parseInt(route.params.data.state_id))
                 //setLoading(false)
             })
             .catch(function (error) {
@@ -619,6 +620,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                     }
                     setItemsDistrict(d);
                     setSelectedValueCity({label: route.params.data.city, value: parseInt(route.params.data.city_id)})
+                    getStationName(parseInt(route.params.data.city_id))
                 } else {
                     let d =[]
                     d.push({
@@ -1984,11 +1986,11 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                         marginLeft: 5,
                                         marginBottom: 5,
                                     }}>
-                                    Signature
+                                    Stamp
                   </Text>
                                 <TouchableOpacity onPress={onUploadStampClicked}>
-                                    {Object.keys(filePath).length == 0 ? (
-                                        <Stamp_Icon name='Upload Signature' />
+                                    {filePath.assets[0].uri == '' ? (
+                                        <Stamp_Icon name='Upload Stamp' />
                                     ) : (
                                             <Image
                                                 style={{ width: 100, height: 100, borderRadius: 10 }}

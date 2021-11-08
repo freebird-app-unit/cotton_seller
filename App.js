@@ -76,6 +76,7 @@ const App = () => {
         prevScrName: 'Dashboard',
       });
     } else {
+      console.log("Notification Data: " + JSON.stringify(remoteMessage.data))
       RootNavigation.navigate("DealDetails", {
         data: remoteMessage.data,
         cameFrom: 'Negotiation',
