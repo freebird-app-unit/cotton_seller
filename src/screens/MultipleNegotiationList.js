@@ -137,7 +137,7 @@ class MultipleNegotiationList extends Component {
             temp.negotiation_by = content.data.negotiationMultipleSeller.negotiation_by;
             temp.prev_no_of_bales = content.data.negotiationMultipleSeller.prev_bales;
             temp.current_no_of_bales = content.data.negotiationMultipleSeller.current_bales;
-
+            temp.broker_name = content.data.negotiationMultipleSeller.broker_name
             // console.log('findDat + changed', find)
 
 

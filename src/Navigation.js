@@ -37,6 +37,8 @@ import {
 import styles from './screens/Styles'
 import EditProfile from './components/EditProfile'
 import NewsSingle from './components/NewsSingle'
+import MCXScreen from './components/MCXScreen'
+
 import Custom from './components/Custom'
 // import notifee, { EventType, AndroidImportance } from '@notifee/react-native';
 import Plan from './components/Plan'
@@ -196,6 +198,18 @@ const home = ({ navigation, route }) => {
             <View
                 style={styles.flex}>
                 <HomeScreen navigation={navigation} route={route} />
+            </View>
+        </View>
+    )
+}
+const mcxScreenFunction = ({ navigation, route }) => {
+    // console.log('navigation>', navigation)
+    return (
+        <View style={{ flex: 1, backgroundColor: '#333' }}>
+            <AppHeading title={'MCX'} menu leftPress={() => navigation.navigate('MenuScreen')} />
+            <View
+                style={styles.flex}>
+                <MCXScreen navigation={navigation} route={route} />
             </View>
         </View>
     )
@@ -674,6 +688,7 @@ const App = () => {
 
                     <Stack.Screen name="LoginScreen" component={LoginScreen} />
                     <Stack.Screen name="HomeScreen" component={home} />
+                    
                     <Stack.Screen name="MenuScreen" component={MenuScreen} />
                     <Stack.Screen name="PostToSell" component={PostToSellFunction} />
                     <Stack.Screen name="SearchToSell" component={SearchToSellFunction} />
@@ -683,6 +698,7 @@ const App = () => {
                     <Stack.Screen name="NewsFeed" component={NewsFeedViewFunction} />
                     <Stack.Screen name="Wallet" component={WalletFunction} />
                     <Stack.Screen name="Profile" component={ProfileFunction} />
+                    <Stack.Screen name="McxScreen" component={mcxScreenFunction} />
 
 
 

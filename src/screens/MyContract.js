@@ -621,7 +621,9 @@ export default class Dashboard extends Component {
                             disabled={ dd.is_seller_otp_verify == 1 }
                           onPress={() => 
                               {
-                                ( dd.is_seller_otp_verify == 0 ) && this.setState({ set: true, deal_Id: dd.deal_id })
+                            (dd.is_seller_otp_verify == 0) && this.setState({
+                              set: true, deal_Id: dd.deal_id, otpArray: ['', '', '', '', '', ''],
+                              otpArrayMail: ['', '', '', '', '', ''] })
                           }}>
                             <Text
                               numberOfLines={1}
@@ -1026,7 +1028,13 @@ export default class Dashboard extends Component {
           />
         }
         ><Modal isVisible={this.state.set}
-          onBackdropPress={() => this.setState({ set: false })}
+            onBackdropPress={() => this.setState({
+              set: false, OtpArray: ['', '', '', '', '', ''],
+              OtpArrayMail: ['', '', '', '', '', ''] })}
+            onBackButtonPress={() => this.setState({
+              set: false, OtpArray: ['', '', '', '', '', ''],
+              OtpArrayMail: ['', '', '', '', '', '']
+            })}
         >
             <View style={{ backgroundColor: '#fff', justifyContent: 'center', borderRadius: heightPercentageToDP(1), paddingHorizontal: 20, paddingVertical: heightPercentageToDP(7) }}>
               <View style={{ justifyContent: 'center', marginLeft: widthPercentageToDP(10), alignItems: 'center', marginBottom: 30 }}>

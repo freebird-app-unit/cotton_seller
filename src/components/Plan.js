@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import Swiper from 'react-native-swiper';
 import { GenericStyles } from '../styles/GenericStyles';
 import colors from '../common/colors';
+import EncryptedStorage from 'react-native-encrypted-storage';
 
 import {
     FullButtonComponent,
@@ -23,13 +24,15 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Spinner from 'react-native-loading-spinner-overlay';
 import api_config from '../Api/api';
 import axios from 'axios';
+import { RazorpayApiKey } from "../Api/Razorpayconfig";
+import RazorpayCheckout from 'react-native-razorpay';
 
-const Plans = ({ navigation }) => {
+const Plan = ({ navigation,route }) => {
 
-    // console.log('props>>', navigation)
+    console.log('props>>', navigation,route)
 
     const [Plan, setPlan] = useState([])
-
+    const balance = route.params
 
     const [itemChecked, setItemChecked] = useState(false);
 
@@ -38,7 +41,7 @@ const Plans = ({ navigation }) => {
     const backgroundStyle = {
         flex: 1,
         width: '100%',
-        paddingBottom: 30,
+        paddingBottom: 5,
         paddingTop: hp(3),
         // marginTop: hp(2),
         backgroundColor: 'white',
@@ -47,6 +50,8 @@ const Plans = ({ navigation }) => {
 
     };
     const [spinner, setSpinner] = useState(false)
+    const [IdSelected, setIdSelected] = useState('')
+
 
     useEffect(() => {
 
@@ -69,12 +74,16 @@ const Plans = ({ navigation }) => {
                     'Content-Type': 'multipart/form-data',
                 },
             }).then(function (response) {
-                console.log('res', response.data)
+                console.log('res', response.data.data)
                 if (response.data.status == 200) {
 
                     let p = response.data.data.map(item => {
-                        item.selected = false
-                        return item
+
+                        return {
+                            ...item,
+                            selected: false
+                        }
+
                     })
                     console.log('p', p)
                     setPlan(p)
@@ -97,9 +106,116 @@ const Plans = ({ navigation }) => {
 
     }, [])
 
-    const onSubmitButtonPress = () => {
-        navigation.navigate('LoginScreen')
-        setSubmittingOtp(false)
+    const onSubmitButtonPress = async () => {
+        //  test with upi failure@razorpay
+        //  test with upi success@razorpay
+        console.log('balance', balance, IdSelected.price)
+        if (balance >= parseInt(IdSelected.price))
+  {        
+
+
+        if (IdSelected) {
+            try {
+                var today = new Date();
+                var time = today.getHours() + today.getMinutes() + today.getSeconds();
+
+                let user_data = JSON.parse(await EncryptedStorage.getItem('user_data'))
+
+                console.log('IdSelected.price', IdSelected.price)
+                let op = {
+                    name: 'Seller ' + await EncryptedStorage.getItem('user_id'),
+                    image: require('../assets/ic_launcher.png'),
+                    description: `Payment of ${IdSelected.name} with ${IdSelected.validity} days validity`,
+                    key: RazorpayApiKey,
+                    currency: 'INR',
+                    amount: JSON.stringify(IdSelected.price) + '00',
+                    prefill: {
+                        email: '',
+                        contact: user_data.user_mobile,
+                        name: '',
+                    },
+                    theme: { color: theme.colors.primary }
+                }
+
+                //    setOption(op);
+                console.log('option', op)
+
+                RazorpayCheckout.open(op)
+                    .then(res => {
+                        console.log('res', res)
+                        if (res.hasOwnProperty('razorpay_payment_id'))
+                            PaymentDone(res.razorpay_payment_id)
+                        else
+                            alert('please check your network')
+
+                    })
+                    .catch(err => {
+                        console.log(JSON.stringify(err))
+                        alert('please check your network')
+                    });
+
+            }
+            catch (error) {
+                console.log(JSON.stringify(error));
+            }
+        }
+        else {
+            alert('Please Select the Plan')
+        }
+
+  }
+  else {
+            alert(`You don't have sufficient balance`)
+  }
+
+    }
+
+    const PaymentDone = async (RazorPayId) => {
+
+        console.log('avigay')
+        try {
+            setSpinner(true)
+            let data = {
+
+                "user_id": await EncryptedStorage.getItem('user_id'),
+                "user_type": "seller",
+                "plan_id": IdSelected.id,
+                'transaction_id': RazorPayId
+            };
+
+            const formData = new FormData();
+            formData.append('data', JSON.stringify(data));
+            console.log('data', data);
+            axios({
+                url: api_config.BASE_URL + api_config.ADD_USER_PLAN,
+                method: 'POST',
+                data: formData,
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'multipart/form-data',
+
+                },
+            }).then(function (response) {
+                setSpinner(false)
+
+                console.log('res>>>', response.data)
+                if (response.data.status == 200) {
+                    alert(response.data.message)
+                    navigation.goBack()
+
+                } else {
+                    console.log(response.data.message);
+                }
+            })
+                .catch(function (error) {
+                    setSpinner(false)
+                    console.log('error', JSON.stringify(error))
+                    alert(defaultMessages.en.serverNotRespondingMsg);
+                });
+        } catch (error) {
+            console.log(Json.stringify(error));
+        }
+
     }
 
     const [submittingOtp, setSubmittingOtp] = useState(true);
@@ -155,8 +271,10 @@ const Plans = ({ navigation }) => {
 
 
     const select = (item) => {
+        console.log('item', item);
 
         item.selected = !item.selected
+        setIdSelected(item)
         const updated = Plan.map((it) => {
             it.selected = false;
             if (it.id === item.id) {
@@ -165,10 +283,10 @@ const Plans = ({ navigation }) => {
             return it;
         });
 
-        console.log('updated', updated)
-
         setPlan(updated)
         setItemChecked((prevState) => !prevState);
+        setSubmittingOtp(false)
+
         // setPlan(pl)
     }
 
@@ -214,8 +332,8 @@ const Plans = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1, backgroundColor: '#333', }}>
+            <Spinner visible={spinner} color="#085cab" />
             <View style={backgroundStyle}>
-                <Spinner visible={spinner} color="#085cab" />
                 {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} hidden /> */}
                 <View style={{ flex: 1, backgroundColor: 'white', }}>
 
@@ -224,7 +342,7 @@ const Plans = ({ navigation }) => {
                         flexDirection: 'column', backgroundColor: '#fff', paddingHorizontal: wp(5)
                     }}>
 
-                        <View style={{ flex: 1 }}>
+                        <View style={{ height: hp(65) }}>
                             <FlatList
                                 data={Plan}
                                 numColumns={2}
@@ -236,10 +354,11 @@ const Plans = ({ navigation }) => {
                             type={'fill'}
                             text={'Done'}
                             textStyle={styles.submitButtonText}
-                            buttonStyle={GenericStyles.mt24}
+                            // buttonStyle={GenericStyles.mt24}
                             onPress={onSubmitButtonPress}
-                            disabled={submittingOtp}
+                        // disabled={submittingOtp}
                         />
+
                     </View>
 
                 </View>
@@ -274,4 +393,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Plans
+export default Plan

@@ -51,6 +51,8 @@ import com.pedrouid.crypto.RNSCCryptoPackage;
 import com.horcrux.svg.SvgPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// react-native-webview
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 // rn-fetch-blob
 import com.RNFetchBlob.RNFetchBlobPackage;
 
@@ -118,6 +120,7 @@ public class PackageList {
       new RNSCCryptoPackage(),
       new SvgPackage(),
       new VectorIconsPackage(),
+      new RNCWebViewPackage(),
       new RNFetchBlobPackage()
     ));
   }

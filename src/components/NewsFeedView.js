@@ -125,7 +125,7 @@ export default function NewsFeedView({ navigation }) {
     
 
     const FirstRoute = ({News,index}) => (
-        <TouchableOpacity key={index} style={{ marginTop: hp(1),width:wp(100) }} onPress={() => navigation.navigate('NewsSingle', { Id: News.id })}>
+        <TouchableOpacity key={index} style={{ marginTop: hp(1),flex:1, }} onPress={() => navigation.navigate('NewsSingle', { Id: News.id })}>
             <View>
             <Image style={{ width: wp(90), height: hp(25) }} source={{ uri: News.image }} />
             <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', paddingHorizontal: wp(2) }}>
@@ -134,8 +134,6 @@ export default function NewsFeedView({ navigation }) {
                 <Text style={[styles.VAlue1], { opacity: 0.5 }}>1h ago</Text>
             </View>
         </View></TouchableOpacity>
-
-
 
     );
 
@@ -182,14 +180,16 @@ export default function NewsFeedView({ navigation }) {
     return (
         <View style={backgroundStyle}>
             <Spinner visible={loading} color="#085cab" />
-                    <Swiper style={{ height: hp(50),}}
+                    <Swiper 
                         dotColor={'rgba(105,186,83,0.3)'}
                         key={News.length}
                         activeDotColor={theme.colors.primary}
                         scrollEnabled={true}
-                        loadMinimalSize={2}
+                        // width={wp(94)}
+                        // horizontal
+                        // loadMinimalSize={2}
                         removeClippedSubviews
-
+                automaticallyAdjustContentInsets={true}
                         onIndexChanged={(index) =>
                             
                                 setIndex(index)
