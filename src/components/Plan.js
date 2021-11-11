@@ -109,9 +109,7 @@ const Plan = ({ navigation,route }) => {
     const onSubmitButtonPress = async () => {
         //  test with upi failure@razorpay
         //  test with upi success@razorpay
-        console.log('balance', balance, IdSelected.price)
-        if (balance >= parseInt(IdSelected.price))
-  {        
+         
 
 
         if (IdSelected) {
@@ -164,11 +162,8 @@ const Plan = ({ navigation,route }) => {
         }
 
   }
-  else {
-            alert(`You don't have sufficient balance`)
-  }
 
-    }
+    
 
     const PaymentDone = async (RazorPayId) => {
 
