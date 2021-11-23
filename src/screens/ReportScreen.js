@@ -147,7 +147,7 @@ function Contract({navigation}) {
                     setLoader(false)
 
                     console.log('response :>>>>>>>>>.list', response.data);
-                    if (response.data.status == 200) {
+                    if (response.data.status == 200 && response.data.data.length > 0) {
                         let productList = response.data.data;
                         var arrProductList = [];
 
@@ -158,11 +158,16 @@ function Contract({navigation}) {
                                 value: productList[i].product_id,
                             });
                         }
+                        let obj = {
+                            label: 'All',
+                            value: 0,
+                        }
+                        arrProductList.unshift(obj)
                         setProduct(arrProductList)
                     } else {
                         setProduct([{label:'No Product available',value : 0}])
 
-                        alert(response.data.message);
+                        alert('No Product available');
                     }
                 })
                 .catch(function (error) {
@@ -200,7 +205,7 @@ function Contract({navigation}) {
                     setLoader(false)
 
                     console.log('response :>>>>>>>>>.brokertotal', response.data);
-                    if (response.data.status == 200) {
+                    if (response.data.status == 200 && response.data.data.length > 0) {
                         let productList = response.data.data;
                         var arrProductList = [];
 
@@ -220,7 +225,7 @@ function Contract({navigation}) {
                     } else {
                         setBroker([{ label: 'No Broker available', value: 0 }])
 
-                        alert(response.data.message);
+                        alert('No Broker available');
                     }
                 })
                 .catch(function (error) {
@@ -259,7 +264,7 @@ function Contract({navigation}) {
                     setLoader(false)
 
                     console.log('response :>>>>>>>>>.buyer', response.data);
-                    if (response.data.status == 200) {
+                    if (response.data.status == 200 && response.data.data.length > 0) {
                         let productList = response.data.data;
                         var arrProductList = [];
 
@@ -278,7 +283,7 @@ function Contract({navigation}) {
                         setBuyer(arrProductList)
                     } else {
                         setBuyer([{label : 'No Buyer available',value:0}])
-                        alert(response.data.message);
+                        alert('No Buyer available');
                     }
                 })
                 .catch(function (error) {
