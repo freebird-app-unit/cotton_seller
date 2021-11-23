@@ -165,9 +165,14 @@ function Contract({navigation}) {
                         arrProductList.unshift(obj)
                         setProduct(arrProductList)
                     } else {
-                        setProduct([{label:'No Product available',value : 0}])
-
-                        alert('No Product available');
+                        var arrProductList = [];
+                        let obj = {
+                            label: 'No Product available',
+                            value: 0,
+                        }
+                        arrProductList.unshift(obj)
+                        setProduct(arrProductList)
+                        setProductId({ label: 'No Product available', value: 0 })
                     }
                 })
                 .catch(function (error) {
@@ -223,9 +228,15 @@ function Contract({navigation}) {
                         arrProductList.unshift(obj)
                         setBroker(arrProductList)
                     } else {
-                        setBroker([{ label: 'No Broker available', value: 0 }])
 
-                        alert('No Broker available');
+                        var arrProductList = [];
+                        let obj = {
+                            label: 'No Broker available',
+                            value: 0,
+                        }
+                        arrProductList.unshift(obj)
+                        setBroker(arrProductList)
+                        setBrokerId({ label: 'No Broker available', value: 0 })
                     }
                 })
                 .catch(function (error) {
@@ -282,8 +293,14 @@ function Contract({navigation}) {
                         arrProductList.unshift(obj)
                         setBuyer(arrProductList)
                     } else {
-                        setBuyer([{label : 'No Buyer available',value:0}])
-                        alert('No Buyer available');
+                        var arrProductList = [];
+                        let obj = {
+                            label: 'No Buyer available',
+                            value: 0,
+                        }
+                        arrProductList.unshift(obj)
+                        setBuyer(arrProductList)
+                        setBuyerId({ label: 'No Buyer available', value: 0 })
                     }
                 })
                 .catch(function (error) {
