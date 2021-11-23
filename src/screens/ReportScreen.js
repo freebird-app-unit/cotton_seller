@@ -160,6 +160,8 @@ function Contract({navigation}) {
                         }
                         setProduct(arrProductList)
                     } else {
+                        setProduct([{label:'No Product available',value : 0}])
+
                         alert(response.data.message);
                     }
                 })
@@ -216,6 +218,8 @@ function Contract({navigation}) {
                         arrProductList.unshift(obj)
                         setBroker(arrProductList)
                     } else {
+                        setBroker([{ label: 'No Broker available', value: 0 }])
+
                         alert(response.data.message);
                     }
                 })
@@ -239,6 +243,7 @@ function Contract({navigation}) {
 
             const formData = new FormData();
             formData.append('data', JSON.stringify(data));
+            console.log('data',data)
 
             axios({
                 url: api_config.BASE_URL + api_config.CONTRACT_PARTY_LIST,
@@ -272,6 +277,7 @@ function Contract({navigation}) {
                         arrProductList.unshift(obj)
                         setBuyer(arrProductList)
                     } else {
+                        setBuyer([{label : 'No Buyer available',value:0}])
                         alert(response.data.message);
                     }
                 })
