@@ -146,7 +146,7 @@ function Contract({navigation}) {
                 .then(function (response) {
                     setLoader(false)
 
-                    // console.log('response :>>>>>>>>>.list', response.data);
+                    console.log('response :>>>>>>>>>.list', response.data);
                     if (response.data.status == 200) {
                         let productList = response.data.data;
                         var arrProductList = [];
@@ -154,8 +154,8 @@ function Contract({navigation}) {
                         for (let i = 0; i < productList.length; i++) {
                             
                             arrProductList.push({
-                                label: productList[i].name,
-                                value: productList[i].id,
+                                label: productList[i].product_name,
+                                value: productList[i].product_id,
                             });
                         }
                         setProduct(arrProductList)
@@ -360,7 +360,7 @@ function Contract({navigation}) {
                 .then(function (response) {
                     setLoader(false)
 
-                    alert('response :>>>>>>>>>.appbroker' + response);
+                    // alert('response :>>>>>>>>>.appbroker' + response);
                     if (response.data.status == 200) {
                         let d = {
                             title: BrokerId.label,
@@ -412,7 +412,7 @@ function Contract({navigation}) {
                 .then(function (response) {
                     setLoader(false)
 
-                    alert('response :>>>>>>>>>.appproduct' + response);
+                    console.log('response :>>>>>>>>>.appproduct' , response.data);
                     if (response.data.status == 200) {
                         let d = {
                             title: ProductId.label,
@@ -425,7 +425,7 @@ function Contract({navigation}) {
                         setProductData(datag)
                     } else {
                         setProductData([])
-
+                        
                         alert(response.data.message);
                     }
                 })
