@@ -20,86 +20,7 @@ const App = ({ navigation }) => {
 
     const [availabeBalance, setBalance] = useState('')
 
-    const [transaction, setTransaction] = useState(
-        [
-            {
-                title: 'Today',
-                data: [{
-                    transactionDetail: 'Added to a wallet',
-                    debited: true,
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: true,
-                    broker: false,
-                    planRecharge: false
-                }, {
-                    transactionDetail: 'Added to a wallet',
-                    debited: false,
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: false,
-                    broker: true,
-                    brokerName: 'John Deo',
-                    planRecharge: false
-
-                },
-                {
-                    transactionDetail: 'Added to a wallet',
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: false,
-                    broker: false,
-                    brokerName: 'John Deo',
-                    debited: false,
-                    planRecharge: true,
-                    planValue: '5000',
-
-                },
-                ]
-            },
-            {
-                title: '10-10-2021',
-                data: [{
-                    transactionDetail: 'Added to a wallet',
-                    debited: true,
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: true,
-                    broker: false,
-                    planRecharge: false
-                }, {
-                    transactionDetail: 'Added to a wallet',
-                    debited: false,
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: false,
-                    broker: true,
-                    brokerName: 'John Deo',
-                    planRecharge: false
-
-                },
-                {
-                    transactionDetail: 'Added to a wallet',
-                    time: '09:00 pm',
-                    closing_balance: '10,000',
-                    trans_balance: '10,000',
-                    wallet: false,
-                    broker: false,
-                    brokerName: 'John Deo',
-                    debited: false,
-                    planRecharge: true,
-                    planValue: '5000',
-
-                },
-                ]
-            },
-        ]
-    )
+    const [transaction, setTransaction] = useState([])
 
     const [loading, setLoader] = useState(false)
 
@@ -127,7 +48,7 @@ const App = ({ navigation }) => {
                     'Content-Type': 'multipart/form-data',
                 },
             })
-                .then(function (response) {
+                .then(async function (response) {
                     setLoader(false)
                     serRefresh(false);
 
@@ -142,6 +63,8 @@ const App = ({ navigation }) => {
                         // let bro = response.data.data.filter(item => item.type === 'default')
                         // DefaultBrokerList(bro);
                         // let Brokernotdefault = response.data.data.filter(item => item.type === 'not_default')
+                        // let dataPlan = JSON.parse(await EncryptedStorage.getItem('Plan_data'));
+                        // console.log('dataPlan',dataPlan)
                         setBalance(response.data.data.wallet_amount);
                         setTransaction(response.data.data.transaction_history);
 
@@ -198,7 +121,9 @@ const App = ({ navigation }) => {
             fontSize: hp(2.1),
             color: theme.colors.text,
             fontWeight: 'bold',
-            fontFamily: 'Poppins - Bold'
+            fontFamily: 'Poppins - Bold',
+            width: wp(58)
+
         },
         balance: {
             fontSize: hp(3), fontFamily: 'Poppins - Bold',
@@ -221,8 +146,21 @@ const App = ({ navigation }) => {
             // backgroundColor: '#8fb1aa',  
         }
     }
+
+    const timeConvert = (time) => {
+        // Check correct time format and split into components
+        time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+        if (time.length > 1) { // If time format correct
+            time = time.slice(1);  // Remove full string match value
+            time[5] = +time[0] < 12 ? ' AM' : ' PM'; // Set AM/PM
+            time[0] = +time[0] % 12 || 12; // Adjust hours
+        }
+        return time.join(''); // return adjusted time or original string
+    }
+
     const renderItem = ({ item }) => {
-        console.log('item', item)
+        console.log('item', item.date)
         return (
             <View style={{ flexDirection: 'row', alignSelf: 'center', width: wp(94), marginVertical: hp(1) }}>
                 <View style={{ alignItems: 'flex-start', justifyContent: 'center', width: wp(10) }}>
@@ -239,7 +177,7 @@ const App = ({ navigation }) => {
                 </View>
                 <View style={{ width: wp(70), flexDirection: 'column', alignSelf: 'center', marginHorizontal: wp(2) }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', }}>
-                        {item.message && <Text style={styles.label}>{item.message}</Text>}
+                        {item.message && <Text style={styles.label} numberOfLines={1}>{item.message}</Text>}
 
 
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -254,8 +192,8 @@ const App = ({ navigation }) => {
                         </View>
                     </View>
                     <View style={{ flexDirection: 'row', marginTop: hp(1), justifyContent: 'space-between', alignItems: 'center' }}>
-                        <Text style={styles.time}>09:09 pm</Text>
-                        <Text style={styles.time}>closing balance {availabeBalance}</Text>
+                        <Text style={styles.time}>{item.date.split(' ')[0]}, {timeConvert(item.date.split(' ').pop())}</Text>
+                        {/* <Text style={styles.time}>closing balance {availabeBalance}</Text> */}
                     </View>
                 </View>
                 <View style={{ alignItems: 'flex-end', justifyContent: 'center', width: wp(10) }}>
@@ -325,11 +263,11 @@ const App = ({ navigation }) => {
                                 )
                             }
                         </AnimatedCircularProgress>
-                        <Text style={{
+                        {/* <Text style={{
                             fontSize: hp(1.3),
                             color: theme.colors.text,
                             opacity: .5
-                        }}>Expired 10-10-2020</Text>
+                        }}>Expired 10-10-2020</Text> */}
                     </View>
                 </View>
                 <View style={{ flexDirection: 'row', marginVertical: hp(2.5), justifyContent: 'space-between', alignItems: 'center' }}>

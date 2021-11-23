@@ -2,7 +2,8 @@ const api_config = {
   //Development URL
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid/api/',
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
-  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
+  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v3/api/',
+  // 'http://cottontradecentre.com/development/cotton_bid_v2/api/get_mcx_data'
   //Production URL
   //BASE_URL: 'http://cottontradecentre.com/cotton_bid/api/',
 
@@ -12,8 +13,10 @@ const api_config = {
   GET_BUSINESS_TYPE: 'business_type',
   GET_REGISTRATION_AS: 'registration_as',
   GET_STATE: 'state_list',
-  GET_DISTRICT: 'city_list',
+  GET_DISTRICT: 'district_list',
   GET_STATIONNAME: 'station_list',
+  GET_CITY: 'city_list',
+
   LOGIN_SELLER: 'login_seller',
   RESEND_OTP: 'resend_otp_seller',
   VERIFY_OTP: 'otp_verify_seller',
@@ -56,10 +59,17 @@ const api_config = {
   CHANGE_PASSWORD_SELLER:'change_password_seller',
   TRANSACTION_HISTORY:'transaction_history',
   RESEND_DEAL_OTP:'resend_deal_otp',
-  ADD_USER_PLAN:'add_user_plan'
+  ADD_USER_PLAN:'add_user_plan',
+  GET_MCX_DATA:"get_mcx_data",
+  PARTY_WISE_CONTRACT_REPORT:'party_wise_contract_report',
+  PRODUCT_WISE_CONTRACT_REPORT: 'product_wise_contract_report',
+  BROKER_WISE_CONTRACT_REPORT: 'broker_wise_contract_report',
+  POST_REPORT : 'post_report',
+  CONTRACT_PRODUCT_LIST : 'contract_product_list',
+  CONTRACT_BROKER_LIST:'contract_broker_list',
+  CONTRACT_PARTY_LIST:'contract_party_list'
+
 
 };
-
-
 
 export default api_config;

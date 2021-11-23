@@ -188,6 +188,64 @@ const LoginScreen = ({route, navigation}) => {
     //   });
   };
 
+
+  const onPay = (dataPay) => {
+
+      try {
+        setLoading(true)
+        let data = {
+
+          "user_id": dataPay.user_id,
+          "user_type": "seller",
+          "plan_id": dataPay.plan_id,
+          'transaction_id': dataPay.payment_id
+        };
+
+        const formData = new FormData();
+        formData.append('data', JSON.stringify(data));
+        console.log('data', data);
+        axios({
+          url: api_config.BASE_URL + api_config.ADD_USER_PLAN,
+          method: 'POST',
+          data: formData,
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'multipart/form-data',
+
+          },
+        }).then(async function (response) {
+          setLoading(false)
+
+          console.log('res>>>', response.data)
+          if (response.data.status == 200) {
+            let data = JSON.parse(await EncryptedStorage.getItem('Plan_data'));
+
+            data.is_api_call = true,
+
+              await EncryptedStorage.setItem('Plan_data', JSON.stringify(data));
+
+            alert(response.data.message)
+            navigation.navigate('HomeScreen')
+
+          } else {
+            alert(response.data.message)
+            console.log(response.data.message);
+          }
+        })
+          .catch(function (error) {
+            setLoading(false)
+            console.log('error', JSON.stringify(error))
+            alert(defaultMessages.en.serverNotRespondingMsg);
+          });
+      } catch (error) {
+        setLoading(false)
+
+        console.log(Json.stringify(error));
+      }
+
+    }
+
+  
   async function storeUserID(id, mobile, password, apiToken, userPlan, isLogout) {
     try {
       let data = {
@@ -201,11 +259,24 @@ const LoginScreen = ({route, navigation}) => {
       await EncryptedStorage.setItem('isLogout', JSON.stringify(isLogout));
       await EncryptedStorage.setItem('user_data', JSON.stringify(data));
       await EncryptedStorage.setItem('user_id', id.toString());
+      let dataPlan = JSON.parse(await EncryptedStorage.getItem('Plan_data'));
+
+      console.log('dataPlan>>>>>>.',dataPlan)
+
       setLoading(false);
       // navigation.navigate('HomeScreen')
+      if (dataPlan && dataPlan.user_id == id) {
       if (userPlan){
         navigation.navigate('HomeScreen');
-      } else {
+      } else if (dataPlan.hasOwnProperty('is_api_call')) {
+        dataPlan.is_api_call ? navigation.navigate('HomeScreen') : onPay(dataPlan);
+      }else {
+        navigation.navigate('RegisterPlan');
+            }      }
+      else if (userPlan) {
+        navigation.navigate('HomeScreen');
+      }
+      else {
         navigation.navigate('RegisterPlan');
       }
    
@@ -301,7 +372,6 @@ console.log("Login data: " + JSON.stringify(data))
               keyboardType="phone-pad"
               maxLength={10}
             />
-
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <TextInput
                 label="Password"

@@ -33,7 +33,6 @@ import Plus from '../assets/Plus';
 import Bell_Icon from '../assets/Bell';
 import History_Icon from '../assets/History';
 import Newsfeed_Icon from '../assets/NewsFeed';
-import Wallet_Icon from '../assets/Wallet';
 import MCX_Icon from '../assets/MCX';
 import Calculator_Icon from '../assets/Calculator';
 import ChangePassword_Icon from '../assets/ChangePassword';
@@ -45,6 +44,8 @@ import { priceValidator } from '../helpers/priceValidator';
 import MyPostGreen_Icon from '../assets/MyPostGreen';
 import defaultMessages from '../helpers/defaultMessages';
 import { Picker } from '@react-native-picker/picker';
+import Wallet_Icon from '../assets/Wallet'
+
 //svgs
 import Home from '../assets/Home';
 import NoRecordsFound_Icon from '../assets/NoRecodsFound';
@@ -103,7 +104,7 @@ const Data = [
     },
     {
         label: 'SearchToSell',
-        Title: 'Search To Sell',
+        Title: 'Search Buyer',
         Icon: <SearchToSell_Icon />
     },
      {
@@ -122,18 +123,20 @@ const Data = [
         Icon: <MyContracts_Icon />
     },
     {
-        label: 'HomeScreen',
+        label: 'ReportScreen',
         Title: 'Reports',
         Icon: <Reports_Icon />
-    },{
-        label: 'HomeScreen',
-        Title: 'Transaction Tracking',
-        Icon: <TransactionTracking_Icon />
-    },{
-        label: 'HomeScreen',
-        Title: 'History',
-        Icon: <History_Icon />
-    },{
+    },
+    // {
+    //     label: 'HomeScreen',
+    //     Title: 'Transaction Tracking',
+    //     Icon: <TransactionTracking_Icon />
+    // },{
+    //     label: 'HomeScreen',
+    //     Title: 'History',
+    //     Icon: <History_Icon />
+    // },
+    {
         label: 'NewsFeed',
         Title: 'News Feed',
         Icon: <Newsfeed_Icon />
@@ -151,7 +154,7 @@ const Data = [
     {
         label: 'Wallet',
         Title: 'Wallet',
-        Icon: <Wallet_Icon/>
+        Icon: <Wallet_Icon />
     },
     {
         label: 'Profile',

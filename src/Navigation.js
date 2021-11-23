@@ -50,6 +50,8 @@ import {
 } from './components/responsive-ratio';
 // import Wallet from './src/components/Wallet'
 import { FirstRoute, SecondRoute, ThirdRoute } from './components/CalculatorView'
+import { Post, Contract } from './screens/ReportScreen'
+
 
 // import firebase from '@react-native-firebase/app';
 // import messaging from '@react-native-firebase/messaging';
@@ -85,7 +87,7 @@ const tabnavi = ({ navigation }) => {
                 borderTopRightRadius: 20,
             }}>
                 <Tab.Navigator tabBarOptions={{
-                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins - Regular' },
+                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-Regular' },
                     activeTintColor: theme.colors.primary,
                     inactiveTintColor: '#afafaf',
                     indicatorStyle: { backgroundColor: theme.colors.primary }
@@ -93,6 +95,45 @@ const tabnavi = ({ navigation }) => {
                     <Tab.Screen name="Ginning" component={FirstRoute} />
                     <Tab.Screen name="Spinning" component={SecondRoute} />
                     <Tab.Screen name="Exports" component={ThirdRoute} />
+                </Tab.Navigator>
+            </View>
+        </View>
+    );
+}
+
+
+const ReportTab = ({ navigation }) => {
+    // console.log('nabvi', navigation)
+    return (
+        <View style={{ flex: 1, backgroundColor: '#333', }}>
+            <View style={{
+                flexDirection: 'row', paddingHorizontal: wp(5),
+                marginTop: hp(4), height: hp(9), alignItems: 'center', justifyContent: 'space-between'
+            }}>
+                <Ionicons name='chevron-back-outline' size={hp(3)} color='#fff' style={{ width: wp(30) }} onPress={() => navigation.goBack()} />
+                <Text style={{ alignSelf: 'center', color: '#fff', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Report</Text>
+                <View style={{ width: wp(30) }} />
+
+            </View>
+            <View style={{
+                flex: 1,
+                width: '100%',
+                // height: hp(86),
+                paddingBottom: 30,
+                paddingTop: hp(3),
+                marginTop: hp(2),
+                backgroundColor: 'white',
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+            }}>
+                <Tab.Navigator tabBarOptions={{
+                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-Regular' },
+                    activeTintColor: theme.colors.primary,
+                    inactiveTintColor: '#afafaf',
+                    indicatorStyle: { backgroundColor: theme.colors.primary }
+                }}>
+                    <Tab.Screen name="Post" component={Post} />
+                    <Tab.Screen name="Contract" component={Contract} />
                 </Tab.Navigator>
             </View>
         </View>
@@ -299,7 +340,7 @@ const PlanFunction = ({ navigation, route }) => <View style={{ flex: 1, backgrou
 </View>
 
 const SearchSelectSellerFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
-    <AppHeading title={'Select Seller'} leftPress={() => navigation.goBack()} />
+    <AppHeading title={'Select Buyer'} leftPress={() => navigation.goBack()} />
     <View
         style={styles.flex}>
         <SearchSelectSeller navigation={navigation} route={route} />
@@ -740,6 +781,9 @@ const App = () => {
                     {/* <Stack.Screen name="Wallet" component={Wallet} /> */}
                     <Stack.Screen name="Custom" component={Custom} />
                     <Stack.Screen name="Calculator" component={tabnavi} />
+                    <Stack.Screen name="ReportScreen" component={ReportTab} />
+
+                    
 
                 </Stack.Navigator>
             </NavigationContainer>

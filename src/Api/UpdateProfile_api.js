@@ -1,7 +1,7 @@
-export function UpdateProfile_api(id,buyerType, buyerName, password, postalAddress, contactPerson, contactNumber, email, propriterShipValue, millRegNo, millRegistrationDate, valueRMSME, firstFYTurnOver, firstFYTurnOverYear, secondFYTurnOver, secondFYTurnOverYear, thirdFYTurnOver, thirdFYTurnOverYear, cottonTradeExperience, gstNo, panNo, stateID, districtID, stationID, bankName, accountHolderName, branchAddress, ifscCode, referralCode, fcmToken) {
+export function UpdateProfile_api(id,buyerType, buyerName, password, postalAddress, contactPerson, contactNumber, email, propriterShipValue, millRegNo, millRegistrationDate, valueRMSME, firstFYTurnOver, firstFYTurnOverYear, secondFYTurnOver, secondFYTurnOverYear, thirdFYTurnOver, thirdFYTurnOverYear, cottonTradeExperience, gstNo, panNo, stateID, districtID, stationID,cityID, bankName, accountHolderName, branchAddress, ifscCode, referralCode, fcmToken) {
     let update_param = {
         id,
-        seller_buyer_type: "seller",
+        seller_buyer_type: buyerType,
         // seller_buyer_type: buyerType,
         device_type: "android",
         name: buyerName,
@@ -25,8 +25,8 @@ export function UpdateProfile_api(id,buyerType, buyerName, password, postalAddre
         // pan_no_of_buyer: panNo,
         country_id: "1",
         state_id: stateID,
-        city_id: districtID,
-        station_id: stationID,
+        district_id: districtID,
+        city_id: buyerType == 'Ginner' ? stationID : cityID,
         // bank_name: bankName,
         // account_holder_name: accountHolderName,
         // branch_address: branchAddress,

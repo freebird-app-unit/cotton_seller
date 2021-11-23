@@ -64,6 +64,9 @@ class NotificationSelectSeller extends Component {
       stateOpenState: false,
       stateValue: null,
       stateList: [],
+      citylist: [],
+      cityDrpDwnPlaceholder: '',
+
       stateDrpDwnPlaceholder: '',
       districtOpenState: false,
       districtValue: null,
@@ -239,16 +242,81 @@ class NotificationSelectSeller extends Component {
           spinner: false,
         });
         //this.getDistrictList(stateArray[0].id)
-        self.getSellerList("1", stateID, districtListData[0].id)
+        self.getSellerList("1", stateID, self.state.districtId)
       })
       .catch(function (error) {
+        console.log('error',error)
         alert(defaultMessages.en.serverNotRespondingMsg);
       })
   };
+  getCityName = (districtID) => {
 
+    let data = { district_id: districtID };
+    var self = this;
+    const formData = new FormData();
+    formData.append("data", JSON.stringify(data));
+    self.setState({
+
+      spinner: true,
+    });
+    axios({
+      url: api_config.BASE_URL + api_config.GET_CITY,
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "multipart/form-data",
+      },
+      data: formData,
+    })
+      .then(function (response) {
+        let stationListData = response.data.data;
+        if (response.data.status == 200) {
+          let stationArray = [];
+          for (let i = 0; i < stationListData.length; i++) {
+            if (i == 0) {
+              self.setState({
+                cityDrpDwnPlaceholder: stationListData[i].name,
+              });
+              self.setState({ cityId: stationListData[0].id });
+              self.getSellerList(
+                "1",
+                self.state.stateId,
+                self.state.districtId,
+                stationListData[i].id
+              );
+            }
+            stationArray.push({
+              label: stationListData[i].name,
+              value: stationListData[i].id,
+            });
+          }
+          self.setState({
+            citylist: stationArray,
+            spinner: false,
+          });
+        }
+        else {
+          let d = []
+          d.push({
+            label: "No city avilable", value: 0
+          })
+          self.setState({
+            citylist: d,
+            spinner: false,
+          });
+        }
+      })
+      .catch(function (error) {
+        self.setState({
+
+          spinner: false,
+        });
+        alert(defaultMessages.en.serverNotRespondingMsg);
+      });
+  };
   getStationName = (districtID) => {
 
-    let data = { city_id: districtID }
+    let data = { district_id: districtID }
     var self = this;
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -285,13 +353,13 @@ class NotificationSelectSeller extends Component {
 
 
 
-  getSellerList = (countryId, stateID, districtID) => {
+  getSellerList = (countryId, stateID, districtID,cityId) => {
 
     console.log("seller params---" + countryId + '--' + stateID + '--' + districtID)
 
     //passed static data 
-    let data = { user_type: "seller", country_id: countryId, state_id: stateID, city_id: districtID }
-
+    let data = { user_type: "seller", country_id: countryId, state_id: stateID,district_id:districtID, city_id: cityId }
+console.log("Request Data: " + JSON.stringify(data))
     // need to uncomment below code once api response done
     // let data = {user_type:"seller",country_id:"1",state_id:stateID,city_id:districtID}
     var self = this;
@@ -377,7 +445,7 @@ class NotificationSelectSeller extends Component {
     var spinningMealName = this.props.route.params.dataObj.spinning_meal_name;
     var sId = this.state.stateId;
     var dId = this.state.districtId;
-    var stId = this.state.stationId;
+    var ctId = this.state.cityId;
 
     //  {"seller_buyer_id":"1","product_id":"1","price":"50000","no_of_bales":"50","d_e":"export","buy_for":"other","spinning_meal_name":"test","country_id":"1","state_id":"1","city_id":"1","station_id":"1","buyers":[{"id":"1","type":"default"}],"attribute_array":[{"attribute":"uhml","attribute_value":"28.3"},{"attribute":"rd","attribute_value":"21.3"}]}
     let data = {
@@ -387,8 +455,8 @@ class NotificationSelectSeller extends Component {
       "spinning_meal_name": spinningMealName,
       "country_id": "1",
       "state_id": sId,
-      "city_id": dId,
-      "station_id": 0,
+      "city_id": ctId,
+      'district_id': dId,
       "buyers": sellerObject,
       "brokers": brokerObject,
       "attribute_array": attributeArray
@@ -633,7 +701,14 @@ class NotificationSelectSeller extends Component {
                   onSelect={(selectedItem, i) => {
                     //this.changeState(selectedItem.value)
                     this.setState({ spinner: true })
-                    this.getSellerList('1', this.state.stateId, selectedItem.value)
+
+                    setTimeout(() => {
+                      this.setState({ spinner: false })
+                      this.StationRef.current.openDropdown()
+                    }, 200);
+
+                    this.getCityName(selectedItem.value)
+                    this.getSellerList('1', this.state.stateId, selectedItem.value,'')
                   }}
 
                   buttonStyle={styles.dropdown3BtnStyle}
@@ -669,56 +744,69 @@ class NotificationSelectSeller extends Component {
 
               </View>
 
-              {/* <View style={{marginLeft:'5%',marginTop:10,marginRight:'5%'}}>
+              <View style={{marginLeft:'5%',marginTop:10,marginRight:'5%'}}>
 
-                <Text numberOfLines={1} 
-                          ellipsizeMode='tail' 
-                          style={{flex: 1,
-                            color:theme.colors.textColor,
-                            fontSize:16,
-                            fontFamily:'Poppins-SemiBold',
-                            textAlignVertical:'center'}}>Station Name</Text>
-
-                 
-
-<SelectDropdown
-              data={this.state.stationlist}
-              onSelect={(selectedItem, i) => {
-                this.changeStation(selectedItem.value)
-              }}
-            
-            buttonStyle={styles.dropdown3BtnStyle}
-            renderCustomizedButtonChild={(selectedItem, index) => {
-              return (
-                <View style={styles.dropdown3BtnChildStyle}>
-                  <Text style={styles.dropdown3BtnTxt}>
-                    {selectedItem ? selectedItem.label : this.state.stationDrpDwnPlaceholder}
-                  </Text>
-                </View>
-              );
-            }}
-            renderDropdownIcon={() => {
-              return (
-                <FontAwesome name="chevron-down" color={"black"} size={14} style={{marginRight:20}} />
-              );
-            }}
-            dropdownIconPosition={"right"}
-            
-            dropdownStyle={styles.dropdown3DropdownStyle}
-            rowStyle={styles.dropdown3RowStyle}
-            renderCustomizedRowChild={(item, index) => {
-              return (
-                <View style={styles.dropdown3RowChildStyle}>
-                  
-                  <Text style={styles.dropdown3RowTxt}>{item.label}</Text>
-                </View>
-              );
-            }}
-            />
-
+                <Text
+                        numberOfLines={1}
+                        ellipsizeMode="tail"
+                        style={{
+                          flex: 1,
+                          color: theme.colors.textColor,
+                          fontSize: 16,
+                          fontWeight: "bold",
+                          textAlignVertical: "center",
+                        }}
+                      >
+                        City Name
+                      </Text>
+                      <SelectDropdown
+                        data={this.state.citylist}
+                        ref={this.StationRef}
+                        onSelect={(selectedItem, i) => {
+                          this.setState({
+                            cityId: selectedItem.value,
+                          })
+                          //this.changeStation(selectedItem.value);
+                          this.getSellerList(1, this.state.stateId, this.state.districtId, selectedItem.value);
+                        }}
+                        buttonStyle={styles.dropdown3BtnStyle}
+                        renderCustomizedButtonChild={(selectedItem, index) => {
+                          return (
+                            <View style={styles.dropdown3BtnChildStyle}>
+                              <Text style={styles.dropdown3BtnTxt}>
+                                {selectedItem
+                                  ? selectedItem.label
+                                  : this.state.cityDrpDwnPlaceholder}
+                              </Text>
+                            </View>
+                          );
+                        }}
+                        renderDropdownIcon={() => {
+                          return (
+                            <FontAwesome
+                              name="chevron-down"
+                              color={"black"}
+                              size={14}
+                              style={{ marginRight: 20 }}
+                            />
+                          );
+                        }}
+                        dropdownIconPosition={"right"}
+                        dropdownStyle={styles.dropdown3DropdownStyle}
+                        rowStyle={styles.dropdown3RowStyle}
+                        renderCustomizedRowChild={(item, index) => {
+                          return (
+                            <View style={styles.dropdown3RowChildStyle}>
+                              <Text style={styles.dropdown3RowTxt}>
+                                {item.label}
+                              </Text>
+                            </View>
+                          );
+                        }}
+                      />
                     
                   
-              </View> */}
+              </View>
 
 
 
@@ -992,6 +1080,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 0,
+    paddingHorizontal: 10,
+
   },
   dropdown3BtnImage: { width: 45, height: 45, resizeMode: "cover" },
   dropdown3BtnTxt: {
@@ -1007,13 +1097,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderBottomColor: "#444",
     height: 50,
+    
   },
   dropdown3RowChildStyle: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingHorizontal: 0,
+    paddingHorizontal: 10,
   },
   dropdownRowImage: { width: 45, height: 45, resizeMode: "cover" },
   dropdown3RowTxt: {

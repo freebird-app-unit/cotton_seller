@@ -17,7 +17,7 @@ import api_config from '../Api/api';
 import axios from 'axios';
 const Profile = ({ navigation,route }) => {
 
-    console.log('props>>')
+    console.log('props>>',)
 
     const Name = (item) => {
         if (item.indexOf(' ') >= 0) {
@@ -184,7 +184,7 @@ const [Props,setProfileData] = useState([])
                         }} label={Name(Props.name)} backgroundColor={theme.colors.primary} />
                     <View style={{ flexDirection: 'column', marginLeft: wp(5) }}>
                         <Text style={styles.label}>{Props.name || 'Unknown'}</Text>
-                        <Text style={styles.VAlue1}>{Props.user_type || 'not provided'}</Text>
+                            <Text style={styles.VAlue1}>{Props.seller_buyer_type || 'not provided'}</Text>
                     </View>
                 </View>
                 <MainSection Section='Personal Details' />
@@ -192,8 +192,8 @@ const [Props,setProfileData] = useState([])
                 <LabelValue label='Contact Person Mobile Number' value={Props.mobile_number || 'not provided'} />
                 <LabelValue label='Email Address' value={Props.email || 'not provided'} />
                 <MainSection Section='Location Details' />
-                    <LabelValue label='Station' value={Props.station || 'not provided'} />
-                    <LabelValue label='District' value={Props.city || 'not provided'} />
+                    {Props.seller_buyer_type == "Ginner" ? <LabelValue label='Station' value={Props.city || 'not provided'} /> : <LabelValue label='City' value={Props.city || 'not provided'} />}
+                    <LabelValue label='District' value={Props.district || 'not provided'} />
                     <LabelValue label='State' value={Props.state || 'not provided'} />
                 <MainSection Section='Company Details' />
                     <LabelValue label='Header' value={Props.business_type || 'not provided'} />
@@ -214,7 +214,7 @@ const [Props,setProfileData] = useState([])
                 <LabelValue label='GST Number' value={Props.gst_no || 'Not Provided'} />
                 <LabelValue label='Pan Number' value={Props.pan_no_of_buyer || 'not provided'} />
                 <LabelValue label='Bank Name' value={Props.bank_name || 'not provided'} />
-                <LabelValue label='Account Hoder Name' value={Props.account_holder_name || 'not provided'} />
+                <LabelValue label='Account Holder Name' value={Props.account_holder_name || 'not provided'} />
                 <LabelValue label='Branch Address' value={Props.branch_address || 'Not Provided'} />
                 <LabelValue label='IFSC Code' value={Props.ifsc_code || 'not provided'} />
                 <LabelValue label='Referral Code' value={Props.referral_code || 'not provided'} />

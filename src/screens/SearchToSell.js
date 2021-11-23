@@ -627,6 +627,7 @@ export default class Dashboard extends Component {
             self.setState({
               spinner: false,
             });
+            console.log('error',JSON.stringify(error))
             alert(defaultMessages.en.serverNotRespondingMsg);
           });
       }

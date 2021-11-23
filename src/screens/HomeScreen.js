@@ -1242,7 +1242,8 @@ export default class Dashboard extends Component {
 
 
     socket.onAny(async event => {
-      if('MakeDealToSeller' + (await EncryptedStorage.getItem('user_id')) === event)
+      // console.log('event>>>HomesCreen', event, await EncryptedStorage.getItem('user_id'));
+      if('MakeDealToBuyer' + (await EncryptedStorage.getItem('user_id')) === event)
     {
       this.getNegotiationListData();
 

@@ -231,6 +231,7 @@ class SearchSelectSeller extends Component {
   };
 
   crateProductAttributeUI4 = stationData => {
+    console.log('station...data,',stationData)
     return stationData.map((ell, i) => (
       <View>
         <TouchableOpacity onPress={() => this.onClickCountry(ell.state)}>
@@ -300,8 +301,8 @@ class SearchSelectSeller extends Component {
               style={{width: 30, height: 30, marginRight: 10}}></DownArrow>
           </View>
         </TouchableOpacity>
-
-        {this.crateProductAttributeUI4(ell.station)}
+        {ell.buyer_type == 'Spinner' ? this.crateProductView(ell.city) : this.crateProductAttributeUI4(ell.city)}
+        {/* {this.crateProductAttributeUI4(ell.city)} */}
       </View>
     ));
   };
@@ -339,12 +340,13 @@ class SearchSelectSeller extends Component {
           </View>
         </TouchableOpacity>
 
-        {this.crateProductAttributeUI3(ell.city)}
+        {this.crateProductAttributeUI3(ell.district)}
       </View>
     ));
   };
 
   crateProductAttributeUI = () => {
+    console.log('>>>>>',this.props.route.params.data.data)
     return this.props.route.params.data.data.map((ell, i) => (
       <View>
         <TouchableOpacity onPress={() => this.onClickCountry(ell.state)}>

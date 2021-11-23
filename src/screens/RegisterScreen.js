@@ -146,6 +146,11 @@ const RegisterScreen = ({ navigation, ref }) => {
   const [StationError, setStationError] = useState(null);
   const [itemsStation, setItemsStation] = useState([]);
 
+  const [openCity, setOpenCity] = useState(false);
+  const [valueCity, setValueCity] = useState(null);
+  const [CityError, setCityError] = useState(null);
+  const [itemsCity, setItemsCity] = useState([]);
+
   const [openSellerType, setOpenSellerType] = useState(false);
   const [valueSellerType, setValueSellerType] = useState(null);
   const [sellerTypeError, setSellerTypeError] = useState(null);
@@ -336,11 +341,52 @@ const RegisterScreen = ({ navigation, ref }) => {
         alert(defaultMessages.en.serverNotRespondingMsg);
       });
   };
+  const getCityName = districtID => {
+    setLoading(true);
+    setValueDistrict(districtID);
+    let data = { district_id: districtID };
+
+    const formData = new FormData();
+    formData.append('data', JSON.stringify(data));
+
+    axios({
+      url: api_config.BASE_URL + api_config.GET_CITY,
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'multipart/form-data',
+      },
+      data: formData,
+    })
+      .then(function (response) {
+        if (response.data.status == 200) {
+          let stationListData = response.data.data;
+          setItemsCity([]);
+          setLoading(false);
+          for (let i = 0; i < stationListData.length; i++) {
+            setItemsCity(itemsStation => [
+              ...itemsStation,
+              { label: stationListData[i].name, value: stationListData[i].id },
+            ]);
+          }
+        } else {
+          let d = []
+          d.push({
+            label: "No City avilable", value: 0
+          })
+          setItemsCity(d)
+          setLoading(false);
+        }
+      })
+      .catch(function (error) {
+        alert(defaultMessages.en.serverNotRespondingMsg);
+      });
+  };
 
   const getStationName = districtID => {
     setLoading(true);
     setValueDistrict(districtID);
-    let data = { city_id: districtID };
+    let data = { district_id: districtID };
 
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -475,17 +521,21 @@ const RegisterScreen = ({ navigation, ref }) => {
         });
         return;
       }
-      if (!fieldValidator(password.value)) {
+      if (!fieldValidator(password.value) || password.value.length < 6) {
         setPassword({
           ...password,
-          error: defaultMessages.en.required.replace('{0}', 'Password'),
+          error: password.value.length < 6 ? defaultMessages.en.minlength
+            .replace('{0}', 'Password')
+            .replace('{1}', '6') : defaultMessages.en.required.replace('{0}', 'Password'),
         });
         return;
       }
-      if (!fieldValidator(confirmPassword.value)) {
+      if (!fieldValidator(confirmPassword.value) || confirmPassword.value.length < 6) {
         setConfirmPassword({
           ...confirmPassword,
-          error: defaultMessages.en.required.replace('{0}', 'Confirm Password'),
+          error: confirmPassword.value.length < 6 ? defaultMessages.en.minlength
+            .replace('{0}', 'Confirm Password')
+            .replace('{1}', '6') : defaultMessages.en.required.replace('{0}', 'Confirm Password'),
         });
         return;
       }
@@ -590,7 +640,7 @@ const RegisterScreen = ({ navigation, ref }) => {
         );
         return;
       }
-      if (valueStation == null) {
+      if (valueSellerType == 'Ginner' ? valueStation == null : valueCity == null) {
         setStationError(
           defaultMessages.en.selectValidation.replace('{0}', 'station'),
         );
@@ -705,6 +755,7 @@ const RegisterScreen = ({ navigation, ref }) => {
       panNo.value,
       valueState,
       valueDistrict,
+      valueCity,
       valueStation,
       bankName.value,
       accountHolderName.value,
@@ -1696,7 +1747,10 @@ const RegisterScreen = ({ navigation, ref }) => {
                   onSelect={(selectedItem, index) => {
                     console.log(JSON.stringify(selectedItem));
                     setDistrictError(null);
-                    getStationName(selectedItem.value);
+                    valueSellerType == 'Ginner' ? getStationName(selectedItem.value) : getCityName(selectedItem.value);
+                    // getStationName(selectedItem.value);
+                    // getCityName(selectedItem.value);
+
                   }}
                   buttonStyle={styles.dropdown3BtnStyle}
                   renderCustomizedButtonChild={(selectedItem, index) => {
@@ -1734,7 +1788,7 @@ const RegisterScreen = ({ navigation, ref }) => {
                     <Text style={styles.error}>{DistrictError}</Text>
                   ) : null}
                 </View>
-                <Text
+                {valueSellerType != 'Ginner' ? (<><Text
                   style={{
                     fontSize: 14,
                     fontWeight: 'bold',
@@ -1742,51 +1796,105 @@ const RegisterScreen = ({ navigation, ref }) => {
                     marginLeft: 20,
                     marginBottom: 5,
                   }}>
-                  Station Name
+                  City
                 </Text>
-                <SelectDropdown
-                  data={itemsStation}
-                  onSelect={(selectedItem, index) => {
-                    console.log(selectedItem, index);
-                    setStationError(null);
-                    setValueStation(selectedItem.value);
-                  }}
-                  buttonStyle={styles.dropdown3BtnStyle}
-                  renderCustomizedButtonChild={(selectedItem, index) => {
-                    return (
-                      <View style={styles.dropdown3BtnChildStyle}>
-                        <Text style={styles.dropdown3BtnTxt}>
-                          {selectedItem ? selectedItem.label : 'Station Name'}
-                        </Text>
-                      </View>
-                    );
-                  }}
-                  renderDropdownIcon={() => {
-                    return (
-                      <FontAwesome
-                        name="chevron-down"
-                        color={'black'}
-                        size={14}
-                        style={{ marginRight: 20 }}
+                  <SelectDropdown
+                    data={itemsCity}
+                    onSelect={(selectedItem, index) => {
+                      console.log(selectedItem, index);
+                      setCityError(null);
+                      setValueCity(selectedItem.value);
+                    }}
+                    buttonStyle={styles.dropdown3BtnStyle}
+                    renderCustomizedButtonChild={(selectedItem, index) => {
+                      return (
+                        <View style={styles.dropdown3BtnChildStyle}>
+                          <Text style={styles.dropdown3BtnTxt}>
+                            {selectedItem ? selectedItem.label : 'City Name'}
+                          </Text>
+                        </View>
+                      );
+                    }}
+                    renderDropdownIcon={() => {
+                      return (
+                        <FontAwesome
+                          name="chevron-down"
+                          color={'black'}
+                          size={14}
+                          style={{ marginRight: 20 }}
+                        />
+                      );
+                    }}
+                    dropdownIconPosition={'right'}
+                    dropdownStyle={styles.dropdown3DropdownStyle}
+                    rowStyle={styles.dropdown3RowStyle}
+                    renderCustomizedRowChild={(item, index) => {
+                      return (
+                        <View style={styles.dropdown3RowChildStyle}>
+                          <Text style={styles.dropdown3RowTxt}>{item.label}</Text>
+                        </View>
+                      );
+                    }}
+                  />
+                  <View style={styles.container}>
+                    {CityError != null ? (
+                      <Text style={styles.error}>{CityError}</Text>
+                    ) : null}
+                  </View></>) : (
+                    <><Text
+                      style={{
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: 'black',
+                        marginLeft: 20,
+                        marginBottom: 5,
+                      }}>
+                      Station Name
+                    </Text>
+                      <SelectDropdown
+                        data={itemsStation}
+                        onSelect={(selectedItem, index) => {
+                          console.log(selectedItem, index);
+                          setStationError(null);
+                          setValueStation(selectedItem.value);
+                        }}
+                        buttonStyle={styles.dropdown3BtnStyle}
+                        renderCustomizedButtonChild={(selectedItem, index) => {
+                          return (
+                            <View style={styles.dropdown3BtnChildStyle}>
+                              <Text style={styles.dropdown3BtnTxt}>
+                                {selectedItem ? selectedItem.label : 'Station Name'}
+                              </Text>
+                            </View>
+                          );
+                        }}
+                        renderDropdownIcon={() => {
+                          return (
+                            <FontAwesome
+                              name="chevron-down"
+                              color={'black'}
+                              size={14}
+                              style={{ marginRight: 20 }}
+                            />
+                          );
+                        }}
+                        dropdownIconPosition={'right'}
+                        dropdownStyle={styles.dropdown3DropdownStyle}
+                        rowStyle={styles.dropdown3RowStyle}
+                        renderCustomizedRowChild={(item, index) => {
+                          return (
+                            <View style={styles.dropdown3RowChildStyle}>
+                              <Text style={styles.dropdown3RowTxt}>{item.label}</Text>
+                            </View>
+                          );
+                        }}
                       />
-                    );
-                  }}
-                  dropdownIconPosition={'right'}
-                  dropdownStyle={styles.dropdown3DropdownStyle}
-                  rowStyle={styles.dropdown3RowStyle}
-                  renderCustomizedRowChild={(item, index) => {
-                    return (
-                      <View style={styles.dropdown3RowChildStyle}>
-                        <Text style={styles.dropdown3RowTxt}>{item.label}</Text>
-                      </View>
-                    );
-                  }}
-                />
-                <View style={styles.container}>
-                  {StationError != null ? (
-                    <Text style={styles.error}>{StationError}</Text>
-                  ) : null}
-                </View>
+                      <View style={styles.container}>
+                        {StationError != null ? (
+                          <Text style={styles.error}>{StationError}</Text>
+                        ) : null}
+                      </View></>)}
+                
               </View>
             )}
 
