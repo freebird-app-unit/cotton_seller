@@ -312,7 +312,9 @@ function Contract({navigation}) {
     };
 
     const BuyerApiContract = async (dates) => {
-        if (BuyerId.value != -1)
+        console.log('hi buyer', BuyerId, dates)
+
+        if (BuyerId.value == -1)
         return;
 
         console.log('hi buyer')
@@ -367,9 +369,9 @@ function Contract({navigation}) {
     const BrokerApiContract = async (dates) => {
            
         
-        console.log('hi broker')
+        console.log('hi broker',dates)
         try {
-            BrokerId.value != -1 && setLoader(true)
+            (BrokerId.value != -1) &&  setLoader(true)
 
             let data = {
 
@@ -380,7 +382,7 @@ function Contract({navigation}) {
             const formData = new FormData();
             formData.append('data', JSON.stringify(data));
 
-            BrokerId.value != -1 && axios({
+            (BrokerId.value != -1 ) && axios({
                 url: api_config.BASE_URL + api_config.BROKER_WISE_CONTRACT_REPORT,
                 method: 'POST',
                 data: formData,
@@ -419,7 +421,9 @@ function Contract({navigation}) {
     }
 
     const ProductApiContract = async (dates) => {
-        if (ProductId.value != -1)
+        console.log('hi broker')
+
+        if (ProductId.value == -1)
         return ;
 
         console.log('hi broker')
@@ -477,6 +481,13 @@ function Contract({navigation}) {
     const [prg, setprg] = useState(false)
     const [Loader, setLoader] = useState(false)
     const [currentDate, setCurrentDate] = useState(moment(new Date()).format('DD-MM-YYYY'))
+    const [ToDate, setTodate] = useState(null)
+    const [brokercurrentDate, setbrokerCurrentDate] = useState(moment(new Date()).format('DD-MM-YYYY'))
+    const [brokerToDate, setbrokerTodate] = useState(null)
+    const [procurrentDate, setproCurrentDate] = useState(moment(new Date()).format('DD-MM-YYYY'))
+    const [proToDate, setproTodate] = useState(null)
+
+    
     const [date,setDate] = useState(null)
 
     const [Buyer, setBuyer] = useState([{ label: 'All', value: 0 }])
@@ -489,9 +500,9 @@ function Contract({navigation}) {
 
     console.log('buyerdssdfasda',BuyerData)
 
-    const [BuyerId, setBuyerId] = useState({ label: 'All', value: -1 })
-    const [BrokerId, setBrokerId] = useState({ label: 'All', value: -1 })
-    const [ProductId, setProductId] = useState({ label: 'All', value: -1 })
+    const [BuyerId, setBuyerId] = useState({ label: 'All', value:0 })
+    const [BrokerId, setBrokerId] = useState({ label: 'All', value:0 })
+    const [ProductId, setProductId] = useState({ label: 'All', value:0 })
 
     const FlagSet = (item) => {
             if (item == 'Buyer')
@@ -507,13 +518,41 @@ function Contract({navigation}) {
     const onSelect = data => {
         console.log('data>>>',data)
         setDate(data.obj)
-        FlagSet(data.obj.GoingTo)
+        FlagSet(data.obj.GoingTo);
           
-        bbg && BuyerApiContract(data.obj)
-        brg && BrokerApiContract(data.obj)
-        prg && ProductApiContract(data.obj)
+        if (data.obj.selectedDate){
+            bbg && BuyerApiContract(data.obj)
+            brg && BrokerApiContract(data.obj)
+            prg && ProductApiContract(data.obj)
+        }
+       
+        if (bbg)
+        if (data.obj.from == data.obj.to)
+            setTodate(null)
+        else
+            setTodate(moment(new Date(data.obj.to)).format('DD-MM-YYYY'))
 
-        setCurrentDate(moment(new Date(data.obj.from)).format('DD-MM-YYYY'))
+        if (brg)
+            if (data.obj.from == data.obj.to)
+                setbrokerTodate(null)
+            else
+                setbrokerTodate(moment(new Date(data.obj.to)).format('DD-MM-YYYY'))
+
+        if (prg)
+            if (data.obj.from == data.obj.to)
+                setproTodate(null)
+            else
+                setproTodate(moment(new Date(data.obj.to)).format('DD-MM-YYYY'))
+
+
+
+
+        bbg && setCurrentDate(moment(new Date(data.obj.from)).format('DD-MM-YYYY'))
+        brg && setbrokerCurrentDate(moment(new Date(data.obj.from)).format('DD-MM-YYYY'))
+
+        prg && setproCurrentDate(moment(new Date(data.obj.from)).format('DD-MM-YYYY'))
+
+
         console.log('cur', currentDate.toString())
     };
 
@@ -729,17 +768,57 @@ function Contract({navigation}) {
                         borderColor: "lightgray", justifyContent: 'space-between', width: wp(46), alignItems: 'center',
                         paddingHorizontal: wp(3)
                     }}>
-                        <Text style={{
-                            fontSize: 14,
-                            // fontWeight: 'bold',
-                            color: 'black',
-                            // fontFamily: 'Poppins-SemiBold',
-                            fontFamily: 'Poppins-Regular',
-                            // marginLeft: 20,
-                            // marginBottom: 5,
-                        }}>
-                            {currentDate}
-                        </Text>
+                        {bbg && (<View style={{ flexDirection: ToDate ? 'column' : 'row' }}>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>
+                                {bbg && currentDate}
+                                {brg && brokercurrentDate}
+                                {prg && procurrentDate}
+
+
+                            </Text>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>
+                                {bbg && ToDate}
+                               
+                            </Text>
+                        </View> )}
+                        { brg && (<View style={{ flexDirection: brokerToDate ? 'column' : 'row' }}>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>{brg && brokercurrentDate}</Text>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>
+                                {brg && brokerToDate}
+                            </Text>
+                        </View> )}
+
+                        {prg && (<View style={{ flexDirection: proToDate ? 'column' : 'row', }}>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>
+                                {prg && procurrentDate}</Text>
+                            <Text style={{
+                                fontSize: 14,
+                                color: 'black',
+                                fontFamily: 'Poppins-Regular',
+                            }}>
+                                {prg && proToDate}
+                            </Text>
+                        </View>)}
                         <Icon name="calendar" size={hp(2.3)} color="#000" />
                     </View>
                 </TouchableOpacity>
@@ -762,13 +841,14 @@ function Contract({navigation}) {
 function Post({navigation}) {
     const [Status, setstatusValue] = useState([{ label: 'active', value: 0 }, { label: 'complete', value: 1 },
     { label: 'cancel', value: 2 }])
-    const [selectedStatus, setSelectedStatus] = useState(null)
+    const [selectedStatus, setSelectedStatus] = useState({ label: 'active', value: 0 })
 
     // const [Expenses, setExpense] = useState(0.0)
     // const [Cotton_Seed, setCottoSeed] = useState(0.0)
     // const [Our_Turn, setOutTurn] = useState(0.0)
     // const [Shortage, setShortage] = useState(0.0)
     // const [Result, setResult] = useState(0.0)
+    const [ToDate,setTodate] = useState(null)
     const [currentDate, setCurrentDate] = useState(moment(new Date()).format('DD-MM-YYYY'))
     const [statusData, setStatusData] = useState([])
     const [Loader, setLoader] = useState(false)
@@ -831,9 +911,16 @@ function Post({navigation}) {
 
  
     const onSelectPost = data => {
-        console.log('data>>>', data)
+        console.log('data>>>', data, selectedStatus)
         // setDate(data.obj)
+        if (data.obj.selectedDate)
         selectedStatus ? postApi(data.obj) : alert("please select status");
+    
+        if (data.obj.from == data.obj.to)
+            setTodate(null)
+            else
+            setTodate(moment(new Date(data.obj.to)).format('DD-MM-YYYY'))
+
 
         setCurrentDate(moment(new Date(data.obj.from)).format('DD-MM-YYYY'))
         console.log('cur', currentDate.toString())
@@ -1072,6 +1159,7 @@ function Post({navigation}) {
                         borderRadius: 4,
                         borderColor: "lightgray",justifyContent:'space-between',width:wp(46),alignItems:'center',
                         paddingHorizontal:wp(3)}}>
+                            <View style={{flexDirection: ToDate ?  'column' : 'row'}}>
                         <Text style={{
                             fontSize: 14,
                             // fontWeight: 'bold',
@@ -1083,6 +1171,18 @@ function Post({navigation}) {
                         }}>
                                 {currentDate}
                             </Text>
+                                <Text style={{
+                                    fontSize: 14,
+                                    // fontWeight: 'bold',
+                                    color: 'black',
+                                    // fontFamily: 'Poppins-SemiBold',
+                                    fontFamily: 'Poppins-Regular',
+                                    // marginLeft: 20,
+                                    // marginBottom: 5,
+                                }}>
+                                    {ToDate}
+                                </Text>                                
+                            </View>
                         <Icon name="calendar" size={hp(2.3)} color="#000" />
                         </View>
                 </TouchableOpacity>

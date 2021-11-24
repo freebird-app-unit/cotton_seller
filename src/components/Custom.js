@@ -39,6 +39,8 @@ class MyContractFilter extends Component {
             isStartDatePicked: false,
             isEndDatePicked: false,
             startDate: '',
+            selectingDate:false,
+            selectEndDate:false,
             SendFromDate: moment(new Date()).format('YYYY-MM-DD'),
             SendEndDate: moment(new Date()).format('YYYY-MM-DD')
         };
@@ -49,19 +51,39 @@ class MyContractFilter extends Component {
         const { navigation,route } = this.props;
        navigation.goBack();
         // console.log('this,.propsd',this.props.route)
-       let obj = {
+        if (this.state.selectEndDate == false)
+        {
+            const obj = {
+                from: this.state.SendFromDate,
+                to: this.state.SendFromDate,
+                GoingTo: route.params.comingFrom,
+                selectedDate: this.state.selectingDate 
+            }
+                    
+            this.setState({ selectingDate: false, selectEndDate: false,})
+            route.params.onSelect({ obj });
+        } else {
+        const obj = {
             from: this.state.SendFromDate,
             to: this.state.SendEndDate,
-            GoingTo:route.params.comingFrom
+            selectedDate: this.state.selectingDate ,
+            GoingTo: route.params.comingFrom
+
         }
+            this.setState({ selectingDate: false, selectEndDate: false, })
+
+
         route.params.onSelect({ obj });
+    }
     }
 
 
     onDayPress = (day) => {
      
         console.log('day', day);
-        if (this.state.isStartDatePicked == false) {
+        
+
+        if (this.state.isStartDatePicked == false ) {
             let markedDates = {}
             markedDates[day.dateString] = { startingDay: true, color: theme.colors.primary, textColor: '#FFFFFF' };
             this.setState({
@@ -69,6 +91,7 @@ class MyContractFilter extends Component {
                 isStartDatePicked: true,
                 isEndDatePicked: false,
                 startDate: day.dateString,
+                selectingDate:true,
                 SendFromDate: moment(new Date(day.dateString)).format('YYYY-MM-DD')
             });
         } else {
@@ -102,10 +125,25 @@ class MyContractFilter extends Component {
                     markedDates: markedDates,
                     isStartDatePicked: false,
                     isEndDatePicked: true,
-                    startDate: ''
+                    selectEndDate:true,
+                    startDate: '',
+                    selectingDate: true,
+
                 });
             } else {
-                alert('Select an upcomming date!');
+                let markedDates = {}
+                markedDates[day.dateString] = { startingDay: false, color: 'white', textColor: '#333' };
+
+                this.setState({
+                    isStartDatePicked: false,
+                    isEndDatePicked: true,
+                    selectEndDate: false,
+                    startDate: '',
+                    markedDates:{},
+                    selectingDate: false,
+
+                });
+                // alert('Select an upcomming date!');
             }
         }
     }
@@ -143,11 +181,21 @@ class MyContractFilter extends Component {
 
     onClickCancel = () => {
 
-        this.props.navigation.goBack()
+        let markedDates = {}
+        markedDates[this.state.SendFromDate] = { startingDay: false, color: 'white', textColor: '#333' };
+
+        this.setState({
+            isStartDatePicked: false,
+            isEndDatePicked: true,
+            startDate: '',
+            markedDates: {},
+            selectingDate: false,
+
+        });
 
     }
     onClickApply = () => {
-
+        this.props.navigation.goBack()
     }
 
     onClickCustomCalender = () => {
@@ -201,8 +249,21 @@ class MyContractFilter extends Component {
                         }}>
                             <Ionicons name='chevron-back-outline' size={hp(3)} color='#333' style={{ width: wp(30) }} 
                             onPress={() => this.goBack()} />
-                            <Text style={{ alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Custom</Text>
-                            <View style={{ width: wp(30) }} />
+                            <Text style={{width:wp(30), alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Custom</Text>
+                            <View style={{ width: wp(22),justifyContent:'space-between', flexDirection:'row', alignSelf:'center' }} >
+                                <TouchableOpacity onPress={() => this.onClickCancel()}>
+                                    <Text style={{
+                                        alignSelf: 'center', color: '#333',
+                                        fontSize: hp(1.9), fontFamily: 'Poppins-Regular'
+                                    }}>Reset</Text>
+
+                                </TouchableOpacity>
+                                <TouchableOpacity onPress={() => this.goBack()}>
+                                    <Text style={{
+                                        alignSelf: 'center', color: '#333', fontSize: hp(1.9),
+                                        fontFamily: 'Poppins-Regular'
+                                    }} >Done</Text>
+                                </TouchableOpacity></View>
 
                         </View>
                         <CalendarList
@@ -213,13 +274,10 @@ class MyContractFilter extends Component {
                             hideExtraDays={true}
                             hideDayNames={true}
                             onDayPress={this.onDayPress}
+                            maxDate={moment(new Date()).format('YYYY-MM-DD')}
                         />
                     </View>
-
-
-
                 </View>
-
             </Background>
         );
     }
