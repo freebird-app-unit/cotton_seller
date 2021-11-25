@@ -346,7 +346,7 @@ class SearchSelectSeller extends Component {
   };
 
   crateProductAttributeUI = () => {
-    console.log('>>>>>',this.props.route.params.data.data)
+    console.log('>>>>>>>>>> data showing',this.props.route.params.data.data)
     return this.props.route.params.data.data.map((ell, i) => (
       <View>
         <TouchableOpacity onPress={() => this.onClickCountry(ell.state)}>

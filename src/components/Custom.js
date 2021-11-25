@@ -21,7 +21,8 @@ import Background from './Background';
 import Spinner from 'react-native-loading-spinner-overlay';
 import Search from '../assets/Search';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import Refresh_Icon from '../assets/Refresh_Icon';
+import Done_Icon from '../assets/Done_Icon';
 //svgs
 
 class MyContractFilter extends Component {
@@ -252,17 +253,11 @@ class MyContractFilter extends Component {
                             <Text style={{width:wp(30), alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Custom</Text>
                             <View style={{ width: wp(22),justifyContent:'space-between', flexDirection:'row', alignSelf:'center' }} >
                                 <TouchableOpacity onPress={() => this.onClickCancel()}>
-                                    <Text style={{
-                                        alignSelf: 'center', color: '#333',
-                                        fontSize: hp(1.9), fontFamily: 'Poppins-Regular'
-                                    }}>Reset</Text>
+                                    <Refresh_Icon />
 
                                 </TouchableOpacity>
                                 <TouchableOpacity onPress={() => this.goBack()}>
-                                    <Text style={{
-                                        alignSelf: 'center', color: '#333', fontSize: hp(1.9),
-                                        fontFamily: 'Poppins-Regular'
-                                    }} >Done</Text>
+                                    <Done_Icon />
                                 </TouchableOpacity></View>
 
                         </View>
