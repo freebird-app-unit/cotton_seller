@@ -50,7 +50,7 @@ import Wallet_Icon from '../assets/Wallet'
 import Home from '../assets/Home';
 import NoRecordsFound_Icon from '../assets/NoRecodsFound';
 import SearchToSell_Icon from '../assets/SearchToSell';
-import PostToSell_Icon from '../assets/PostToSell';
+import PostToSell_Icon from '../assets/PostToSell_Icon';
 import MyPost_Icon from '../assets/MyPost';
 import MyContracts_Icon from '../assets/MyContracts';
 import Logout_Icon from '../assets/Logout';
