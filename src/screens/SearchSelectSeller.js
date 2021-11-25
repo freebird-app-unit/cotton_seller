@@ -232,8 +232,10 @@ class SearchSelectSeller extends Component {
 
   crateProductAttributeUI4 = stationData => {
     console.log('station...data,',stationData)
-    return stationData.map((ell, i) => (
-      <View>
+    return stationData.map((ell, i) => {
+      console.log('ellsation', ell.hasOwnProperty('data'))
+      return ell.hasOwnProperty('data') &&  (
+       <View>
         <TouchableOpacity onPress={() => this.onClickCountry(ell.state)}>
           <View
             style={{
@@ -264,13 +266,16 @@ class SearchSelectSeller extends Component {
           </View>
         </TouchableOpacity>
 
-        {this.crateProductView(ell.data)}
-      </View>
-    ));
+         {this.crateProductView(ell.data)}
+      </View> 
+    )});
   };
 
   crateProductAttributeUI3 = districtData => {
-    return districtData.map((ell, i) => (
+    // console.log('districtdata', districtData[0], districtData[0].city[1].city_arr.length > 0)
+    return districtData.map((ell, i) => {
+      // console.log(ell.city[1].city_arr)
+     return  (
       <View>
         <TouchableOpacity onPress={() => this.onClickCountry(ell.state)}>
           <View
@@ -301,10 +306,15 @@ class SearchSelectSeller extends Component {
               style={{width: 30, height: 30, marginRight: 10}}></DownArrow>
           </View>
         </TouchableOpacity>
-        {ell.buyer_type == 'Spinner' ? this.crateProductView(ell.city) : this.crateProductAttributeUI4(ell.city)}
+         {(districtData[0].city.length >= 2 && ell.city[1].city_arr.length > 0) &&
+        this.crateProductView(ell.city[1].city_arr) }
+         {(districtData[0].city.length == 1 && ell.city[0].city_arr.length > 0) &&
+           this.crateProductView(ell.city[0].city_arr)}
+         {districtData[0].city.length > 1 && this.crateProductAttributeUI4(ell.city)}
         {/* {this.crateProductAttributeUI4(ell.city)} */}
       </View>
-    ));
+    )}
+    );
   };
 
   crateProductAttributeUI2 = stateData => {

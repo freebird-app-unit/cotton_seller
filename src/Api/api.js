@@ -29,7 +29,10 @@ const api_config = {
   //NEGOTIATION_LIST: 'negotiation_list',
   //NEGOTIATION_LIST: 'negotiation_list_new',
   NEGOTIATION_LIST: 'negotiation_list_new_v2',
-  SEARCH_TO_SELL: 'search_to_sell',
+  // SEARCH_TO_SELL: 'search_to_sell',
+  SEARCH_TO_SELL: 'search_to_sell_new_v3', //temp
+
+  
   FORGOT_PASSWORD_SELLER:'forgot_password_seller',
   RESET_PASSWORD_SELLER:'reset_password_seller',
   SEARCH_SELLER:'search_buyer',
