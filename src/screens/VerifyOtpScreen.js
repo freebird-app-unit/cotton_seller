@@ -133,6 +133,7 @@ const AUTO_SUBMIT_OTP_TIME_LIMIT = 4; // 4 secs
 let resendOtpTimerInterval;
 let autoSubmitOtpTimerInterval;
 import VerifyOtpIcon from '../assets/VerifyOtp';
+import { heightPercentageToDP } from '../components/responsive-ratio';
 
 const VerifyOtpScreen = function(props) {
   const {otpRequestData, attempts} = props;
@@ -265,6 +266,8 @@ const VerifyOtpScreen = function(props) {
   };
 
   const refCallback = textInputRef => node => {
+    console.log('textInputRef', )
+    // node.borderColor = 'gray'
     textInputRef.current = node;
   };
 
@@ -405,6 +408,8 @@ const VerifyOtpScreen = function(props) {
   // to have consistency, using this event just to detect backspace key press and
   // onOtpChange for other digits press
   const onOtpKeyPress = index => {
+    
+
     return ({nativeEvent: {key: value}}) => {
       // auto focus to previous InputText if value is blank and existing value is also blank
       
@@ -446,7 +451,7 @@ const VerifyOtpScreen = function(props) {
           visible={loading}
           color="#085cab"
         />
-      <View style={{width: '100%', marginTop: 0,backgroundColor:'#F0F5F9',height:108,justifyContent:'center'}}>
+      {/* <View style={{ width: '100%', backgroundColor: '#F0F5F9', height: heightPercentageToDP(9), marginTop: heightPercentageToDP(4),justifyContent:'center'}}>
           <Appbar.Header style={{backgroundColor: 'transparent'}}>
             <Appbar.BackAction
               color="#000"
@@ -460,7 +465,7 @@ const VerifyOtpScreen = function(props) {
             />
             <Appbar.Action color="transparent" onPress={() => {}} />
           </Appbar.Header>
-        </View>
+        </View> */}
         <ScrollView
           showsVerticalScrollIndicator={true}
           showsHorizontalScrollIndicator={false}
@@ -474,7 +479,7 @@ const VerifyOtpScreen = function(props) {
             <VerifyOtpIcon></VerifyOtpIcon>
             </View>
           <CustomText>
-             We have sent verification code on your number <CustomText style={GenericStyles.bold}>{mobileNumber}</CustomText>
+             We have sent verification code on your number <CustomText style={{color:'black',fontFamily:'Poppins-Bold'}}>{mobileNumber}</CustomText>
             {/* {otpRequestData.email_id ? 'email' : ' mobile number'}{' '} */}
           </CustomText>
           <View style={[GenericStyles.row, GenericStyles.mt12]}>
@@ -493,8 +498,10 @@ const VerifyOtpScreen = function(props) {
                 onChangeText={onOtpChange(index)}
                 keyboardType={'numeric'}
                 maxLength={1}
-                style={[styles.otpText, GenericStyles.centerAlignedText]}
-                autoFocus={index === 0 ? true : undefined}
+                  style={[{ width: '100%', borderColor: otpArray[index] != '' ? colors.GREEN : colors.GREY }, GenericStyles.centerAlignedText]}
+
+                autoFocus={index === 0 ? true : false}
+                
                 refCallback={refCallback(textInputRef)}
                 key={index}
               />
@@ -556,8 +563,8 @@ const styles = StyleSheet.create({
   },
   submitButtonText: {
     color: colors.WHITE,
-    //backgroundColor:colors.GREEN,
-    fontFamily:'popins',
+    //backgroundColor:,
+    fontFamily:'Poppins-Regular',
     fontSize:18,
     alignItems: 'center',
   },
@@ -570,14 +577,16 @@ const styles = StyleSheet.create({
     color: colors.GREEN,
     textTransform: 'none',
     fontSize:18,
-    fontFamily:'popins',
+    fontFamily:'Poppins-Regular',
     textDecorationLine: 'underline',
   },
   otpText: {
-    fontWeight: 'bold',
-    color: colors.GREEN,
-    fontSize: 18,
+    // fontWeight: 'bold',
+    // color: colors.GREEN,
+    // fontSize: heightPercentageToDP(2.2),
     width: '100%',
+    // fontFamily:'Poppins-Bold',
+    // marginTop:heightPercentageToDP(0.5)
   },
   scrollViewStyle: {
     width: '100%',

@@ -133,8 +133,8 @@ const ChangePasswordScreen = ({ navigation }) => {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: '#F0F5F9' }}>
-      <View style={{ width: '100%', height: heightPercentageToDP(9), marginTop: heightPercentageToDP(4) }}>
+    <View style={{ flex: 1 }}>
+      {/* <View style={{ width: '100%', height: heightPercentageToDP(9), marginTop: heightPercentageToDP(4) }}>
 
         <Appbar.Header style={{ backgroundColor: 'transparent' }} >
 
@@ -152,17 +152,17 @@ const ChangePasswordScreen = ({ navigation }) => {
         </Appbar.Header>
 
 
-      </View>
+      </View> */}
 
       <View style={{ flex: 1, marginTop: '1%', width: '100%', borderTopLeftRadius: 20, borderTopRightRadius: 20, backgroundColor: 'white' }}>
 
-        <View style={{ justifyContent: 'center', width: '100%', alignItems: 'center', marginTop: '10%', marginBottom: 50 }}>
+        <View style={{ justifyContent: 'center', width: '100%', alignItems: 'center', marginTop: '0%', marginBottom: 50 }}>
           <Spinner
             //visibility of Overlay Loading Spinner
             visible={loading}
             color="#085cab"
           />
-          <SetPasswordIcon> </SetPasswordIcon>
+          {/* <SetPasswordIcon> </SetPasswordIcon> */}
         </View>
 
         <TextInput
@@ -177,6 +177,7 @@ const ChangePasswordScreen = ({ navigation }) => {
           secureTextEntry={hideCurrentPass ? true : false}
           pass={true}
           show={hideCurrentPass}
+          outlineColor={'#eee'}
           rightOnpress={() => setHideCurrentPass(!hideCurrentPass)}
         />
 
@@ -192,6 +193,7 @@ const ChangePasswordScreen = ({ navigation }) => {
           secureTextEntry={hideNewPass ? true : false}
           pass={true}
           show={hideNewPass}
+          outlineColor={'#eee'}
           rightOnpress={() => setHideNewPass(!hideNewPass)}
         />
 
@@ -206,6 +208,7 @@ const ChangePasswordScreen = ({ navigation }) => {
           secureTextEntry={hideConfirmPass ? true : false}
           pass={true}
           show={hideConfirmPass}
+          outlineColor={'#eee'}
           rightOnpress={() => setHideConfirmPass(!hideConfirmPass)}
         />
 
@@ -213,6 +216,7 @@ const ChangePasswordScreen = ({ navigation }) => {
           mode="contained"
           onPress={onSetPasswordClick}
           style={{ marginTop: 25 }}
+          texting={{fontFamily:'Popins-Bold'}}
         >
           Set Password
         </Button>

@@ -202,13 +202,13 @@ module.exports = {
         },
         dropdown3BtnStyle: {
             width: "100%",
-            height: 50,
+            height: 45,
             // padding:2,
             backgroundColor: "#FFF",
             paddingHorizontal: 0,
             borderWidth: 1,
             borderRadius: 4,
-            borderColor: "#444",
+            borderColor: "lightgray",
             left: 0
         },
     otpResendButton: {
@@ -224,12 +224,12 @@ module.exports = {
         textDecorationLine: 'underline',
     },
         dropdown3BtnChildStyle: {
-            flex: 1,
+            // flex: 1,
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
             // paddingHorizontal: 0,
-            paddingLeft: widthPercentageToDP(1),
+            paddingLeft: widthPercentageToDP(2),
 
         },
         dropdown3BtnImage: { width: 45, height: 45, resizeMode: "cover" },
@@ -237,14 +237,14 @@ module.exports = {
             color: "black",
             textAlign: "center",
             fontSize: 14,
-            marginHorizontal: 0,
+            // marginHorizontal: 10,
             fontFamily: 'Poppins-Regular'
         },
         dropdown3DropdownStyle: { backgroundColor: "white",marginTop:heightPercentageToDP(-4) },
         dropdown3RowStyle: {
             backgroundColor: "#fff",
             borderBottomColor: "#444",
-            height: 50,
+            height: 40,
             paddingHorizontal: widthPercentageToDP(4),
 
         },

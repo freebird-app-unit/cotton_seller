@@ -639,7 +639,7 @@ export default class Dashboard extends Component {
                             <Text style={styles.dropdown3BtnTxt}>
                               {selectedItem
                                 ? selectedItem.label
-                                : 'Select ' + el.label}
+                                : el.label}
                             </Text>
                           </View>
                         );
@@ -701,7 +701,7 @@ export default class Dashboard extends Component {
                 <TextInput
                   style={{
                     width: '100%',
-                    height: 46,
+                    height: 45,
                     fontWeight: 'bold',
                     backgroundColor: '#fff',
                   }}

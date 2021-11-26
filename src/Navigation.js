@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { theme } from './core/theme'
 import { View, Text, Alert, StatusBar, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import FilterSettings from './assets/FilterSettings';
 import { Appbar, Searchbar, Button, Badge } from 'react-native-paper';
 import { navigationRef } from '../RootNavigation';
 import {
@@ -58,6 +59,7 @@ import { Post, Contract } from './screens/ReportScreen'
 // import EncryptedStorage from 'react-native-encrypted-storage';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { createIconSetFromFontello } from 'react-native-vector-icons';
+// import VerifyOtp from './assets/VerifyOtp';
 
 const Stack = createStackNavigator()
 const Tab = createMaterialTopTabNavigator();
@@ -87,10 +89,10 @@ const tabnavi = ({ navigation }) => {
                 borderTopRightRadius: 20,
             }}>
                 <Tab.Navigator tabBarOptions={{
-                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-Regular' },
+                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-SemiBold', textTransform: 'none' },
                     activeTintColor: theme.colors.primary,
                     inactiveTintColor: '#afafaf',
-                    indicatorStyle: { backgroundColor: theme.colors.primary }
+                    indicatorStyle: { backgroundColor: theme.colors.primary },
                 }}>
                     <Tab.Screen name="Ginning" component={FirstRoute} />
                     <Tab.Screen name="Spinning" component={SecondRoute} />
@@ -127,7 +129,7 @@ const ReportTab = ({ navigation }) => {
                 borderTopRightRadius: 20,
             }}>
                 <Tab.Navigator tabBarOptions={{
-                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-Regular' },
+                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-SemiBold', textTransform: 'none' },
                     activeTintColor: theme.colors.primary,
                     inactiveTintColor: '#afafaf',
                     indicatorStyle: { backgroundColor: theme.colors.primary }
@@ -162,7 +164,7 @@ const AppHeading = (props) => {
                     titleStyle={{ fontSize: 20, fontFamily: "Poppins-SemiBold" }}
                 />
                 {props.filter ? <Appbar.Action
-                    icon="notification-clear-all"
+                    icon={() => <FilterSettings color={'white'}/>}
                     color={props.color ? props.color : "white"}
                     onPress={
                         props.rightPress
@@ -256,6 +258,42 @@ const mcxScreenFunction = ({ navigation, route }) => {
     )
 }
 
+const VerifyOtpFunction = ({navigation, route}) => {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#F0F5F9' }}>
+            <AppHeading color={'#333'} title={'Verify OTP'} leftPress={() => navigation.navigate('ForgotPasswordScreen')} />
+            <View
+                style={styles.flex}>
+                <VerifyOtpScreen navigation={navigation} />
+            </View>
+        </View>
+    )
+}
+
+const ChangePasswordFunction = ({ navigation, route }) => {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#333' }}>
+            <AppHeading menu title={'Change Password'} leftPress={() => navigation.navigate('MenuScreen')} />
+            <View
+                style={styles.flex}>
+                <ChangePasswordScreen navigation={navigation} />
+            </View>
+        </View>
+    )
+}
+
+const ForgotPasswordFunction = ({ navigation, route }) => {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#F0F5F9' }}>
+            <AppHeading color={'#333'} title={'Forgot Password'} leftPress={() => navigation.navigate('LoginScreen')} />
+            <View
+                style={styles.flex}>
+                <ForgotPasswordScreen navigation={navigation} />
+            </View>
+        </View>
+    )
+}
+
 const MyContractFunction = ({ navigation, route }) => {
     // console.log('navigation>??', route)
     return (
@@ -323,8 +361,8 @@ const NewsFeedViewFunction = ({ navigation }) => <View style={{ flex: 1, backgro
     </View>
 </View>
 
-const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
-    <AppHeading title={'Filter'} leftPress={() => navigation.goBack()} />
+const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#fff' }}>
+    <AppHeading title={'Filter'} color={'#333'} leftPress={() => navigation.goBack()} />
     <View
         style={styles.flex}>
         <MyContractFilter navigation={navigation} route={route} />
@@ -754,16 +792,16 @@ const App = () => {
                     <Stack.Screen name="RegisterScreen" component={RegisterScreenFunction} />
                     <Stack.Screen
                         name="ForgotPasswordScreen"
-                        component={ForgotPasswordScreen} />
+                        component={ForgotPasswordFunction} />
                     <Stack.Screen
                         name="SetPasswordScreen"
                         component={SetPasswordScreen} />
                     <Stack.Screen
                         name="ChangePasswordScreen"
-                        component={ChangePasswordScreen} />
+                        component={ChangePasswordFunction} />
                     <Stack.Screen name="SplashScreen" component={SplashScreen} />
                     {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
-                    <Stack.Screen name="VerifyOtpScreen" component={VerifyOtpScreen} />
+                    <Stack.Screen name="VerifyOtpScreen" component={VerifyOtpFunction} />
                     <Stack.Screen name="MyContractDetails" component={MyContractDetailsFunction} />
                     <Stack.Screen name="MyContractFilter" component={MyContractFilterFunction} />
                     <Stack.Screen name="SearchSelectSeller" component={SearchSelectSellerFunction} />

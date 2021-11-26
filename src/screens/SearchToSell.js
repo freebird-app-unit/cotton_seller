@@ -134,7 +134,7 @@ const CustomComponent = ({ ...props }) => {
                     <Text style={styles.dropdown3BtnTxt}>
                       {selectedItem
                         ? selectedItem.label
-                        : "Select " + props.label}
+                        : props.label}
                     </Text>
                   </View>
                 );

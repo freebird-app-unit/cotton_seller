@@ -508,7 +508,7 @@ export default class Dashboard extends Component {
                               color: theme.colors.textColor,
                               fontSize: 16,
                               textAlignVertical: 'center',
-                              fontFamily: 'Poppins-Medium',
+                              fontFamily: 'Poppins-Bold',
                             }}>
                             {dd.product_name}
                           </Text>

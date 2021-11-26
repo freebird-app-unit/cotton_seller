@@ -967,15 +967,8 @@ const RegisterScreen = ({ navigation, ref }) => {
     actionSheet.current.show();
   };
 
-  return (
-    <Background>
-      <View
-        style={{
-          flex: 1,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'transparent',
-        }}>
+  return (    
+      <View>
         <Spinner visible={loading} color="#085cab" />
         {/* <View style={{width: '100%', marginTop: 0, backgroundColor: '#F0F5F9'}}>
           <Appbar.Header style={{backgroundColor: 'transparent'}}>
@@ -998,7 +991,7 @@ const RegisterScreen = ({ navigation, ref }) => {
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="always"
           //contentContainerStyle={styles.contentContainer}
-          contentContainerStyle={{ flexGrow: 1, paddingBottom: 60 }}
+          contentContainerStyle={{alignSelf:'stretch'}}
           style={{ backgroundColor: 'white' }}>
           <View pointerEvents={loading ? 'none' : 'auto'}>
             <View style={{ height: 15 }} />
@@ -2132,7 +2125,7 @@ const RegisterScreen = ({ navigation, ref }) => {
           </View>
         )} */}
       </View>
-    </Background>
+    // </Background>
   );
 };
 
@@ -2213,12 +2206,12 @@ const styles = StyleSheet.create({
 
   dropdown3BtnStyle: {
     width: '90%',
-    height: 50,
+    height: 45,
     backgroundColor: '#FFF',
     paddingHorizontal: 0,
     borderWidth: 1,
     borderRadius: 4,
-    borderColor: '#444',
+    borderColor: 'lightgray',
     left: 19,
   },
   dropdown3BtnChildStyle: {

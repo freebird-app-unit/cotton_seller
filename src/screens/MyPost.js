@@ -484,7 +484,7 @@ export default class Dashboard extends Component {
     try {
       if (attributeArray.length > 0) {
         return attributeArray.map((el, i) => (
-          <View style={{ flex: 1 }}>
+          <View style={{ flex: 1,paddingEnd:0.5, borderColor: i < attributeArray.length-1 ? '#D1D1D1' : '#fff',borderRightWidth:0.5}}>
             <Text
               numberOfLines={1}
               ellipsizeMode="tail"
@@ -670,6 +670,7 @@ export default class Dashboard extends Component {
                       alignItems: "center",
                       color: "white",
                       borderRadius: 5,
+                      paddingTop:3,
                       backgroundColor: "#69BA53",
                       textAlignVertical: "center",
                       fontFamily: "Poppins-SemiBold",
@@ -824,7 +825,7 @@ export default class Dashboard extends Component {
                         textAlign: "center",
                         alignItems: "center",
                         color: "#69BA53",
-                        borderStyle: "dotted",
+                        borderStyle: 'dashed',
                         borderWidth: 1,
                         borderRadius: 5,
                         borderColor: "#69BA53",
@@ -845,7 +846,7 @@ export default class Dashboard extends Component {
                         textAlign: "center",
                         alignItems: "center",
                         color: "#BA5369",
-                        borderStyle: "dotted",
+                        borderStyle: 'dashed',
                         borderWidth: 1,
                         borderRadius: 5,
                         borderColor: "#BA5369",
@@ -1072,7 +1073,7 @@ export default class Dashboard extends Component {
                   mode="text"
                   uppercase={false}
                   color={this.state.btnActiveTextColor}
-                  labelStyle={{ fontSize: 14, fontFamily: "Poppins-Regular" }}
+                  labelStyle={{ fontSize: 14, fontFamily: "Poppins-SemiBold" }}
                 >
                   Active
                 </Button>
@@ -1085,7 +1086,7 @@ export default class Dashboard extends Component {
                   mode="text"
                   uppercase={false}
                   color={this.state.btnCompletedTextColor}
-                  labelStyle={{ fontSize: 14, fontFamily: "Poppins-Regular" }}
+                  labelStyle={{ fontSize: 14, fontFamily: "Poppins-SemiBold" }}
                 >
                   Completed
                 </Button>

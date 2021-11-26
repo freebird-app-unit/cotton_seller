@@ -27,6 +27,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { theme } from '../core/theme';
 import TextInput from '../components/TextInput';
 import SelectDropdown from 'react-native-select-dropdown';
+import style1 from './Styles'
 
 //svgs
 import Home from '../assets/Home';
@@ -299,7 +300,7 @@ class MyContractFilter extends Component {
                       flex: 1,
                       color: theme.colors.textColor,
                       fontSize: 12,
-
+                      fontFamily:'Poppins-Regular',
                       textAlignVertical: 'center'
                     }}>By time duration</Text>
 
@@ -317,7 +318,9 @@ class MyContractFilter extends Component {
                         flex: 1,
                         height: 35,
                         textAlign: 'center',
-                        textAlignVertical: 'center'
+                        textAlignVertical: 'center', paddingTop: 3,
+                        fontFamily: 'Poppins-Medium',
+
                       }}>Weekly</Text>
 
                     <Text numberOfLines={1}
@@ -332,7 +335,9 @@ class MyContractFilter extends Component {
                         height: 35,
                         textAlign: 'center',
                         textAlignVertical: 'center',
-                        marginLeft: 10, marginRight: 10
+                        marginLeft: 10, marginRight: 10, paddingTop: 3,
+                        fontFamily: 'Poppins-Medium',
+
                       }}>Monthly</Text>
 
                     <TouchableOpacity style={{
@@ -352,7 +357,9 @@ class MyContractFilter extends Component {
                           flex: 1,
                           height: 35,
                           textAlign: 'center',
-                          textAlignVertical: 'center'
+                          textAlignVertical: 'center',paddingTop:3,
+                          fontFamily: 'Poppins-Medium',
+
                         }}>Custom</Text></TouchableOpacity>
                   </View>
 
@@ -367,6 +374,7 @@ class MyContractFilter extends Component {
                       flex: 1,
                       color: theme.colors.textColor,
                       fontSize: 12,
+                      fontFamily: 'Poppins-Regular',
 
                       textAlignVertical: 'center'
                     }}>By Product</Text>
@@ -380,11 +388,11 @@ class MyContractFilter extends Component {
                         //this.addValues(selectedItem.label, el.label)
                       }}
 
-                      buttonStyle={styles.dropdown3BtnStyle}
+                      buttonStyle={style1.dropdown3BtnStyle}
                       renderCustomizedButtonChild={(selectedItem, index) => {
                         return (
-                          <View style={styles.dropdown3BtnChildStyle}>
-                            <Text style={styles.dropdown3BtnTxt}>
+                          <View style={style1.dropdown3BtnChildStyle}>
+                            <Text style={style1.dropdown3BtnTxt}>
                               {selectedItem ? selectedItem.label : this.state.dropdownPlaceholder}
                             </Text>
                           </View>
@@ -397,13 +405,13 @@ class MyContractFilter extends Component {
                       }}
                       dropdownIconPosition={"right"}
 
-                      dropdownStyle={styles.dropdown3DropdownStyle}
-                      rowStyle={styles.dropdown3RowStyle}
+                      dropdownStyle={style1.dropdown3DropdownStyle}
+                      rowStyle={style1.dropdown3RowStyle}
                       renderCustomizedRowChild={(item, index) => {
                         return (
-                          <View style={styles.dropdown3RowChildStyle}>
+                          <View style={style1.dropdown3RowChildStyle}>
 
-                            <Text style={styles.dropdown3RowTxt}>{item.label}</Text>
+                            <Text style={style1.dropdown3RowTxt}>{item.label}</Text>
                           </View>
                         );
                       }}
@@ -698,12 +706,12 @@ const styles = StyleSheet.create({
   },
   dropdown3BtnStyle: {
     width: "100%",
-    height: 50,
+    height: 45,
     backgroundColor: "#FFF",
     paddingHorizontal: 0,
     borderWidth: 1,
     borderRadius: 4,
-    borderColor: "#444",
+    borderColor: "lightgray",
     left: 0
   },
   dropdown3BtnTxt: {
@@ -711,7 +719,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "normal",
     fontSize: 16,
-    marginHorizontal: 0,
+    marginHorizontal: 10,
   },
   dealBtnEnable: {
     flex: 1,

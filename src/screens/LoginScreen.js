@@ -468,7 +468,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: '40%',justifyContent:'center'
+    height: '46%',justifyContent:'center'
   },
 });
 

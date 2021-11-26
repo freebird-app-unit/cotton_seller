@@ -121,18 +121,18 @@ const App = ({ navigation }) => {
             fontSize: hp(2.1),
             color: theme.colors.text,
             fontWeight: 'bold',
-            fontFamily: 'Poppins - Bold',
+            fontFamily: 'Poppins-Bold',
             width: wp(58)
 
         },
         balance: {
-            fontSize: hp(3), fontFamily: 'Poppins - Bold',
+            fontSize: hp(3), fontFamily: 'Poppins-Bold',
             fontWeight: 'bold'
         },
         time: {
             fontSize: hp(1.5),
             opacity: 0.5,
-            fontFamily: 'Poppins - Regular'
+            fontFamily: 'Poppins-Regular'
         },
         sectionHeader: {
             marginVertical: hp(1.5),
@@ -184,7 +184,7 @@ const App = ({ navigation }) => {
                             <Ionicons name={item.type != 'withdraw' ? 'add-outline' : 'remove-outline'} size={hp(1.7)}
                                 color={item.type != 'withdraw' ? theme.colors.primary : 'red'} style={{ marginRight: wp(2) }} />
                             <FontAwesome name={'rupee'} size={hp(2)} color={item.type != 'withdraw' ? theme.colors.primary : 'red'} style={{ marginRight: wp(1) }} />
-                            <Text style={{
+                            <Text style={{paddingBottom:hp(0.5),
                                 color: item.type != 'withdraw' ? theme.colors.primary : 'red', fontSize: hp(2.1), fontFamily: 'Poppins - Bold',
                                 fontWeight: 'bold'
                             }}>{item.amount}</Text>
@@ -214,22 +214,24 @@ const App = ({ navigation }) => {
                             fontSize: hp(2.7),
                             color: theme.colors.text,
                             opacity: 0.5,
-                            fontWeight: 'bold',
+                            fontFamily: 'Poppins-SemiBold'
+
                             // paddingVertical: 12,
                         }}>Available Balance</Text>
-                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                            <FontAwesome name={'rupee'} size={hp(3)} color='#333' style={{ paddingTop: hp(0.5), marginRight: wp(1) }} />
+                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+                            <FontAwesome name={'rupee'} size={hp(3)} color='#333' style={{ paddingBottom: hp(0.5), marginRight: wp(1) }} />
                             <Text style={{
                                 fontSize: hp(3.5),
                                 color: theme.colors.text,
-                                fontWeight: 'bold',
+                                fontFamily:'Poppins-SemiBold'
                             }}>{availabeBalance}</Text></View>
                         <TouchableOpacity onPress={() => navigation.navigate('Plan', availabeBalance)}>
                             <View style={{
-                                height: hp(5), paddingHorizontal: wp(2), paddingVertical: hp(1), borderRadius: 5, justifyContent: 'center',
+                                height: hp(5),paddingVertical: hp(1), 
+                                borderRadius: 5, justifyContent: 'center',
                                 alignItems: 'center', borderWidth: wp(0.3), borderColor: theme.colors.primary
                             }}>
-                                <Text style={{ color: theme.colors.primary }}>Show Plans</Text>
+                                <Text style={{ fontSize: hp(2.1),color: theme.colors.primary, fontFamily: 'Poppins-Regular' }}>Show Plans</Text>
                             </View>
                         </TouchableOpacity>
                     </View>
@@ -248,14 +250,15 @@ const App = ({ navigation }) => {
                                     <View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}><Text style={{
                                         fontSize: hp(2.8),
                                         color: theme.colors.text,
-                                        fontWeight: 'bold',
+                                        fontFamily:'Poppins-Bold'
                                     }}>
                                         30
                                     </Text>
                                         <Text style={{
                                             fontSize: hp(1.7),
-                                            color: theme.colors.text,
-                                            opacity: 0.5,
+                                            color:'#afafaf',marginTop:hp(-1),
+                                            fontFamily: 'Poppins-Regular'
+
                                         }}>
                                             Days Left
                                         </Text>
@@ -274,9 +277,9 @@ const App = ({ navigation }) => {
                     <Text style={{
                         fontSize: hp(2.5),
                         color: theme.colors.text,
-                        fontWeight: 'bold',
+                        fontFamily: 'Poppins-SemiBold'
                         // paddingVertical: 12,
-                    }}>Transaction</Text>
+                    }}>Transactions</Text>
                     <Ionicons name='options-outline' size={hp(3)} color='#333' />
                 </View>
 

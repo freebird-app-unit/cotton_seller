@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import colors from '../common/colors';
 import {GenericStyles} from '../styles/GenericStyles';
+import { theme } from '../core/theme';
+import { heightPercentageToDP } from '../components/responsive-ratio';
 
 const CustomTextInput = function(props) {
   const {
@@ -14,9 +16,10 @@ const CustomTextInput = function(props) {
     refCallback,
     ...remainingProps
   } = props;
-
+  // ref = { refCallback }
+  console.log('refCallback', refCallback)
   return (
-    <View style={[styles.containerStyle, containerStyle]}>
+    <View style={[styles.containerStyle, containerStyle,style]}>
       {LeftComponent}
       <TextInput
         {...remainingProps}
@@ -31,13 +34,16 @@ const CustomTextInput = function(props) {
 const styles = StyleSheet.create({
   containerStyle: {
     flexDirection: 'row',
-    borderColor: colors.GREEN,
+    // borderColor: colors.GREEN,
     borderWidth: 1,
     borderRadius: 4,
     padding: 8,
   },
   textInputStyle: {
     padding: 0,
+    color:theme.colors.blackBG,
+    fontSize:heightPercentageToDP(2.1),
+    fontFamily:'Poppins-Bold'
   },
 });
 

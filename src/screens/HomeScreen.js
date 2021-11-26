@@ -162,6 +162,8 @@ export default class Dashboard extends Component {
         textAlign: 'center',
         alignItems: 'center',
         textAlignVertical: 'center',
+        paddingTop: 5,
+
         color: 'white',
         fontFamily: 'Poppins-Regular',
       },
@@ -173,6 +175,8 @@ export default class Dashboard extends Component {
         textAlignVertical: 'center',
         color: theme.colors.textColor,
         fontFamily: 'Poppins-Regular',
+        paddingTop: 5
+
       },
       btnActiveContainer: {
         flex: 1,
@@ -496,6 +500,7 @@ export default class Dashboard extends Component {
                                 width: '100%',
                                 height: '100%',
                                 fontSize: 14,
+                                // flex:1,
                                 textAlign: 'center',
                                 alignItems: 'center',
                                 color: 'white',
@@ -503,6 +508,7 @@ export default class Dashboard extends Component {
                                 backgroundColor: '#69BA53',
                                 textAlignVertical: 'center',
                                 fontFamily: 'Poppins-Regular',
+                                paddingTop:5
                               }}>
                               Respond
                             </Text>
@@ -653,7 +659,7 @@ export default class Dashboard extends Component {
                             flex: 1,
                             color: theme.colors.textColor,
                             fontSize: 12,
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             textAlignVertical: 'center',
                             fontFamily: 'Poppins-SemiBold',
                           }}>
@@ -1136,6 +1142,7 @@ export default class Dashboard extends Component {
                       alignItems: 'center',
                       color: 'white',
                       borderRadius: 5,
+                      paddingTop: 5,
                       backgroundColor: '#69BA53',
                       textAlignVertical: 'center',
                       fontFamily: 'Poppins-Regular',

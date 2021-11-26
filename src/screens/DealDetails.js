@@ -612,7 +612,7 @@ class DealDetails extends Component {
               textAlign: 'center',
               textAlignVertical: 'center',
               textTransform: 'uppercase',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-SemiBold',
             }}>
             {item.attribute}
           </Text>
@@ -627,7 +627,7 @@ class DealDetails extends Component {
               fontWeight: 'bold',
               textAlign: 'center',
               textAlignVertical: 'center',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-SemiBold',
             }}>
             {item.attribute_value}
           </Text>
@@ -902,7 +902,7 @@ console.log("transmitArray: "+JSON.stringify(this.state.transmitArray))
                   </View>
 
                   <View style={{flex: 1, width: '100%', height: 60}}>
-                    <Text style={{width: '35%', color: theme.colors.textColor}}>
+                    <Text style={{ width: '35%', color: theme.colors.textColor, fontFamily: 'Poppins-Medium',}}>
                       Price
                     </Text>
 
@@ -949,6 +949,7 @@ console.log("transmitArray: "+JSON.stringify(this.state.transmitArray))
                         color: theme.colors.textColor,
                         marginBottom: 5,
                         marginTop: 10,
+                        fontFamily: 'Poppins-Medium',
                       }}>
                       Payment Condition
                     </Text>
@@ -1001,6 +1002,7 @@ console.log("transmitArray: "+JSON.stringify(this.state.transmitArray))
                         color: theme.colors.textColor,
                         marginBottom: 5,
                         marginTop: 10,
+                        fontFamily: 'Poppins-Medium',
                       }}>
                       Header
                     </Text>
@@ -1178,6 +1180,7 @@ console.log("transmitArray: "+JSON.stringify(this.state.transmitArray))
                         color: theme.colors.textColor,
                         marginBottom: 5,
                         marginTop: 10,
+                        fontFamily: 'Poppins-Medium',
                       }}>
                       Broker
                     </Text>
@@ -1531,7 +1534,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 0,
     borderWidth: 1,
     borderRadius: 4,
-    borderColor: '#444',
+    borderColor: 'lightgray',
     left: 0,
   },
   dropdown3BtnChildStyle: {
@@ -1580,9 +1583,10 @@ const styles = StyleSheet.create({
   postInput: {
     fontSize: 15,
     width: '100%',
-    fontFamily: 'Outrun future',
+    // fontFamily: 'Outrun future',
     backgroundColor: theme.colors.surface,
     textAlignVertical: 'top',
+    fontFamily:'Poppins-Regular'
   },
 });
 

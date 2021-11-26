@@ -18,8 +18,9 @@ const CustomText = function(props) {
 const styles = StyleSheet.create({
   style: {
     color: colors.SILVER,
-    fontSize:18,
-    fontFamily:'popins',
+    fontSize:20,
+    opacity:.7,
+    fontFamily:'Poppins-Regular',
     textAlign: 'center'
   }
 });

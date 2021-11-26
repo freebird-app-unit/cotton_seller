@@ -13,6 +13,10 @@ import {numberValidator} from '../helpers/numberValidator';
 import Spinner from 'react-native-loading-spinner-overlay';
 import {mobileValidator} from '../helpers/mobileValidator';
 import AsyncStorage from '@react-native-community/async-storage';
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from '../components/responsive-ratio';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
+
 import axios from 'axios';
 import {
   StyleSheet,
@@ -111,11 +115,15 @@ const ForgotPasswordScreen = ({ navigation }) => {
   return (
   
     <View style={{flex: 1,backgroundColor: '#F0F5F9'}}>
-    <View style={{width: '100%', marginTop: 0}}>
+      {/* <View style={{ width: '100%', height: hp(9), marginTop: hp(4)}}>
 
         <Appbar.Header style={{backgroundColor: 'transparent'}} >
             
-            <Appbar.BackAction color='black' onPress={() => navigation.goBack()} />
+          <Appbar.Action
+            icon={() => <Ionicons name='chevron-back-outline' size={hp(3)} color={'#333'} />}
+
+            onPress={() => navigation.goBack()}
+          />
             <Appbar.Content
               style={{alignItems: 'center'}}
               color='black'
@@ -126,9 +134,9 @@ const ForgotPasswordScreen = ({ navigation }) => {
           </Appbar.Header>
 
 
-        </View>
+        </View> */}
 
-<View style={{flex: 1, marginTop:'10%',width:'100%',borderTopLeftRadius:20,borderTopRightRadius:20,backgroundColor:'white'}}>
+<View style={{flex: 1,width:'100%',borderTopLeftRadius:20,borderTopRightRadius:20,backgroundColor:'white'}}>
     <View style={{justifyContent:'center',width:'100%',alignItems:'center',marginTop:'10%',marginBottom:50}}>
       <Spinner
           //visibility of Overlay Loading Spinner

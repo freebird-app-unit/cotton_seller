@@ -702,7 +702,7 @@ export default class PostToSell extends Component {
                 <TextInput
                   style={{
                     width: '100%',
-                    height: 46,
+                    height: 40,
                     fontWeight: 'bold',
                     backgroundColor: '#fff',
                   }}
