@@ -134,7 +134,7 @@ const RegisterPlan = ({ navigation }) => {
                 console.log('IdSelected.price', IdSelected.price)
                 let op = {
                     name: 'Seller ' + await EncryptedStorage.getItem('user_id'),
-                    image: require('../assets/ic_launcher.png'),
+                    //image: require('../assets/ic_launcher.png'),
                     description: `Payment of ${IdSelected.name} with ${IdSelected.validity} days validity`,
                     key: RazorpayApiKey,
                     currency: 'INR',
