@@ -322,7 +322,8 @@ console.log("Login data: " + JSON.stringify(data))
       })
       .catch(function (error) {
         setLoading(false);
-        alert(defaultMessages.en.serverNotRespondingMsg);
+        //alert(defaultMessages.en.serverNotRespondingMsg);
+        alert(error)
       });
   };
 
