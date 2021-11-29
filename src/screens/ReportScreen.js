@@ -45,7 +45,9 @@ const TouchableFunction = ({...props}) => {
                     fontFamily:'Poppins-Regular',
                     height: 35,
                     textAlign: 'center',
-                    textAlignVertical: 'center'
+                    textAlignVertical: 'center',
+                    paddingTop: 3
+
                 }}>{props.title}</Text></TouchableOpacity>
     )
     
@@ -573,7 +575,7 @@ function Contract({navigation}) {
                     alignItems: 'center',
                 }}>
                 <NoRecordsFound_Icon />
-                <Text>Sorry, no records available</Text></View>
+                <Text style={{fontFamily:'Poppins-Regular',fontSize:14}}>Sorry, no records available</Text></View>
         )
     }
 
@@ -942,7 +944,7 @@ function Post({navigation}) {
                     alignItems: 'center',
                 }}>
                 <NoRecordsFound_Icon />
-                <Text>Sorry, no records available</Text></View>
+                <Text style={{ fontFamily: 'Poppins-Regular', fontSize: 14 }}>Sorry, no records available</Text></View>
         )
     }
 

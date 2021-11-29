@@ -216,7 +216,7 @@ const ChangePasswordScreen = ({ navigation }) => {
           mode="contained"
           onPress={onSetPasswordClick}
           style={{ marginTop: 25 }}
-          texting={{fontFamily:'Popins-Bold'}}
+          texting={{ fontFamily: 'Poppins-Bold', paddingTop: 3 }}
         >
           Set Password
         </Button>

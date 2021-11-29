@@ -571,6 +571,8 @@ export default class Dashboard extends Component {
                               backgroundColor: '#69BA53',
                               textAlignVertical: 'center',
                               fontFamily: 'Poppins-Regular',
+                              paddingTop: 5
+
                             }}>
                             Respond
                           </Text>

@@ -258,6 +258,10 @@ class MyContractFilter extends Component {
   onClickApply = () => {
 
   }
+  onSelectPost = data => {
+    console.log('data>>>bhai', data)
+    // setDate(data.obj)    
+  };
   changeProduct = selectedItem => {
     try {
       this.setState({ spinner: true, selectedProductID: selectedItem.value, selectedProductName: selectedItem.label });
@@ -345,7 +349,7 @@ class MyContractFilter extends Component {
                       borderRadius: 5,
                       flex: 1,
                     }}
-                      onPress={() => this.props.navigation.navigate('Custom')}>
+                  onPress={() => this.props.navigation.navigate('Custom', { onSelect: this.onSelectPost, comingFrom: 'Post' })}>
                       <Text numberOfLines={1}
                         ellipsizeMode='tail'
                         style={{

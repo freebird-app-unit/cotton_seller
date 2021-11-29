@@ -613,6 +613,7 @@ export default class Dashboard extends Component {
                                 borderRadius: 5,
                                 backgroundColor: '#69BA53',
                                 textAlignVertical: 'center',
+                                fontFamily:'Poppins-Regular'
                               }}>
                               Download
                             </Text>
@@ -638,6 +639,8 @@ export default class Dashboard extends Component {
                                 borderRadius: 5,
                                 backgroundColor: (dd.is_seller_otp_verify == 1) ? 'rgba(105, 186, 83, 0.5)' :  '#69BA53',
                                 textAlignVertical: 'center',
+                                fontFamily: 'Poppins-Regular'
+
                               }}>
                               Pending Verification
                             </Text>

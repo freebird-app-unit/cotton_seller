@@ -20,7 +20,7 @@
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
         <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/src/main/res;file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/src/release/res;file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/res/rs/release;file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/res/resValues/release" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/src/androidTest/res;file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/src/androidTestRelease/res" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
         <option name="PROJECT_TYPE" value="1" />
       </configuration>
@@ -33,7 +33,9 @@
     <content url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android">
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/ap_generated_sources/release/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/ap_generated_sources/release/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/res/resValues/release" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/react-native-otp-verify/android/build" />

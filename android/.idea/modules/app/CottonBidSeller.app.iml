@@ -19,8 +19,8 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/release/res;file://$MODULE_DIR$/../../../app/build/generated/res/react/release;file://$MODULE_DIR$/../../../app/build/generated/res/google-services/release;file://$MODULE_DIR$/../../../app/build/generated/res/rs/release;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/release" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestRelease/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/release/res;file://$MODULE_DIR$/../../../app/build/generated/res/react/release;file://$MODULE_DIR$/../../../app/build/generated/res/rs/release;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/release" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -37,6 +37,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/react/release" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/release" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/release/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/release/out" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
@@ -136,11 +139,13 @@
     <orderEntry type="module" module-name="CottonBidSeller.react-native-image-picker" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-otp-verify" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-push-notification" />
+    <orderEntry type="module" module-name="CottonBidSeller.react-native-razorpay" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-safe-area-context" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-screens" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-simple-crypto" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-svg" />
     <orderEntry type="module" module-name="CottonBidSeller.react-native-vector-icons" />
+    <orderEntry type="module" module-name="CottonBidSeller.react-native-webview" />
     <orderEntry type="module" module-name="CottonBidSeller.rn-fetch-blob" />
   </component>
 </module>

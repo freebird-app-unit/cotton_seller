@@ -4,10 +4,6 @@
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-xhdpi/node_modules_reactnativecalendars_src_img_up.png"
     },
     {
-        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-xhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
     },
@@ -46,6 +42,10 @@
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_antdesign.json.flat",
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_antdesign.json"
+    },
+    {
+        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.jpg.flat",
+        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-hdpi/ic_launcher.jpg"
     },
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/raw_node_modules_mdndata_css_properties.json.flat",
@@ -124,16 +124,12 @@
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/raw/node_modules_csstree_data_patch.json"
     },
     {
-        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.jpg.flat",
+        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.jpg"
     },
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowdown.png.flat",
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowdown.png"
-    },
-    {
-        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
@@ -188,10 +184,6 @@
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-hdpi/node_modules_reactnavigation_stack_src_views_assets_backicon.png"
     },
     {
-        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-xxxhdpi/node_modules_reactnativecalendars_src_img_up.png"
     },
@@ -216,8 +208,12 @@
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-mdpi/src_images_search_icon.png"
     },
     {
-        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xhdpi/ic_launcher.jpg"
+    },
+    {
+        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.jpg.flat",
+        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.jpg"
     },
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
@@ -254,6 +250,10 @@
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
         "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/drawable-mdpi/node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.jpg.flat",
+        "source": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/res/mipmap-mdpi/ic_launcher.jpg"
     },
     {
         "merged": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_light_icons_tick.png.flat",

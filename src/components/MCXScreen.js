@@ -57,6 +57,7 @@ const MCXScreen = ({ navigation }) => {
 
                 // global.Notification = content.data.notificationSeller
                 let d = mcxData.filter(item => content.data.Mcx.parameters.map(it => {
+                    console.log('it>>>',it)
                     if (it.name.startsWith(item.name))
                         {
                             item.name = it.name,
@@ -102,9 +103,23 @@ const MCXScreen = ({ navigation }) => {
 
     const [loading, setLoader] = useState(false)
 
-    const [mcxData, setmcxData] = useState([{ name: `COTTON${year}${b[month]}FUT`,value:'--'},
-        { name: `KAPAS${year}${b[month]}FUT`, value: '--' }, {
-            name: `USDINR${year}${b[month]}FUT`,value:'--'}])
+    const [mcxData, setmcxData] = useState([{ name: 'COTTON21DECFUT', value: '--' }, { name :'COTTON22APRFUT', value: '--'},
+        {
+            name: 'COTTON22FEBFUT', value: '--'
+        }, {
+            name: 'COTTON22JANFUT', value: '--'},
+        {
+            name: 'USDINR21DECFUT', value: '--'
+        }, {
+            name: 'USDINR22JANFUT', value: '--'
+        }, {
+            name: 'USDINR22FEBFUT', value: '--'},
+        { name: 'KAPAS22APRFUT', value: '--' }, { name: 'KAPAS22FEBFUT', value: '--'}])
+
+    // const [mcxData, setmcxData] = useState(
+    //     [{ name: `COTTON${year}${b[month]}FUT`,value:'--'},
+    //     { name: `KAPAS${year}${b[month]}FUT`, value: '--' }, {
+    //         name: `USDINR${year}${b[month]}FUT`,value:'--'}])
     const ListTransaction = () => {
         try {
             setLoader(true)
