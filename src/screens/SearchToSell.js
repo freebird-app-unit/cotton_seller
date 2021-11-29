@@ -125,6 +125,8 @@ const CustomComponent = ({ ...props }) => {
         ><View style={{ flex: 1, marginRight: 3 }}>
             <SelectDropdown
               data={props.fromValue}
+              ref={props.fromref}
+
               onSelect={props.onSelectFrom}
               buttonStyle={styles.dropdown3BtnStyle}
               renderCustomizedButtonChild={(selectedItem, index) => {
@@ -166,6 +168,8 @@ const CustomComponent = ({ ...props }) => {
           <View style={{ flex: 1, marginRight: 3 }}>
             <SelectDropdown
               data={props.toValue}
+              ref={props.toref}
+
               onSelect={props.onSelectTo}
               defaultValue={props.to}
               buttonStyle={styles.dropdown3BtnStyle}
@@ -358,6 +362,19 @@ export default class Dashboard extends Component {
       btnCompletedTextColor: 'gray',
     };
     this.fromselectRef = {};
+    this.lengthRef = null
+
+    this.MicronnairefromRef = null
+    this.MicronnairetoRef = null
+
+    this.RDfromRef = null
+    this.RDtoRef = null
+
+    this.TrashfromRef = null
+    this.TrashtoRef = null
+
+    this.MoisturefromRef = null
+    this.MoisturetoRef = null
     // this.setValue = this.setValue.bind(this);
     // this.setOpenState = this.setOpenState.bind(this);
     // this.setItemsState = this.setItemsState.bind(this);
@@ -757,8 +774,23 @@ export default class Dashboard extends Component {
 
   changeProduct = selectedItem => {
     try {
+      this.lengthRef.reset()
+
+      this.MicronnairefromRef.reset()
+      this.MicronnairetoRef.reset()
+
+      this.RDfromRef.reset()
+      this.RDtoRef.reset()
+
+      this.TrashfromRef.reset()
+      this.TrashtoRef.reset()
+
+      this.MoisturefromRef.reset()
+      this.MoisturetoRef.reset()
+
       this.setState({
         spinner: true,
+        displayBalesCount: 100,
         selectedProductID: selectedItem.value,
         selectedProductName: selectedItem.label,
       });
@@ -949,6 +981,8 @@ export default class Dashboard extends Component {
         }}
       ><SelectDropdown
           data={this.state.lengthData.value}
+          ref={(ref) => { this.lengthRef = ref; return true; }}
+
           onSelect={(selectedItem, j) => {
             console.log(selectedItem);
             this.addValuesSearchBuyer(
@@ -1084,6 +1118,8 @@ export default class Dashboard extends Component {
             {this.state.lengthData.hasOwnProperty('value') && this.crateProductAttributeUI()}
             {this.state.Micronnaire.hasOwnProperty('value') && <CustomComponent to={this.state.selectedMicronnaire.to}
               from={this.state.selectedMicronnaire.from} label={this.state.Micronnaire.label}
+              fromref={(ref) => { this.MicronnairefromRef = ref; return true; }}
+              toref={(ref) => { this.MicronnairetoRef = ref; return true; }}
               fromValue={this.state.Micronnaire.value}
               toValue={this.state.Micronnaire.value.filter(item => item.label > this.state.selectedMicronnaire.from)}
               onSelectFrom={(selectedItem, j) => {
@@ -1107,6 +1143,8 @@ export default class Dashboard extends Component {
             />}
             {this.state.RD.hasOwnProperty('value') && <CustomComponent to={this.state.selectedRD.to}
               from={this.state.selectedRD.from} label={this.state.RD.label}
+              fromref={(ref) => { this.RDfromRef = ref; return true; }}
+              toref={(ref) => { this.RDtoRef = ref; return true; }}
               fromValue={this.state.RD.value}
               toValue={this.state.RD.value.filter(item => item.label > this.state.selectedRD.from)}
               onSelectFrom={(selectedItem, j) => {
@@ -1131,6 +1169,8 @@ export default class Dashboard extends Component {
             {this.state.Trash.hasOwnProperty('value') && <CustomComponent to={this.state.selectedTrash.to}
               from={this.state.selectedTrash.from} label={this.state.Trash.label}
               fromValue={this.state.Trash.value}
+              fromref={(ref) => { this.TrashfromRef = ref; return true; }}
+              toref={(ref) => { this.TrashtoRef = ref; return true; }}
               toValue={this.state.Trash.value.filter(item => item.label > this.state.selectedTrash.from)}
               onSelectFrom={(selectedItem, j) => {
                 console.log(selectedItem);
@@ -1154,6 +1194,8 @@ export default class Dashboard extends Component {
             {this.state.Moisture.hasOwnProperty('value') && <CustomComponent to={this.state.selectedMoisture.to}
               from={this.state.selectedMoisture.from} label={this.state.Moisture.label}
               fromValue={this.state.Moisture.value}
+              fromref={(ref) => { this.MoisturefromRef = ref; return true; }}
+              toref={(ref) => { this.MoisturetoRef = ref; return true; }}
               toValue={this.state.Moisture.value.filter(item => +item.label > +this.state.selectedMoisture.from)}
               onSelectFrom={(selectedItem, j) => {
                 console.log(selectedItem);

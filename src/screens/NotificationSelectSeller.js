@@ -242,7 +242,7 @@ class NotificationSelectSeller extends Component {
           spinner: false,
         });
         //this.getDistrictList(stateArray[0].id)
-        self.getSellerList("1", stateID, self.state.districtId)
+        self.getSellerList("1", stateID, self.state.districtId,'')
       })
       .catch(function (error) {
         console.log('error',error)
@@ -374,7 +374,7 @@ console.log("Request Data: " + JSON.stringify(data))
     })
       .then(function (response) {
         let districtListData = response.data.data;
-        let districtArray = [];
+        let districtArray = []
         console.log("Search seller response: " + JSON.stringify(response.data.data));
         for (let i = 0; i < districtListData.length; i++) {
           districtArray.push({ label: districtListData[i].name, value: districtListData[i].buyer_id, city: districtListData[i].city, isSelected: false })
@@ -704,7 +704,7 @@ console.log("Request Data: " + JSON.stringify(data))
 
                     setTimeout(() => {
                       this.setState({ spinner: false })
-                      this.StationRef.current.openDropdown()
+                      // this.StationRef.current.openDropdown()
                     }, 200);
 
                     this.getCityName(selectedItem.value)

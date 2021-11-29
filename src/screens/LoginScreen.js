@@ -261,7 +261,7 @@ const LoginScreen = ({route, navigation}) => {
       await EncryptedStorage.setItem('user_id', id.toString());
       let dataPlan = JSON.parse(await EncryptedStorage.getItem('Plan_data'));
 
-      console.log('dataPlan>>>>>>.',dataPlan)
+      console.log('dataPlan>>>>>>.',userPlan, dataPlan, dataPlan.user_id == id)
 
       setLoading(false);
       // navigation.navigate('HomeScreen')

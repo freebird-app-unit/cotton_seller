@@ -228,7 +228,7 @@ export default class PostToSell extends Component {
       btnActiveTextColor: theme.colors.primary,
       btnCompletedTextColor: 'gray',
     };
-
+    this.itemsRef = []
     // this.setValue = this.setValue.bind(this);
     // this.setOpenState = this.setOpenState.bind(this);
     // this.setItemsState = this.setItemsState.bind(this);
@@ -560,6 +560,12 @@ export default class PostToSell extends Component {
                 data={this.state.productItem}
                 onSelect={(selectedItem, i) => {
                   console.log(selectedItem);
+                  this.itemsRef.map(item => item.reset())
+
+                  this.setState({
+                    balesPrice: '',
+                    displayBalesCount: 100
+                  })
                   this.changeProduct(selectedItem);
                   //this.addValues(selectedItem.label, el.label)
                 }}
@@ -624,6 +630,8 @@ export default class PostToSell extends Component {
                     }}>
                     <SelectDropdown
                       data={el.value}
+                      ref={(ref) => { this.itemsRef[i] = ref; return true; }}
+
                       onSelect={(selectedItem, j) => {
                         console.log(selectedItem);
                         //this.addValues(selectedItem.label, el.label)
