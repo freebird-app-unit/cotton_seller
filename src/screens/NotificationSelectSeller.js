@@ -552,7 +552,7 @@ console.log("Request Data: " + JSON.stringify(data))
               textAlignVertical: 'center'
             }}>{item.label}</Text>
 
-          <Text numberOfLines={1}
+          {item.city != '' && (<Text numberOfLines={1}
             ellipsizeMode='tail'
             style={{
               flex: 1,
@@ -562,7 +562,7 @@ console.log("Request Data: " + JSON.stringify(data))
               textAlignVertical: 'center',
               fontFamily: 'Poppins-Regular'
               , opacity: .5
-            }}>{item.city}</Text>
+            }}>{item.city}</Text>)}
 
         </View>
 
@@ -703,8 +703,8 @@ console.log("Request Data: " + JSON.stringify(data))
                     this.setState({ spinner: true })
 
                     setTimeout(() => {
-                      this.setState({ spinner: false })
-                      // this.StationRef.current.openDropdown()
+                      this.setState({ spinner: false, districtId: selectedItem.value})
+                      this.StationRef.current.openDropdown()
                     }, 200);
 
                     this.getCityName(selectedItem.value)
