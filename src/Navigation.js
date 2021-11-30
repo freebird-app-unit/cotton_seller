@@ -330,7 +330,7 @@ const PostToSellFunction = ({ navigation }) => <View style={{ flex: 1, backgroun
 </View>
 
 const SearchToSellFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
-    <AppHeading title={'Search to sell'} menu leftPress={() => navigation.navigate('MenuScreen')} />
+    <AppHeading title={'Search Buyer'} menu leftPress={() => navigation.navigate('MenuScreen')} />
     <View
         style={styles.flex}>
         <SearchToSell navigation={navigation} route={route} />

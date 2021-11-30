@@ -136,7 +136,7 @@ const CustomComponent = ({ ...props }) => {
                     <Text style={styles.dropdown3BtnTxt}>
                       {selectedItem
                         ? selectedItem.label
-                        : props.label}
+                        : ''}
                     </Text>
                   </View>
                 );
@@ -180,7 +180,7 @@ const CustomComponent = ({ ...props }) => {
                     <Text style={styles.dropdown3BtnTxt}>
                       {selectedItem
                         ? (selectedItem.label > props.from ? selectedItem.label : 'Select ' + props.label)
-                        : "Select " + props.label}
+                        : ''}
                     </Text>
                   </View>
                 );
@@ -999,7 +999,7 @@ export default class Dashboard extends Component {
                 <Text style={styles.dropdown3BtnTxt}>
                   {selectedItem
                     ? selectedItem.label
-                    : "Select " + this.state.lengthData.label}
+                    : ''}
                 </Text>
               </View>
             );

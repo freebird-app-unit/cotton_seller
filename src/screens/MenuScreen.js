@@ -324,7 +324,7 @@ export default class Dashboard extends Component {
                             mode="text"
                             uppercase={false}
                             color={theme.colors.blackBG}
-                            labelStyle={{ fontWeight: 'normal' }}>
+                            labelStyle={{ fontFamily:'Poppins-SemiBold' }}>
                             Logout
                     </Button>
                     </View>

@@ -649,7 +649,7 @@ export default class PostToSell extends Component {
                             <Text style={styles.dropdown3BtnTxt}>
                               {selectedItem
                                 ? selectedItem.label
-                                : 'Select ' + el.label}
+                                : ''}
                             </Text>
                           </View>
                         );

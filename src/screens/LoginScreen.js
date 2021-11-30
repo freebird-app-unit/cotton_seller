@@ -107,7 +107,8 @@ const LoginScreen = ({route, navigation}) => {
         },
       })
         .then(function (response) {
-          
+          setLoading(false);
+
           console.log('response :', response.data);
 
           if (response.data.status == 200) {
@@ -248,6 +249,7 @@ const LoginScreen = ({route, navigation}) => {
   
   async function storeUserID(id, mobile, password, apiToken, userPlan, isLogout) {
     try {
+      // alert('hellow')
       let data = {
         user_id: id.toString(),
         user_mobile: mobile.toString(),
@@ -261,7 +263,7 @@ const LoginScreen = ({route, navigation}) => {
       await EncryptedStorage.setItem('user_id', id.toString());
       let dataPlan = JSON.parse(await EncryptedStorage.getItem('Plan_data'));
 
-      console.log('dataPlan>>>>>>.',userPlan, dataPlan, dataPlan.user_id == id)
+      console.log('dataPlan>>>>>>.',userPlan, dataPlan,)
 
       setLoading(false);
       // navigation.navigate('HomeScreen')
@@ -283,6 +285,8 @@ const LoginScreen = ({route, navigation}) => {
 
       // });
     } catch (error) {
+      console.log("error",JSON.stringify(error))
+      alert('error' + JSON.stringify(error))
       // There was an error on the native side
     }
   }
