@@ -27,7 +27,7 @@
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/app/cotton_seller.keystore" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/app/cotton_seller_latest.keystore" />
     <option name="KEY_ALIAS" value="Cotton Seller" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
