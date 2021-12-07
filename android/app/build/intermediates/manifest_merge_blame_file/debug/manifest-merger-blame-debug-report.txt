@@ -1,380 +1,380 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.cottonbidseller"
-4    android:versionCode="3"
-5    android:versionName="1.2" >
+4    android:versionCode="4"
+5    android:versionName="1.3" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
 9        android:targetSdkVersion="30" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->D:\Github_Projects\cotton_seller\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->D:\Github_Projects\cotton_seller\android\app\src\debug\AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:4:22-64
+12-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.CAMERA" />
-13-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:5:2-7:7
-13-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:6:7-47
+13-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:5:2-7:7
+13-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:6:7-47
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:8:5-10:7
-14-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:9:7-63
+14-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:8:5-10:7
+14-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:9:7-63
 15    <uses-permission android:name="android.permission.VIBRATE" />
-15-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:11:5-66
-15-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:11:22-63
+15-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:11:5-66
+15-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:11:22-63
 16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:12:5-80
-16-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:12:22-78
+16-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:12:5-80
+16-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:12:22-78
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->[com.facebook.flipper:flipper:0.75.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/5df2c3954574f8fbe60d78d30679908c/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
-17-->[com.facebook.flipper:flipper:0.75.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/5df2c3954574f8fbe60d78d30679908c/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
+17-->[com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:16:5-76
+17-->[com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:16:22-73
 18    <uses-permission android:name="android.permission.WAKE_LOCK" />
-18-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
-18-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+18-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
+18-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-65
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to access Google Play Licensing -->
-19-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
-19-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+19-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
+19-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-76
 20    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-20-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
-20-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
+20-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
+20-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-70
 21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-21-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
-21-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+21-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+21-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
 22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-22-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:28:5-77
-22-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:28:22-74
+22-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:28:5-77
+22-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:28:22-74
 23
 24    <uses-feature
-24-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 25        android:glEsVersion="0x00020000"
-25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
 26        android:required="true" />
-26-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 27
 28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-28-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:5-110
-28-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:22-107
+28-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:26:22-107
 29    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- for android -->
-29-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:15:5-81
-29-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:15:22-78
+29-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:15:5-81
+29-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:15:22-78
 30    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
 31    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
 32    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
 33    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
 34    <!-- for Samsung -->
 35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-35-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
-35-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
 36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-36-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
-36-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
 37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-37-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
-37-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+37-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+37-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
 38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-38-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
-38-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+38-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+38-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
 39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-39-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
-39-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+39-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+39-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
 40    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
-40-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
-40-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
 41    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-41-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
-41-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
 42    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
-42-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
-42-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
 43    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-43-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
-43-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
 44    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-44-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
-44-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+44-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
 45    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
-45-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
-45-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+45-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
 46    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
-46-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
-46-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+46-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
 47    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-47-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
-47-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+47-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
 48    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
-48-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
-48-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+48-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
 49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-49-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
-49-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+49-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
 50    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-50-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
-50-->[me.leolin:ShortcutBadger:1.1.22] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b75ce67a33c75d7f7eef425ea030ccb7/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+50-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b75ce67a33c75d7f7eef425ea030ccb7\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
 51
 52    <application
-52-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:14:5-41:19
+52-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:14:5-41:19
 53        android:name="com.cottonbidseller.MainApplication"
-53-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:15:7-38
+53-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:15:7-38
 54        android:allowBackup="false"
-54-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:18:7-34
+54-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:18:7-34
 55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-55-->[androidx.core:core:1.3.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b66d39b8468bd8d58445227932b7c47b/core-1.3.1/AndroidManifest.xml:24:18-86
+55-->[androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:24:18-86
 56        android:debuggable="true"
 57        android:icon="@mipmap/ic_launcher"
-57-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:17:7-41
+57-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:17:7-41
 58        android:label="@string/app_name"
-58-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:16:7-39
+58-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:16:7-39
 59        android:largeHeap="true"
-59-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:21:7-31
+59-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:21:7-31
 60        android:requestLegacyExternalStorage="true"
-60-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:20:7-50
+60-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:20:7-50
 61        android:theme="@style/AppTheme"
-61-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:22:7-38
+61-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:22:7-38
 62        android:usesCleartextTraffic="true" >
-62-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:19:8-43
+62-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:19:8-43
 63        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-63-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/debug/AndroidManifest.xml:11:9-86
-63-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/debug/AndroidManifest.xml:11:19-83
+63-->D:\Github_Projects\cotton_seller\android\app\src\debug\AndroidManifest.xml:11:9-86
+63-->D:\Github_Projects\cotton_seller\android\app\src\debug\AndroidManifest.xml:11:19-83
 64        <activity
-64-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:23:7-33:18
+64-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:23:7-33:18
 65            android:name="com.cottonbidseller.MainActivity"
-65-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:24:9-37
+65-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:24:9-37
 66            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-66-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:26:9-86
+66-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:26:9-86
 67            android:label="@string/app_name"
-67-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:25:9-41
+67-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:25:9-41
 68            android:launchMode="singleTask"
-68-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:27:9-40
+68-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:27:9-40
 69            android:windowSoftInputMode="adjustResize" >
-69-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:28:9-51
+69-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:28:9-51
 70            <intent-filter>
-70-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:29:9-32:25
+70-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:29:9-32:25
 71                <action android:name="android.intent.action.MAIN" />
-71-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:30:13-65
-71-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:30:21-62
+71-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:30:13-65
+71-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:30:21-62
 72
 73                <category android:name="android.intent.category.LAUNCHER" />
-73-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:31:13-73
-73-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:31:23-70
+73-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:31:13-73
+73-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:31:23-70
 74            </intent-filter>
 75        </activity>
 76
 77        <meta-data
-77-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:34:7-36:54
+77-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:34:7-36:54
 78            android:name="com.google.firebase.messaging.default_notification_icon"
-78-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:35:13-83
+78-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:35:13-83
 79            android:resource="@mipmap/ic_launcher" />
-79-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:36:13-51
+79-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:36:13-51
 80        <meta-data
-80-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:37:9-39:47
+80-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:37:9-39:47
 81            android:name="com.google.firebase.messaging.default_notification_color"
-81-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:38:13-84
+81-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:38:13-84
 82            android:resource="@color/white" />
-82-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:39:13-44
+82-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:39:13-44
 83
 84        <provider
-84-->[:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
+84-->[:notifee_react-native] D:\Github_Projects\cotton_seller\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:40
 85            android:name="io.invertase.notifee.NotifeeInitProvider"
-85-->[:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-68
+85-->[:notifee_react-native] D:\Github_Projects\cotton_seller\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-68
 86            android:authorities="com.cottonbidseller.notifee-init-provider"
-86-->[:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
+86-->[:notifee_react-native] D:\Github_Projects\cotton_seller\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-73
 87            android:exported="false"
-87-->[:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+87-->[:notifee_react-native] D:\Github_Projects\cotton_seller\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 88            android:initOrder="-100" />
-88-->[:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+88-->[:notifee_react-native] D:\Github_Projects\cotton_seller\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-37
 89
 90        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
-90-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-111
-90-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-108
+90-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-111
+90-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-108
 91        <service
-91-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-23:19
+91-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-23:19
 92            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
-92-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-95
+92-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-95
 93            android:exported="false" >
-93-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-37
+93-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
 94            <intent-filter>
-94-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
+94-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-22:29
 95                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-95-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
-95-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
+95-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-78
+95-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-75
 96            </intent-filter>
 97        </service>
 98
 99        <receiver
-99-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-32:20
+99-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-32:20
 100            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
-100-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-96
+100-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-96
 101            android:exported="true"
-101-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-36
+101-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-36
 102            android:permission="com.google.android.c2dm.permission.SEND" >
-102-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-73
+102-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-73
 103            <intent-filter>
-103-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+103-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-31:29
 104                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-104-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
-104-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+104-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-81
+104-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-78
 105            </intent-filter>
 106        </receiver>
 107
 108        <meta-data
-108-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-36:36
+108-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-36:36
 109            android:name="firebase_messaging_auto_init_enabled"
-109-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-64
+109-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-64
 110            android:value="true" />
-110-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-33
+110-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-33
 111        <meta-data
-111-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:9-39:32
+111-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-39:32
 112            android:name="com.google.firebase.messaging.default_notification_channel_id"
-112-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-89
+112-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-89
 113            android:value="" />
-113-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-29
+113-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-29
 114        <meta-data
-114-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+114-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
 115            android:name="app_data_collection_default_enabled"
-115-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+115-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
 116            android:value="true" />
-116-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+116-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
 117
 118        <service
-118-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:19
+118-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
 119            android:name="com.google.firebase.components.ComponentDiscoveryService"
-119-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
+119-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-89
 120            android:directBootAware="true"
-120-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 121            android:exported="false" >
-121-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+121-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
 122            <meta-data
-122-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
+122-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:85
 123                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-123-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-120
+123-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-120
 124                android:value="com.google.firebase.components.ComponentRegistrar" />
-124-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
+124-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-82
 125            <meta-data
-125-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+125-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
 126                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-126-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+126-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
 127                android:value="com.google.firebase.components.ComponentRegistrar" />
-127-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+127-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
 128            <meta-data
-128-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e4fd85eadb40ae7d231f7303a1f10ae6/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+128-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
 129                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-129-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e4fd85eadb40ae7d231f7303a1f10ae6/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+129-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
 130                android:value="com.google.firebase.components.ComponentRegistrar" />
-130-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e4fd85eadb40ae7d231f7303a1f10ae6/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+130-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
 131            <meta-data
-131-->[com.google.android.gms:play-services-measurement-api:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e8e758d1e6f2966c4bed78b01adb190a/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:30:13-32:85
+131-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e8e758d1e6f2966c4bed78b01adb190a\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:30:13-32:85
 132                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-132-->[com.google.android.gms:play-services-measurement-api:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e8e758d1e6f2966c4bed78b01adb190a/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:31:17-139
+132-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e8e758d1e6f2966c4bed78b01adb190a\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:31:17-139
 133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.android.gms:play-services-measurement-api:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e8e758d1e6f2966c4bed78b01adb190a/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:32:17-82
+133-->[com.google.android.gms:play-services-measurement-api:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e8e758d1e6f2966c4bed78b01adb190a\jetified-play-services-measurement-api-19.0.1\AndroidManifest.xml:32:17-82
 134            <meta-data
-134-->[com.google.firebase:firebase-installations:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/99da45bd6427910f40b54502e54f29b5/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+134-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
 135                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-135-->[com.google.firebase:firebase-installations:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/99da45bd6427910f40b54502e54f29b5/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+135-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
 136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-installations:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/99da45bd6427910f40b54502e54f29b5/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+136-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
 137        </service>
 138
 139        <provider
-139-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-26:38
+139-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-26:38
 140            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-140-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-88
+140-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-88
 141            android:authorities="com.cottonbidseller.reactnativefirebaseappinitprovider"
-141-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+141-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
 142            android:exported="false"
-142-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+142-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
 143            android:initOrder="99" />
-143-->[:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-35
+143-->[:react-native-firebase_app] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-35
 144        <provider
-144-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+144-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 145            android:name="com.imagepicker.ImagePickerProvider"
-145-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-63
+145-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
 146            android:authorities="com.cottonbidseller.imagepickerprovider"
-146-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-71
+146-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
 147            android:exported="false"
-147-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+147-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 148            android:grantUriPermissions="true" >
-148-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+148-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
 149            <meta-data
-149-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+149-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:70
 150                android:name="android.support.FILE_PROVIDER_PATHS"
-150-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+150-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 151                android:resource="@xml/imagepicker_provider_paths" />
-151-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+151-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
 152        </provider>
 153
 154        <activity
-154-->[:react-native-razorpay] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-razorpay/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:86
+154-->[:react-native-razorpay] D:\Github_Projects\cotton_seller\node_modules\react-native-razorpay\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:86
 155            android:name="com.razorpay.CheckoutActivity"
-155-->[:react-native-razorpay] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-razorpay/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-57
+155-->[:react-native-razorpay] D:\Github_Projects\cotton_seller\node_modules\react-native-razorpay\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-57
 156            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-156-->[:react-native-razorpay] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-razorpay/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-83
+156-->[:react-native-razorpay] D:\Github_Projects\cotton_seller\node_modules\react-native-razorpay\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-83
 157            android:theme="@style/CheckoutTheme" >
-157-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:21:13-49
+157-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:21:13-49
 158            <intent-filter>
-158-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:22:13-28:29
+158-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:22:13-28:29
 159                <action android:name="android.intent.action.MAIN" />
-159-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:30:13-65
-159-->/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/android/app/src/main/AndroidManifest.xml:30:21-62
+159-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:30:13-65
+159-->D:\Github_Projects\cotton_seller\android\app\src\main\AndroidManifest.xml:30:21-62
 160
 161                <data
-161-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:25:17-27:47
+161-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:25:17-27:47
 162                    android:host="rzp.io"
-162-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:26:21-42
+162-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:26:21-42
 163                    android:scheme="io.rzp" />
-163-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:27:21-44
+163-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:27:21-44
 164            </intent-filter>
 165        </activity>
 166
 167        <provider
-167-->[:react-native-webview] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+167-->[:react-native-webview] D:\Github_Projects\cotton_seller\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 168            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-168-->[:react-native-webview] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+168-->[:react-native-webview] D:\Github_Projects\cotton_seller\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
 169            android:authorities="com.cottonbidseller.fileprovider"
-169-->[:react-native-webview] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+169-->[:react-native-webview] D:\Github_Projects\cotton_seller\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
 170            android:exported="false"
-170-->[:react-native-webview] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+170-->[:react-native-webview] D:\Github_Projects\cotton_seller\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 171            android:grantUriPermissions="true" >
-171-->[:react-native-webview] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+171-->[:react-native-webview] D:\Github_Projects\cotton_seller\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
 172            <meta-data
-172-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+172-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:70
 173                android:name="android.support.FILE_PROVIDER_PATHS"
-173-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+173-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 174                android:resource="@xml/file_provider_paths" />
-174-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+174-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
 175        </provider>
 176        <provider
-176-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
+176-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
 177            android:name="com.RNFetchBlob.Utils.FileProvider"
-177-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
+177-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
 178            android:authorities="com.cottonbidseller.provider"
-178-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
+178-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
 179            android:exported="false"
-179-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
+179-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
 180            android:grantUriPermissions="true" >
-180-->[:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
+180-->[:rn-fetch-blob] D:\Github_Projects\cotton_seller\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
 181            <meta-data
-181-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:70
+181-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:70
 182                android:name="android.support.FILE_PROVIDER_PATHS"
-182-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+182-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 183                android:resource="@xml/provider_paths" />
-183-->[:react-native-image-picker] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+183-->[:react-native-image-picker] D:\Github_Projects\cotton_seller\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
 184        </provider>
 185
 186        <receiver
-186-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+186-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
 187            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-187-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+187-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
 188            android:exported="true"
-188-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+188-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
 189            android:permission="com.google.android.c2dm.permission.SEND" >
-189-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+189-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
 190            <intent-filter>
-190-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-31:29
+190-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-31:29
 191                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-191-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-81
-191-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:25-78
+191-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-81
+191-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-78
 192            </intent-filter>
 193        </receiver>
 194        <!--
@@ -382,418 +382,418 @@
 196             but set to not exported to explicitly avoid allowing another app to call it.
 197        -->
 198        <service
-198-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+198-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
 199            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-199-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+199-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
 200            android:directBootAware="true"
-200-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+200-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
 201            android:exported="false" >
-201-->[com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+201-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
 202            <intent-filter android:priority="-500" >
-202-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-22:29
+202-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-22:29
 203                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-203-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-78
-203-->[:react-native-firebase_messaging] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/Seller_github/cotton_seller/node_modules/@react-native-firebase/messaging/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-75
+203-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-78
+203-->[:react-native-firebase_messaging] D:\Github_Projects\cotton_seller\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-75
 204            </intent-filter>
 205        </service>
 206        <service
-206-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+206-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
 207            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-207-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+207-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
 208            android:exported="false" >
-208-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+208-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
 209            <meta-data
-209-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+209-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
 210                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-210-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+210-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
 211                android:value="cct" />
-211-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/e451fee15652f592c899e0d6381e4f4f/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+211-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
 212        </service>
 213
 214        <provider
-214-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+214-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 215            android:name="com.google.firebase.provider.FirebaseInitProvider"
-215-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+215-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
 216            android:authorities="com.cottonbidseller.firebaseinitprovider"
-216-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+216-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
 217            android:directBootAware="true"
-217-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+217-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
 218            android:exported="false"
-218-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+218-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
 219            android:initOrder="100" />
-219-->[com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+219-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 220        <provider
-220-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:31:9-37:35
+220-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:31:9-37:35
 221            android:name="androidx.work.impl.WorkManagerInitializer"
-221-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:32:13-69
+221-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:32:13-69
 222            android:authorities="com.cottonbidseller.workmanager-init"
-222-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:33:13-68
+222-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:33:13-68
 223            android:directBootAware="false"
-223-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:34:13-44
+223-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:34:13-44
 224            android:exported="false"
-224-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:35:13-37
+224-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:35:13-37
 225            android:multiprocess="true" />
-225-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:36:13-40
+225-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:36:13-40
 226
 227        <service
-227-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:39:9-44:35
+227-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:39:9-44:35
 228            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-228-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:40:13-88
+228-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:40:13-88
 229            android:directBootAware="false"
-229-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:41:13-44
+229-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:41:13-44
 230            android:enabled="@bool/enable_system_alarm_service_default"
-230-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:42:13-72
+230-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:42:13-72
 231            android:exported="false" />
-231-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:43:13-37
+231-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:43:13-37
 232        <service
-232-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:45:9-51:35
+232-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:45:9-51:35
 233            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-233-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:46:13-84
+233-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:46:13-84
 234            android:directBootAware="false"
-234-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:47:13-44
+234-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:47:13-44
 235            android:enabled="@bool/enable_system_job_service_default"
-235-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:48:13-70
+235-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:48:13-70
 236            android:exported="true"
-236-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:49:13-36
+236-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:49:13-36
 237            android:permission="android.permission.BIND_JOB_SERVICE" />
-237-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:50:13-69
+237-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:50:13-69
 238        <service
-238-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:52:9-57:35
+238-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:52:9-57:35
 239            android:name="androidx.work.impl.foreground.SystemForegroundService"
-239-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:53:13-81
+239-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:53:13-81
 240            android:directBootAware="false"
-240-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:54:13-44
+240-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:54:13-44
 241            android:enabled="@bool/enable_system_foreground_service_default"
-241-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:55:13-77
+241-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:55:13-77
 242            android:exported="false" />
-242-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:56:13-37
+242-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:56:13-37
 243
 244        <receiver
-244-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:59:9-64:35
+244-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:59:9-64:35
 245            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-245-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:60:13-88
+245-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:60:13-88
 246            android:directBootAware="false"
-246-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:61:13-44
+246-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:61:13-44
 247            android:enabled="true"
-247-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:62:13-35
+247-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:62:13-35
 248            android:exported="false" />
-248-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:63:13-37
+248-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:63:13-37
 249        <receiver
-249-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:65:9-75:20
+249-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:65:9-75:20
 250            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-250-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:66:13-106
+250-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:66:13-106
 251            android:directBootAware="false"
-251-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:67:13-44
+251-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:67:13-44
 252            android:enabled="false"
-252-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:68:13-36
+252-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:68:13-36
 253            android:exported="false" >
-253-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:69:13-37
+253-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:69:13-37
 254            <intent-filter>
-254-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:71:13-74:29
+254-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:71:13-74:29
 255                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-255-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:72:17-87
-255-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:72:25-84
+255-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:72:17-87
+255-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:72:25-84
 256                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-256-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:73:17-90
-256-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:73:25-87
+256-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:73:17-90
+256-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:73:25-87
 257            </intent-filter>
 258        </receiver>
 259        <receiver
-259-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:76:9-86:20
+259-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:76:9-86:20
 260            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-260-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:77:13-104
+260-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:77:13-104
 261            android:directBootAware="false"
-261-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:78:13-44
+261-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:78:13-44
 262            android:enabled="false"
-262-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:79:13-36
+262-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:79:13-36
 263            android:exported="false" >
-263-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:80:13-37
+263-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:80:13-37
 264            <intent-filter>
-264-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:82:13-85:29
+264-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:82:13-85:29
 265                <action android:name="android.intent.action.BATTERY_OKAY" />
-265-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:83:17-77
-265-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:83:25-74
+265-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:83:17-77
+265-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:83:25-74
 266                <action android:name="android.intent.action.BATTERY_LOW" />
-266-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:84:17-76
-266-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:84:25-73
+266-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:84:17-76
+266-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:84:25-73
 267            </intent-filter>
 268        </receiver>
 269        <receiver
-269-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:87:9-97:20
+269-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:87:9-97:20
 270            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-270-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:88:13-104
+270-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:88:13-104
 271            android:directBootAware="false"
-271-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:89:13-44
+271-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:89:13-44
 272            android:enabled="false"
-272-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:90:13-36
+272-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:90:13-36
 273            android:exported="false" >
-273-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:91:13-37
+273-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:91:13-37
 274            <intent-filter>
-274-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:93:13-96:29
+274-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:93:13-96:29
 275                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-275-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:94:17-83
-275-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:94:25-80
+275-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:94:17-83
+275-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:94:25-80
 276                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-276-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:95:17-82
-276-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:95:25-79
+276-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:95:17-82
+276-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:95:25-79
 277            </intent-filter>
 278        </receiver>
 279        <receiver
-279-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:98:9-107:20
+279-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:98:9-107:20
 280            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-280-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:99:13-103
+280-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:99:13-103
 281            android:directBootAware="false"
-281-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:100:13-44
+281-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:100:13-44
 282            android:enabled="false"
-282-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:101:13-36
+282-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:101:13-36
 283            android:exported="false" >
-283-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:102:13-37
+283-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:102:13-37
 284            <intent-filter>
-284-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:104:13-106:29
+284-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:104:13-106:29
 285                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-285-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:105:17-79
-285-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:105:25-76
+285-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:105:17-79
+285-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:105:25-76
 286            </intent-filter>
 287        </receiver>
 288        <receiver
-288-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:108:9-119:20
+288-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:108:9-119:20
 289            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-289-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:109:13-88
+289-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:109:13-88
 290            android:directBootAware="false"
-290-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:110:13-44
+290-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:110:13-44
 291            android:enabled="false"
-291-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:111:13-36
+291-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:111:13-36
 292            android:exported="false" >
-292-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:112:13-37
+292-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:112:13-37
 293            <intent-filter>
-293-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:114:13-118:29
+293-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:114:13-118:29
 294                <action android:name="android.intent.action.BOOT_COMPLETED" />
-294-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:17-79
-294-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:25-76
+294-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:17-79
+294-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:25-76
 295                <action android:name="android.intent.action.TIME_SET" />
-295-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:116:17-73
-295-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:116:25-70
+295-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:116:17-73
+295-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:116:25-70
 296                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-296-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:117:17-81
-296-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:117:25-78
+296-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:117:17-81
+296-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:117:25-78
 297            </intent-filter>
 298        </receiver>
 299        <receiver
-299-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:120:9-129:20
+299-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:120:9-129:20
 300            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-300-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:121:13-99
+300-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:121:13-99
 301            android:directBootAware="false"
-301-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:122:13-44
+301-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:122:13-44
 302            android:enabled="@bool/enable_system_alarm_service_default"
-302-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:123:13-72
+302-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:123:13-72
 303            android:exported="false" >
-303-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:124:13-37
+303-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:124:13-37
 304            <intent-filter>
-304-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:126:13-128:29
+304-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:126:13-128:29
 305                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-305-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:127:17-98
-305-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:127:25-95
+305-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:127:17-98
+305-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:127:25-95
 306            </intent-filter>
 307        </receiver>
 308        <receiver
-308-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:130:9-140:20
+308-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:130:9-140:20
 309            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-309-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:131:13-78
+309-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:131:13-78
 310            android:directBootAware="false"
-310-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:132:13-44
+310-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:132:13-44
 311            android:enabled="true"
-311-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:133:13-35
+311-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:133:13-35
 312            android:exported="true"
-312-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:134:13-36
+312-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:134:13-36
 313            android:permission="android.permission.DUMP" >
-313-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:135:13-57
+313-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:135:13-57
 314            <intent-filter>
-314-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:137:13-139:29
+314-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:137:13-139:29
 315                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-315-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:138:17-88
-315-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:138:25-85
+315-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:138:17-88
+315-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:138:25-85
 316            </intent-filter>
 317        </receiver>
 318
 319        <service
-319-->[androidx.room:room-runtime:2.2.5] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/13ffe9b8c3fbe84db414b6fdccb41514/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+319-->[androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
 320            android:name="androidx.room.MultiInstanceInvalidationService"
-320-->[androidx.room:room-runtime:2.2.5] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/13ffe9b8c3fbe84db414b6fdccb41514/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+320-->[androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
 321            android:directBootAware="true"
-321-->[androidx.room:room-runtime:2.2.5] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/13ffe9b8c3fbe84db414b6fdccb41514/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+321-->[androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
 322            android:exported="false" />
-322-->[androidx.room:room-runtime:2.2.5] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/13ffe9b8c3fbe84db414b6fdccb41514/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+322-->[androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
 323        <service
-323-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+323-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
 324            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-324-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+324-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
 325            android:exported="false"
-325-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+325-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
 326            android:permission="android.permission.BIND_JOB_SERVICE" >
-326-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+326-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
 327        </service>
 328
 329        <receiver
-329-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+329-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
 330            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-330-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+330-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
 331            android:exported="false" />
-331-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/2027c98b5862800401a4ef76869fe91d/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+331-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
 332        <receiver android:name="com.razorpay.RzpTokenReceiver" >
-332-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:12:9-16:20
-332-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:12:19-63
+332-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:12:9-16:20
+332-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:12:19-63
 333            <intent-filter>
-333-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:13:13-15:29
+333-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:13:13-15:29
 334                <action android:name="rzp.device_token.share" />
-334-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:14:17-65
-334-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:14:25-62
+334-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:14:17-65
+334-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:14:25-62
 335            </intent-filter>
 336        </receiver>
 337
 338        <meta-data
-338-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:31:9-33:58
+338-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:31:9-33:58
 339            android:name="com.razorpay.plugin.googlepay_all"
-339-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:32:13-61
+339-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:32:13-61
 340            android:value="com.razorpay.RzpGpayMerged" />
-340-->[com.razorpay:checkout:1.6.15] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/167ae055b567fb0cd8db1377da50a979/jetified-checkout-1.6.15/AndroidManifest.xml:33:13-55
+340-->[com.razorpay:checkout:1.6.15] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\167ae055b567fb0cd8db1377da50a979\jetified-checkout-1.6.15\AndroidManifest.xml:33:13-55
 341
 342        <activity
-342-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:23:9-27:75
+342-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
 343            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-343-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:24:13-93
+343-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
 344            android:excludeFromRecents="true"
-344-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:25:13-46
+344-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
 345            android:exported="false"
-345-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:26:13-37
+345-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
 346            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-346-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:27:13-72
+346-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
 347        <!--
 348            Service handling Google Sign-In user revocation. For apps that do not integrate with
 349            Google Sign-In, this service will never be started.
 350        -->
 351        <service
-351-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:33:9-37:51
+351-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
 352            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-352-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:34:13-89
+352-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
 353            android:exported="true"
-353-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:35:13-36
+353-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
 354            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-354-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:36:13-107
+354-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
 355            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
-355-->[com.google.android.gms:play-services-auth:19.2.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9d34607ee6e38ff40bda9abdf58e7d01/jetified-play-services-auth-19.2.0/AndroidManifest.xml:37:13-48
+355-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
 356        <uses-library
-356-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+356-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 357            android:name="org.apache.http.legacy"
-357-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+357-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
 358            android:required="false" />
-358-->[com.google.android.gms:play-services-maps:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/ef0b63786343f257c76b237ddff7290e/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+358-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ef0b63786343f257c76b237ddff7290e\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
 359
 360        <activity
-360-->[com.google.android.gms:play-services-base:17.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/490acf12c4f9537c3d0b9389b60c4264/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+360-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
 361            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-361-->[com.google.android.gms:play-services-base:17.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/490acf12c4f9537c3d0b9389b60c4264/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+361-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
 362            android:exported="false"
-362-->[com.google.android.gms:play-services-base:17.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/490acf12c4f9537c3d0b9389b60c4264/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+362-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
 363            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-363-->[com.google.android.gms:play-services-base:17.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/490acf12c4f9537c3d0b9389b60c4264/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+363-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
 364
 365        <receiver
-365-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:29:9-33:20
+365-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:29:9-33:20
 366            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-366-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:30:13-85
+366-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:30:13-85
 367            android:enabled="true"
-367-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:31:13-35
+367-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:31:13-35
 368            android:exported="false" >
-368-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:32:13-37
+368-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:32:13-37
 369        </receiver>
 370
 371        <service
-371-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:35:9-38:40
+371-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:35:9-38:40
 372            android:name="com.google.android.gms.measurement.AppMeasurementService"
-372-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:36:13-84
+372-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:36:13-84
 373            android:enabled="true"
-373-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:37:13-35
+373-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:37:13-35
 374            android:exported="false" />
-374-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:38:13-37
+374-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:38:13-37
 375        <service
-375-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:39:9-43:72
+375-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:39:9-43:72
 376            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-376-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:40:13-87
+376-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:40:13-87
 377            android:enabled="true"
-377-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:41:13-35
+377-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:41:13-35
 378            android:exported="false"
-378-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:42:13-37
+378-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:42:13-37
 379            android:permission="android.permission.BIND_JOB_SERVICE" />
-379-->[com.google.android.gms:play-services-measurement:19.0.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/cef1ee5aa68a95e976a5bd441f34e77a/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:43:13-69
+379-->[com.google.android.gms:play-services-measurement:19.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cef1ee5aa68a95e976a5bd441f34e77a\jetified-play-services-measurement-19.0.1\AndroidManifest.xml:43:13-69
 380
 381        <meta-data
-381-->[com.google.android.gms:play-services-basement:17.6.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/a16b3ff6a5eba037cbe6de6c71f0c6fd/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+381-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
 382            android:name="com.google.android.gms.version"
-382-->[com.google.android.gms:play-services-basement:17.6.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/a16b3ff6a5eba037cbe6de6c71f0c6fd/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+382-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
 383            android:value="@integer/google_play_services_version" /> <!-- Receiver Service -->
-383-->[com.google.android.gms:play-services-basement:17.6.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/a16b3ff6a5eba037cbe6de6c71f0c6fd/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+383-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
 384        <service
-384-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:20:9-22:40
+384-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:20:9-22:40
 385            android:name="app.notifee.core.ReceiverService"
-385-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:21:13-60
+385-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:21:13-60
 386            android:exported="false" /> <!-- Foreground Service -->
-386-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:22:13-37
+386-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:22:13-37
 387        <service
-387-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:25:9-27:40
+387-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:25:9-27:40
 388            android:name="app.notifee.core.ForegroundService"
-388-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:26:13-62
+388-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:26:13-62
 389            android:exported="false" />
-389-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:27:13-37
+389-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:27:13-37
 390
 391        <receiver android:name="app.notifee.core.RebootBroadcastReceiver" >
-391-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:29:9-35:20
-391-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:29:19-74
+391-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:29:9-35:20
+391-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:29:19-74
 392            <intent-filter>
-392-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:30:13-34:29
+392-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:30:13-34:29
 393                <action android:name="android.intent.action.BOOT_COMPLETED" />
-393-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:17-79
-393-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:25-76
+393-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:17-79
+393-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:25-76
 394                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-394-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:32:17-82
-394-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:32:25-79
+394-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:32:17-82
+394-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:32:25-79
 395                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-395-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:33:17-82
-395-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:33:25-79
+395-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:33:17-82
+395-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:33:25-79
 396            </intent-filter>
 397        </receiver>
 398        <receiver android:name="app.notifee.core.NotificationAlarmReceiver" >
-398-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:36:9-42:20
-398-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:36:19-76
+398-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:36:9-42:20
+398-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:36:19-76
 399            <intent-filter>
-399-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:30:13-34:29
+399-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:30:13-34:29
 400                <action android:name="android.intent.action.BOOT_COMPLETED" />
-400-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:17-79
-400-->[androidx.work:work-runtime:2.5.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/AndroidManifest.xml:115:25-76
+400-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:17-79
+400-->[androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:115:25-76
 401                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-401-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:32:17-82
-401-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:32:25-79
+401-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:32:17-82
+401-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:32:25-79
 402                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-402-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:33:17-82
-402-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:33:25-79
+402-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:33:17-82
+402-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:33:25-79
 403            </intent-filter>
 404        </receiver> <!-- Broadcast Receiver -->
 405        <receiver
-405-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:45:9-53:20
+405-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:45:9-53:20
 406            android:name="app.notifee.core.BlockStateBroadcastReceiver"
-406-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:46:13-72
+406-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:46:13-72
 407            android:exported="false" >
-407-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:47:13-37
+407-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:47:13-37
 408            <intent-filter>
-408-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:48:13-52:29
+408-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:48:13-52:29
 409                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED" />
-409-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:49:17-85
-409-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:49:25-82
+409-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:49:17-85
+409-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:49:25-82
 410                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED" />
-410-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:50:17-102
-410-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:50:25-99
+410-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:50:17-102
+410-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:50:25-99
 411                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED" />
-411-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:51:17-108
-411-->[app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/6a088e35499d32337659081ff10cf038/jetified-core-202108261754/AndroidManifest.xml:51:25-105
+411-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:51:17-108
+411-->[app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6a088e35499d32337659081ff10cf038\jetified-core-202108261754\AndroidManifest.xml:51:25-105
 412            </intent-filter>
 413        </receiver>
 414    </application>
