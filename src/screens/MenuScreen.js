@@ -205,11 +205,22 @@ ListTransaction = (props) => {
 
                 // console.log('response', response.data)
                 let obj = {}
-
-                let list = response.data.data.map(item => {
+                let temp = ''
+                let dt = ''
+                           
+                    let list = response.data.data.map(item => {
+                        temp = item.parameters.split(/(\d+)/);
+                        dt = temp[1];
+                        temp = temp[2].split('FUT');
                     obj = {
                         name: item.parameters,
-                        value: '--'
+                        active: false,
+                        expiryDate: dt + ' ' + temp[0],
+                        close_price: '--',
+                        current_price: '--',
+                        high_price: '--',
+                        low_price: '--',
+                        open_price: '--'
                     }
                     return obj
                 })

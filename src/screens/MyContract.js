@@ -464,7 +464,7 @@ export default class Dashboard extends Component {
               //console.log("Hello Bhavin Thakkar: " + arrDealDetails.length),
 
               <View>
-                <View style={{flexDirection: 'row', width: '100%'}}>
+                {arrDealDetails.length > 0 && (<View style={{flexDirection: 'row', width: '100%'}}>
                   <View
                     style={{
                       flex: 1,
@@ -486,7 +486,7 @@ export default class Dashboard extends Component {
                       {displayDate}
                     </Text>
                   </View>
-                </View>
+                </View>)}
 
                 {arrDealDetails.map((dd, j) => (
                   <View>
