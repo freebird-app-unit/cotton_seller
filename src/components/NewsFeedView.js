@@ -29,7 +29,7 @@ export default function NewsFeedView({ navigation }) {
             setLoading(true);
 
             let data = {
-                limit: '5',
+                limit: page === 1 ? '10' : '5',
                 offset: page,
 
             };
@@ -211,7 +211,7 @@ export default function NewsFeedView({ navigation }) {
                             data={News.slice(5)}
                             renderItem={renderItem}
                             extraData={loading}
-                            onEndReachedThreshold={0.7}
+                            onEndReachedThreshold={0.5}
                             onEndReached={handleLoadMore}
                             refreshControl={
                             <RefreshControl

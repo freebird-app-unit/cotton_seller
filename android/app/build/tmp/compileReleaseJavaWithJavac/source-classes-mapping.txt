@@ -1,9 +1,0 @@
-com/cottonbidseller/MainApplication.java
- com.cottonbidseller.MainApplication
- com.cottonbidseller.MainApplication$1
-com/cottonbidseller/BuildConfig.java
- com.cottonbidseller.BuildConfig
-com/cottonbidseller/MainActivity.java
- com.cottonbidseller.MainActivity
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
